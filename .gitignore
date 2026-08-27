@@ -1,0 +1,20 @@
+# Bỏ qua môi trường ảo
+env/
+venv/
+.env
+
+# Bỏ qua thư mục dữ liệu (RẤT QUAN TRỌNG)
+data/
+*.mp4
+*.jpg
+*.png
+*.zip
+
+# Bỏ qua các file rác của Python và hệ điều hành
+__pycache__/
+*.pyc
+.DS_Store
+
+# Bỏ qua trọng số mô hình tải về hoặc train ra
+*.pth
+*.pt
