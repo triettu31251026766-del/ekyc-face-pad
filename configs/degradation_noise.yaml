@@ -1,0 +1,7 @@
+# configs/degradation_noise.yaml — cấu hình đánh giá suy giảm chất lượng do nhiễu (Gaussian noise).
+# Áp dụng nhiễu với độ lệch chuẩn std cho trước lên tập test, KHÔNG huấn luyện lại model.
+seed: 42
+
+degradation:
+  name: noise
+  std: 0.03

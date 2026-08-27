@@ -1,0 +1,28 @@
+# configs/robustness.yaml — cấu hình huấn luyện robustness (E07).
+# Khi huấn luyện, mỗi ảnh được tăng cường ngẫu nhiên theo các khoảng tham số
+# của jpeg, resize, blur, noise, brightness để model bền vững với suy giảm chất lượng.
+seed: 42
+
+robustness:
+  enabled: true
+
+  augmentations:
+    jpeg:
+      enabled: true
+      quality_range: [50, 90]
+
+    resize:
+      enabled: true
+      scale_range: [0.5, 1.0]
+
+    blur:
+      enabled: true
+      sigma_range: [0.5, 2.0]
+
+    noise:
+      enabled: true
+      std_range: [0.005, 0.03]
+
+    brightness:
+      enabled: true
+      factor_range: [0.7, 1.3]

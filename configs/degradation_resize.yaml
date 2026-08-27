@@ -1,0 +1,7 @@
+# configs/degradation_resize.yaml — cấu hình đánh giá suy giảm độ phân giải (resize).
+# Áp dụng thu nhỏ ảnh theo tỉ lệ scale lên tập test, KHÔNG huấn luyện lại model.
+seed: 42
+
+degradation:
+  name: resize
+  scale: 0.5

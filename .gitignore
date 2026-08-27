@@ -1,6 +1,7 @@
 # Bỏ qua môi trường ảo
 env/
 venv/
+.venv/
 .env
 
 # Bỏ qua thư mục dữ liệu (RẤT QUAN TRỌNG)
