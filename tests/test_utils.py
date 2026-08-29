@@ -67,7 +67,7 @@ def test_model_size_mb_positive():
 
 def test_save_json_roundtrip(tmp_path):
     out = tmp_path / "nested" / "result.json"
-    data = {"experiment_id": "E01_baseline_seed42", "metrics": {"f1": 0.9}}
+    data = {"experiment_id": "E01_baseline_seed123", "metrics": {"f1": 0.9}}
     save_json(data, out)
     assert out.is_file()
     with out.open("r", encoding="utf-8") as handle:
@@ -88,13 +88,13 @@ def test_save_csv_roundtrip(tmp_path):
 
 def test_experiment_logger_writes_file(tmp_path):
     logger = get_experiment_logger("E99_test", log_dir=tmp_path)
-    logger.info("seed=42")
+    logger.info("seed=123")
     logger.info("final f1=0.95")
 
     log_file = tmp_path / "E99_test.log"
     assert log_file.is_file()
     content = log_file.read_text(encoding="utf-8")
-    assert "seed=42" in content
+    assert "seed=123" in content
     assert "final f1=0.95" in content
 
 

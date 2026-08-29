@@ -23,7 +23,7 @@ def _write(tmp_path, content, name="config.yaml"):
 
 def _base_config():
     return {
-        "seed": 42,
+        "seed": 123,
         "dataset": {"name": "celeba_spoof", "root": "data/raw/celeba_spoof"},
         "split": {"strategy": "subject_disjoint"},
         "model": {"name": "mobilenet_v2", "image_size": 224},
@@ -42,7 +42,7 @@ def _base_config():
 def test_load_valid_base_config(tmp_path):
     path = _write(tmp_path, _base_config())
     config = load_config(path)
-    assert config["seed"] == 42
+    assert config["seed"] == 123
     assert config["model"]["name"] == "mobilenet_v2"
     assert config["training"]["epochs"] == 20
 
@@ -102,26 +102,26 @@ def test_unknown_device_raises(tmp_path):
 
 
 def test_load_degradation_config(tmp_path):
-    config = {"seed": 42, "degradation": {"name": "jpeg", "quality": 50}}
+    config = {"seed": 123, "degradation": {"name": "jpeg", "quality": 50}}
     loaded = load_config(_write(tmp_path, config))
     assert loaded["degradation"] == {"name": "jpeg", "quality": 50}
 
 
 def test_invalid_degradation_name_raises(tmp_path):
-    config = {"seed": 42, "degradation": {"name": "solarize", "quality": 50}}
+    config = {"seed": 123, "degradation": {"name": "solarize", "quality": 50}}
     with pytest.raises(ConfigError, match="degradation.name"):
         load_config(_write(tmp_path, config))
 
 
 def test_invalid_jpeg_quality_raises(tmp_path):
-    config = {"seed": 42, "degradation": {"name": "jpeg", "quality": 101}}
+    config = {"seed": 123, "degradation": {"name": "jpeg", "quality": 101}}
     with pytest.raises(ConfigError, match="quality"):
         load_config(_write(tmp_path, config))
 
 
 def test_even_blur_kernel_raises(tmp_path):
     config = {
-        "seed": 42,
+        "seed": 123,
         "degradation": {"name": "blur", "kernel_size": 8, "sigma": 2.0},
     }
     with pytest.raises(ConfigError, match="kernel_size"):
@@ -129,14 +129,14 @@ def test_even_blur_kernel_raises(tmp_path):
 
 
 def test_missing_degradation_param_raises(tmp_path):
-    config = {"seed": 42, "degradation": {"name": "noise"}}
+    config = {"seed": 123, "degradation": {"name": "noise"}}
     with pytest.raises(ConfigError, match="std"):
         load_config(_write(tmp_path, config))
 
 
 def test_load_robustness_config(tmp_path):
     config = {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {
@@ -154,7 +154,7 @@ def test_load_robustness_config(tmp_path):
 
 def test_disabled_augmentation_needs_no_range(tmp_path):
     config = {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {"blur": {"enabled": False}},
@@ -165,7 +165,7 @@ def test_disabled_augmentation_needs_no_range(tmp_path):
 
 def test_invalid_augmentation_range_raises(tmp_path):
     config = {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {

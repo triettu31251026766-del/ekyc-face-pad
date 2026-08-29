@@ -37,7 +37,7 @@ def _make_dataset(root):
 
 def _base_config(dataset_root):
     return {
-        "seed": 42,
+        "seed": 123,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
         "split": {"strategy": "subject_disjoint"},
         "model": {"name": "custom_cnn", "image_size": 32},
@@ -51,7 +51,7 @@ def _base_config(dataset_root):
 
 def _robustness_config():
     return {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {
@@ -73,10 +73,10 @@ def _sample_records():
                 "apcer": 0.1, "bpcer": 0.1, "acer": acer}
 
     return [
-        record("E01_baseline_seed42", 0.80, 0.20),
-        record("E07_robust_seed42", 0.87, 0.12),
-        record("E09_ablation_jpeg_seed42", 0.84, 0.14),
-        record("E09_ablation_brightness_seed42", 0.82, 0.17),
+        record("E01_baseline_seed123", 0.80, 0.20),
+        record("E07_robust_seed123", 0.87, 0.12),
+        record("E09_ablation_jpeg_seed123", 0.84, 0.14),
+        record("E09_ablation_brightness_seed123", 0.82, 0.17),
     ]
 
 
@@ -91,7 +91,7 @@ def test_ablation_table_rows_and_columns():
 
 def test_ablation_table_skips_degradation_records():
     records = _sample_records() + [
-        {"experiment_id": "E02_jpeg70_seed42", "training_mode": "clean",
+        {"experiment_id": "E02_jpeg70_seed123", "training_mode": "clean",
          "degradation_name": "jpeg", "degradation_parameters": {"quality": 70},
          "f1": 0.6, "roc_auc": 0.8, "apcer": 0.3, "bpcer": 0.3, "acer": 0.3},
     ]
@@ -129,7 +129,7 @@ def test_ablation_end_to_end_single_variant(tmp_path):
     assert set(table["variant"]) == {"baseline", "jpeg"}
     assert (tmp_path / "figures" / "fig_ablation.png").is_file()
     # Checkpoint của biến thể ablation được lưu.
-    assert (tmp_path / "checkpoints" / "E09_ablation_jpeg_seed42.pt").is_file()
+    assert (tmp_path / "checkpoints" / "E09_ablation_jpeg_seed123.pt").is_file()
 
 
 # --- Kiểm thử run_all ---
@@ -140,8 +140,8 @@ def test_run_all_end_to_end_order(tmp_path):
     _make_dataset(dataset_root)
 
     degradation_configs = [
-        {"seed": 42, "degradation": {"name": "jpeg", "quality": 70}},
-        {"seed": 42, "degradation": {"name": "blur", "kernel_size": 3, "sigma": 1.0}},
+        {"seed": 123, "degradation": {"name": "jpeg", "quality": 70}},
+        {"seed": 123, "degradation": {"name": "blur", "kernel_size": 3, "sigma": 1.0}},
     ]
 
     summary = run_all(
@@ -158,17 +158,17 @@ def test_run_all_end_to_end_order(tmp_path):
 
     # Thứ tự đúng mục 32: E01 -> E02/E03 (baseline + suy giảm) -> E07 -> E08/E09.
     assert summary["experiment_ids"] == [
-        "E01_baseline_seed42",
-        "E02_jpeg70_seed42",
-        "E03_blur3_seed42",
-        "E07_robust_seed42",
-        "E08_robust_jpeg70_seed42",
-        "E09_robust_blur3_seed42",
+        "E01_baseline_seed123",
+        "E02_jpeg70_seed123",
+        "E03_blur3_seed123",
+        "E07_robust_seed123",
+        "E08_robust_jpeg70_seed123",
+        "E09_robust_blur3_seed123",
     ]
 
     # Đủ checkpoint và bảng so sánh cuối cùng.
-    assert (tmp_path / "checkpoints" / "E01_baseline_seed42.pt").is_file()
-    assert (tmp_path / "checkpoints" / "E07_robust_seed42.pt").is_file()
+    assert (tmp_path / "checkpoints" / "E01_baseline_seed123.pt").is_file()
+    assert (tmp_path / "checkpoints" / "E07_robust_seed123.pt").is_file()
     assert (tmp_path / "tables" / "comparison_table.csv").is_file()
     table = pd.read_csv(tmp_path / "tables" / "comparison_table.csv")
     assert len(table) == 6

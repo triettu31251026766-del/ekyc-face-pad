@@ -97,7 +97,7 @@ def get_experiment_logger(
     tại (cùng id) thì trả về logger cũ, không gắn thêm handler trùng lặp.
 
     Args:
-        experiment_id: Mã thí nghiệm (ví dụ "E01_baseline_seed42").
+        experiment_id: Mã thí nghiệm (ví dụ "E01_baseline_seed123").
         log_dir: Thư mục chứa tệp log.
 
     Returns:

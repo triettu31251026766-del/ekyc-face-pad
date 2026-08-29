@@ -52,17 +52,17 @@ def records(tmp_path):
     """Tập record tổng hợp: baseline + jpeg 90/70 + robust + robust jpeg70."""
     results_dir = tmp_path / "results"
     results_dir.mkdir()
-    _write_record(results_dir, "E01_baseline_seed42", "clean", "none", f1=0.85, acer=0.12)
-    _write_record(results_dir, "E02_jpeg90_seed42", "clean", "jpeg",
+    _write_record(results_dir, "E01_baseline_seed123", "clean", "none", f1=0.85, acer=0.12)
+    _write_record(results_dir, "E02_jpeg90_seed123", "clean", "jpeg",
                   {"quality": 90}, f1=0.80, acer=0.18)
-    _write_record(results_dir, "E03_jpeg70_seed42", "clean", "jpeg",
+    _write_record(results_dir, "E03_jpeg70_seed123", "clean", "jpeg",
                   {"quality": 70}, f1=0.70, acer=0.30)
-    _write_record(results_dir, "E04_resize75_seed42", "clean", "resize",
+    _write_record(results_dir, "E04_resize75_seed123", "clean", "resize",
                   {"scale": 0.75}, f1=0.78, acer=0.22)
-    _write_record(results_dir, "E05_resize50_seed42", "clean", "resize",
+    _write_record(results_dir, "E05_resize50_seed123", "clean", "resize",
                   {"scale": 0.50}, f1=0.68, acer=0.35)
-    _write_record(results_dir, "E07_robust_seed42", "robust", "none", f1=0.87, acer=0.10)
-    _write_record(results_dir, "E08_robust_jpeg70_seed42", "robust", "jpeg",
+    _write_record(results_dir, "E07_robust_seed123", "robust", "none", f1=0.87, acer=0.10)
+    _write_record(results_dir, "E08_robust_jpeg70_seed123", "robust", "jpeg",
                   {"quality": 70}, f1=0.78, acer=0.20)
     # Tệp JSON không phải record -> phải bị bỏ qua.
     (results_dir / "note.json").write_text('{"ghi_chu": "khong phai ket qua"}',

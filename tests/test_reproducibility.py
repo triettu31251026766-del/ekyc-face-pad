@@ -21,9 +21,9 @@ from src.reproducibility import get_environment_info, get_git_commit, set_seed
 
 
 def test_set_seed_reproduces_python_random():
-    set_seed(42)
+    set_seed(123)
     first = [random.random() for _ in range(5)]
-    set_seed(42)
+    set_seed(123)
     second = [random.random() for _ in range(5)]
     assert first == second
 
@@ -52,7 +52,7 @@ def test_different_seeds_give_different_sequences():
     assert first != second
 
 
-@pytest.mark.parametrize("seed", [-1, 1.5, "42", True])
+@pytest.mark.parametrize("seed", [-1, 1.5, "123", True])
 def test_invalid_seed_raises(seed):
     with pytest.raises(ValueError, match="seed"):
         set_seed(seed)

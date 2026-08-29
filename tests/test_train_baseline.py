@@ -48,7 +48,7 @@ def _make_synthetic_dataset(root):
 def _config(dataset_root, experiment_id):
     """Cấu hình E01 hợp lệ, model nhỏ + 1 epoch để chạy test nhanh."""
     return {
-        "seed": 42,
+        "seed": 123,
         "experiment_id": experiment_id,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
         "split": {"strategy": "subject_disjoint"},
@@ -77,7 +77,7 @@ def test_e01_end_to_end_outputs(tmp_path):
     record = _run_once(tmp_path, "E_test")
 
     # 1) Tệp splits được tạo (mục 7).
-    splits_file = tmp_path / "splits" / "celeba_spoof_seed42_subject_disjoint.json"
+    splits_file = tmp_path / "splits" / "celeba_spoof_seed123_subject_disjoint.json"
     assert splits_file.is_file()
 
     # 2) Checkpoint được lưu (mục 38) với đủ nội dung.
@@ -124,7 +124,7 @@ def test_e01_end_to_end_outputs(tmp_path):
 
 
 def test_e01_reproducible_metric(tmp_path):
-    """Chạy 2 lần cùng config (seed 42) -> metric gần như trùng khớp (mục 36)."""
+    """Chạy 2 lần cùng config (seed 123) -> metric gần như trùng khớp (mục 36)."""
     first = _run_once(tmp_path, "E_rep_a")
     second = _run_once(tmp_path, "E_rep_b")
     assert second["f1"] == pytest.approx(first["f1"], abs=1e-6)

@@ -18,10 +18,10 @@ Chạy:
         --robustness configs/robustness.yaml
 
 Đầu ra (mục 28):
-    results/raw/E07_robust_seed42.json
-    results/raw/E07_robust_seed42.csv
-    results/raw/E07_robust_seed42_predictions.csv
-    results/checkpoints/E07_robust_seed42.pt
+    results/raw/E07_robust_seed123.json
+    results/raw/E07_robust_seed123.csv
+    results/raw/E07_robust_seed123_predictions.csv
+    results/checkpoints/E07_robust_seed123.pt
 """
 
 from __future__ import annotations

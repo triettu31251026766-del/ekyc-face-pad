@@ -39,6 +39,7 @@ Cách dùng:
 
 from __future__ import annotations
 
+import functools
 import random
 from typing import Callable
 
@@ -60,6 +61,12 @@ DEFAULT_PROBABILITY = 0.5
 MIN_BLUR_KERNEL = 3
 
 
+def _identity(image: Image.Image) -> Image.Image:
+    """Hàm đồng nhất — dùng khi robustness bị tắt (phải là hàm module-level
+    để pickle được khi DataLoader dùng num_workers > 0)."""
+    return image
+
+
 def build_robustness_transform(config: dict) -> Callable[[Image.Image], Image.Image]:
     """Trả về hàm tăng cường chất lượng ngẫu nhiên cho ảnh huấn luyện.
 
@@ -70,14 +77,17 @@ def build_robustness_transform(config: dict) -> Callable[[Image.Image], Image.Im
         Hàm nhận ảnh PIL và trả về ảnh PIL đã tăng cường. Nếu
         "robustness.enabled" là False thì trả về hàm đồng nhất (giữ nguyên ảnh).
 
+    Chú ý: trả về functools.partial (KHÔNG phải lambda) để transform có thể
+    pickle được khi DataLoader dùng num_workers > 0 trên Windows.
+
     Raises:
         ConfigError: nếu thiếu khối "robustness" trong config.
     """
     robustness = _require_robustness(config)
     if not robustness.get("enabled", False):
-        return lambda image: image
+        return _identity
 
-    return lambda image: apply_training_quality_augmentation(image, config)
+    return functools.partial(apply_training_quality_augmentation, config=config)
 
 
 def apply_training_quality_augmentation(image: Image.Image, config: dict) -> Image.Image:
@@ -103,7 +113,7 @@ def apply_training_quality_augmentation(image: Image.Image, config: dict) -> Ima
 
     augmentations = robustness.get("augmentations", {})
     # Thứ tự cố định giúp kết quả tất định khi cùng seed.
-    for name in ("jpeg", "resize", "blur", "noise", "brightness"):
+    for name in ("jpeg", "resize", "blur", "noise", "brightness", "crop"):
         spec = augmentations.get(name)
         if not spec or not spec.get("enabled", False):
             continue
@@ -162,6 +172,14 @@ def _apply_one(name: str, image: Image.Image, spec: dict) -> Image.Image:
         noise_seed = random.randint(0, 2**32 - 1)
         return gaussian_noise(image, std, seed=noise_seed)
 
+    if name == "crop":
+        # Cắt ngẫu nhiên vùng con tỉ lệ scale rồi resize về kích thước gốc.
+        # Dạy model bất biến với việc khuôn mặt chiếm nhiều/ít khung hình
+        # (khắc phục độ nhạy với mức crop phát hiện ở Test D — xem camera_demo).
+        low, high = _require_range(name, spec, "scale_range")
+        scale = random.uniform(float(low), float(high))
+        return _random_scale_crop(image, scale)
+
     # brightness
     low, high = _require_range(name, spec, "factor_range")
     factor = random.uniform(float(low), float(high))
@@ -188,6 +206,21 @@ def _require_range(name: str, spec: dict, key: str) -> tuple[float, float]:
             f"0 <= low <= high, got {value!r}"
         )
     return float(low), float(high)
+
+
+def _random_scale_crop(image: Image.Image, scale: float) -> Image.Image:
+    """Cắt ngẫu nhiên vùng con kích thước scale*(w, h) rồi resize về kích thước gốc.
+
+    Với scale < 1, ảnh bị "zoom" vào vùng con -> khuôn mặt chiếm tỉ lệ lớn hơn
+    trong khung hình. Giúp model không học thuộc một tỉ lệ mặt/ảnh cố định.
+    """
+    w, h = image.size
+    crop_w = max(1, int(round(w * scale)))
+    crop_h = max(1, int(round(h * scale)))
+    left = random.randint(0, w - crop_w)
+    top = random.randint(0, h - crop_h)
+    cropped = image.crop((left, top, left + crop_w, top + crop_h))
+    return cropped.resize((w, h), Image.BILINEAR)
 
 
 def _kernel_from_sigma(sigma: float) -> int:

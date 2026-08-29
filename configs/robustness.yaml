@@ -1,7 +1,9 @@
 # configs/robustness.yaml — cấu hình huấn luyện robustness (E07).
 # Khi huấn luyện, mỗi ảnh được tăng cường ngẫu nhiên theo các khoảng tham số
-# của jpeg, resize, blur, noise, brightness để model bền vững với suy giảm chất lượng.
-seed: 42
+# của jpeg, resize, blur, noise, brightness và crop để model bền vững với
+# suy giảm chất lượng VÀ sự thay đổi mức crop (phát hiện từ Test D: model
+# rất nhạy với tỉ lệ mặt/ảnh).
+seed: 123
 
 robustness:
   enabled: true
@@ -26,3 +28,7 @@ robustness:
     brightness:
       enabled: true
       factor_range: [0.7, 1.3]
+
+    crop:
+      enabled: true
+      scale_range: [0.4, 1.0]

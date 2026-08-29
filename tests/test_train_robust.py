@@ -37,7 +37,7 @@ def _make_dataset(root):
 
 def _base_config(dataset_root):
     return {
-        "seed": 42,
+        "seed": 123,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
         "split": {"strategy": "subject_disjoint"},
         "model": {"name": "custom_cnn", "image_size": 32},
@@ -51,7 +51,7 @@ def _base_config(dataset_root):
 
 def _robustness_config(probability=1.0):
     return {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {
@@ -74,19 +74,19 @@ def test_train_robust_end_to_end(tmp_path):
         checkpoints_dir=tmp_path / "checkpoints",
     )
 
-    assert record["experiment_id"] == "E07_robust_seed42"
+    assert record["experiment_id"] == "E07_robust_seed123"
     assert record["training_mode"] == "robust"
     assert record["degradation_name"] == "none"  # đánh giá trên test sạch (mục 24)
     assert 0.0 <= record["f1"] <= 1.0
     assert len(record["train_history"]) == 1
 
     # Đủ tệp đầu ra.
-    assert (tmp_path / "checkpoints" / "E07_robust_seed42.pt").is_file()
-    assert (tmp_path / "results" / "E07_robust_seed42.json").is_file()
-    assert (tmp_path / "results" / "E07_robust_seed42.csv").is_file()
+    assert (tmp_path / "checkpoints" / "E07_robust_seed123.pt").is_file()
+    assert (tmp_path / "results" / "E07_robust_seed123.json").is_file()
+    assert (tmp_path / "results" / "E07_robust_seed123.csv").is_file()
 
     # JSON khớp record.
-    with (tmp_path / "results" / "E07_robust_seed42.json").open("r", encoding="utf-8") as fh:
+    with (tmp_path / "results" / "E07_robust_seed123.json").open("r", encoding="utf-8") as fh:
         saved = json.load(fh)
     assert saved["training_mode"] == "robust"
     assert saved["f1"] == record["f1"]
@@ -103,7 +103,7 @@ def test_train_robust_reuses_baseline_splits(tmp_path):
         results_dir=tmp_path / "results_base",
         checkpoints_dir=tmp_path / "checkpoints_base",
     )
-    splits_file = tmp_path / "splits" / "celeba_spoof_seed42_subject_disjoint.json"
+    splits_file = tmp_path / "splits" / "celeba_spoof_seed123_subject_disjoint.json"
     splits_content = splits_file.read_text(encoding="utf-8")
 
     robust_record = run_robust(

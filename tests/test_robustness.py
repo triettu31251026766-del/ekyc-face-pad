@@ -44,8 +44,9 @@ def _config(enabled=True, probability=1.0, augmentations=("jpeg",)):
         "blur": {"enabled": "blur" in augmentations, "sigma_range": [0.5, 2.0], "probability": probability},
         "noise": {"enabled": "noise" in augmentations, "std_range": [0.005, 0.03], "probability": probability},
         "brightness": {"enabled": "brightness" in augmentations, "factor_range": [0.7, 1.3], "probability": probability},
+        "crop": {"enabled": "crop" in augmentations, "scale_range": [0.4, 1.0], "probability": probability},
     }
-    return {"seed": 42, "robustness": {"enabled": enabled, "augmentations": specs}}
+    return {"seed": 123, "robustness": {"enabled": enabled, "augmentations": specs}}
 
 
 def test_disabled_robustness_keeps_image():
@@ -57,7 +58,7 @@ def test_disabled_robustness_keeps_image():
 
 def test_missing_robustness_section_raises():
     with pytest.raises(ConfigError, match="robustness"):
-        build_robustness_transform({"seed": 42})
+        build_robustness_transform({"seed": 123})
 
 
 def test_augmentation_changes_image_and_keeps_size():
@@ -73,9 +74,9 @@ def test_augmentation_reproducible_with_same_seed():
     image = _structured_image()
     config = _config(probability=1.0, augmentations=("jpeg", "resize", "blur", "noise"))
 
-    random.seed(42)
+    random.seed(123)
     first = apply_training_quality_augmentation(image, config)
-    random.seed(42)
+    random.seed(123)
     second = apply_training_quality_augmentation(image, config)
     assert np.array_equal(np.asarray(first), np.asarray(second))
 
@@ -89,12 +90,48 @@ def test_zero_probability_keeps_image():
     assert np.array_equal(np.asarray(result), np.asarray(image))
 
 
+def test_crop_augmentation_keeps_size_and_changes_image():
+    """Phép 'crop' (mục 21 mở rộng) giữ kích thước ảnh và thay đổi nội dung."""
+    random.seed(0)
+    image = _structured_image()
+    result = apply_training_quality_augmentation(
+        image, _config(probability=1.0, augmentations=("crop",))
+    )
+    assert result.size == SIZE
+    assert not np.array_equal(np.asarray(result), np.asarray(image))
+
+
+def test_crop_augmentation_reproducible_with_same_seed():
+    """Cùng seed -> cùng vùng cắt (tái lập được theo mục 36)."""
+    image = _structured_image()
+    config = _config(probability=1.0, augmentations=("crop",))
+
+    random.seed(123)
+    first = apply_training_quality_augmentation(image, config)
+    random.seed(123)
+    second = apply_training_quality_augmentation(image, config)
+    assert np.array_equal(np.asarray(first), np.asarray(second))
+
+
+def test_robustness_transform_is_picklable():
+    """Transform robustness phải pickle được để DataLoader num_workers > 0
+    (Windows spawn) hoạt động — hồi quy cho lỗi PicklingError khi train E07."""
+    import pickle
+
+    config = _config(probability=1.0, augmentations=("jpeg", "crop"))
+    transform = T.Compose(
+        [T.Lambda(build_robustness_transform(config)), T.Resize((64, 64))]
+    )
+    restored = pickle.loads(pickle.dumps(transform))
+    assert restored is not None
+
+
 def test_brightness_stays_within_configured_range():
     random.seed(0)
     # Ảnh xám đồng đều: hệ số độ sáng = mean(sau)/mean(trước).
     image = Image.new("RGB", SIZE, color=(100, 100, 100))
     config = {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {
@@ -117,7 +154,7 @@ def test_blur_kernel_derived_from_sigma():
     random.seed(0)
     image = _structured_image()
     config = {
-        "seed": 42,
+        "seed": 123,
         "robustness": {
             "enabled": True,
             "augmentations": {

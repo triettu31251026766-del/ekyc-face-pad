@@ -14,7 +14,7 @@ QUAN TRỌNG (mục 23):
 Chạy:
     python experiments/eval_degradation.py \
         --config configs/degradation_jpeg.yaml \
-        --checkpoint results/checkpoints/E01_baseline_seed42.pt
+        --checkpoint results/checkpoints/E01_baseline_seed123.pt
 """
 
 from __future__ import annotations

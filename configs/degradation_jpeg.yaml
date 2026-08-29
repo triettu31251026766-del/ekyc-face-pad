@@ -1,6 +1,6 @@
 # configs/degradation_jpeg.yaml — cấu hình đánh giá suy giảm chất lượng JPEG.
 # Áp dụng nén JPEG với quality cho trước lên tập test, KHÔNG huấn luyện lại model.
-seed: 42
+seed: 123
 
 degradation:
   name: jpeg

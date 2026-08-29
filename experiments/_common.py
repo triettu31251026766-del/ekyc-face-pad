@@ -117,11 +117,14 @@ def train_and_evaluate(
         )
     eval_transform = build_eval_transform(config)
 
+    # Số tiến trình tải dữ liệu (tăng tốc; 0 = tải ngay trong tiến trình chính).
+    num_workers = int(config["training"].get("num_workers", 0))
+
     train_loader = DataLoader(
         PADDataset(splits["train"], transform=train_transform),
         batch_size=config["training"]["batch_size"],
         shuffle=True,
-        num_workers=0,
+        num_workers=num_workers,
     )
     val_split = splits["val"]
     val_loader = None
@@ -130,13 +133,13 @@ def train_and_evaluate(
             PADDataset(val_split, transform=eval_transform),
             batch_size=config["training"]["batch_size"],
             shuffle=False,
-            num_workers=0,
+            num_workers=num_workers,
         )
     test_loader = DataLoader(
         PADDataset(splits["test"], transform=eval_transform),
         batch_size=config["training"]["batch_size"],
         shuffle=False,
-        num_workers=0,
+        num_workers=num_workers,
     )
 
     # --- Bước 3: model, optimizer, loss ---
@@ -179,6 +182,14 @@ def train_and_evaluate(
                 "last_metrics": metrics,
             },
             checkpoint_path,
+        )
+        # Ghi lại tiến độ từng epoch vào log (mục 37 tài liệu) để theo dõi được.
+        val_loss = metrics.get("val_loss")
+        val_str = f"{val_loss:.4f}" if val_loss is not None else "n/a"
+        logger.info(
+            f"epoch {epoch}/{config['training']['epochs']}: "
+            f"train_loss={metrics['train_loss']:.4f} | val_loss={val_str} "
+            f"(checkpoint đã lưu)"
         )
 
     history = train_model(
@@ -285,11 +296,12 @@ def load_test_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, 
         save_splits(splits, splits_path)
 
     transform = build_eval_transform(config)
+    num_workers = int(config["training"].get("num_workers", 0))
     test_loader = DataLoader(
         PADDataset(splits["test"], transform=transform),
         batch_size=config["training"]["batch_size"],
         shuffle=False,  # bắt buộc để đánh giá tất định (mục 18)
-        num_workers=0,
+        num_workers=num_workers,
     )
     return test_loader, splits
 

@@ -40,7 +40,7 @@ def _make_dataset(root):
 
 def _base_config(dataset_root, experiment_id="E01_test"):
     return {
-        "seed": 42,
+        "seed": 123,
         "experiment_id": experiment_id,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
         "split": {"strategy": "subject_disjoint"},
@@ -96,8 +96,8 @@ def test_eval_degradation_jpeg_deterministic(trained):
     checkpoint = trained["checkpoint"]
     tmp_path = trained["tmp_path"]
     config = {
-        "seed": 42,
-        "experiment_id": "E02_jpeg30_seed42",
+        "seed": 123,
+        "experiment_id": "E02_jpeg30_seed123",
         "degradation": {"name": "jpeg", "quality": 30},
     }
 
@@ -115,14 +115,14 @@ def test_eval_degradation_jpeg_deterministic(trained):
     assert second["roc_auc"] == first["roc_auc"]
     assert second["acer"] == first["acer"]
     # Tệp kết quả đúng tên experiment_id.
-    assert (tmp_path / "results_deg" / "E02_jpeg30_seed42.json").is_file()
-    assert (tmp_path / "results_deg" / "E02_jpeg30_seed42_predictions.csv").is_file()
+    assert (tmp_path / "results_deg" / "E02_jpeg30_seed123.json").is_file()
+    assert (tmp_path / "results_deg" / "E02_jpeg30_seed123_predictions.csv").is_file()
 
 
 def test_eval_degradation_noise_uses_seed(trained):
     checkpoint = trained["checkpoint"]
     tmp_path = trained["tmp_path"]
-    config = {"seed": 42, "degradation": {"name": "noise", "std": 0.03}}
+    config = {"seed": 123, "degradation": {"name": "noise", "std": 0.03}}
 
     first = run_eval_degradation(config, checkpoint,
                                  splits_dir=tmp_path / "splits",
@@ -146,7 +146,7 @@ def test_eval_degradation_noise_uses_seed(trained):
 def test_eval_degradation_missing_splits_raises(trained):
     checkpoint = trained["checkpoint"]
     tmp_path = trained["tmp_path"]
-    config = {"seed": 42, "degradation": {"name": "jpeg", "quality": 50}}
+    config = {"seed": 123, "degradation": {"name": "jpeg", "quality": 50}}
     with pytest.raises(FileNotFoundError, match="Splits file not found"):
         run_eval_degradation(config, checkpoint,
                              splits_dir=tmp_path / "khong_ton_tai")

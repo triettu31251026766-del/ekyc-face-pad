@@ -140,7 +140,7 @@ def _build_samples(tmp_path):
 
 def test_subject_disjoint_no_overlap(tmp_path):
     samples = _build_samples(tmp_path)
-    splits = create_splits(samples, seed=42, strategy="subject_disjoint",
+    splits = create_splits(samples, seed=123, strategy="subject_disjoint",
                            val_ratio=1 / 3, test_ratio=1 / 3)
     train_ids = {s.subject_id for s in splits["train"]}
     val_ids = {s.subject_id for s in splits["val"]}
@@ -163,8 +163,8 @@ def test_every_sample_assigned_once(tmp_path):
 
 def test_splits_reproducible_with_same_seed(tmp_path):
     samples = _build_samples(tmp_path)
-    first = create_splits(samples, seed=42, strategy="subject_disjoint")
-    second = create_splits(samples, seed=42, strategy="subject_disjoint")
+    first = create_splits(samples, seed=123, strategy="subject_disjoint")
+    second = create_splits(samples, seed=123, strategy="subject_disjoint")
     for name in ("train", "val", "test"):
         assert [s.path for s in first[name]] == [s.path for s in second[name]]
 
@@ -181,13 +181,13 @@ def test_invalid_label_raises(tmp_path):
     samples = _build_samples(tmp_path)
     samples[0].label = 2
     with pytest.raises(DataError, match="label"):
-        create_splits(samples, seed=42)
+        create_splits(samples, seed=123)
 
 
 def test_invalid_ratios_raise(tmp_path):
     samples = _build_samples(tmp_path)
     with pytest.raises(DataError, match="ratio"):
-        create_splits(samples, seed=42, val_ratio=0.6, test_ratio=0.6)
+        create_splits(samples, seed=123, val_ratio=0.6, test_ratio=0.6)
 
 
 # --- Kiểm tra save_splits / load_splits ---
@@ -195,12 +195,12 @@ def test_invalid_ratios_raise(tmp_path):
 
 def test_save_and_load_splits_roundtrip(tmp_path):
     samples = _build_samples(tmp_path)
-    splits = create_splits(samples, seed=42, strategy="subject_disjoint",
+    splits = create_splits(samples, seed=123, strategy="subject_disjoint",
                            val_ratio=0.25, test_ratio=0.25)
     out = tmp_path / "splits.json"
     save_splits(splits, out)
     loaded = load_splits(out)
-    assert loaded["meta"]["seed"] == 42
+    assert loaded["meta"]["seed"] == 123
     assert loaded["meta"]["strategy"] == "subject_disjoint"
     for name in ("train", "val", "test"):
         assert [s.path for s in loaded[name]] == [s.path for s in splits[name]]

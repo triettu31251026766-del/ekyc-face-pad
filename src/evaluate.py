@@ -25,7 +25,7 @@ Yêu cầu quan trọng:
 Cách dùng:
     from src.evaluate import evaluate_model, save_predictions
     result = evaluate_model(model, test_loader, device="cpu", threshold=0.5)
-    save_predictions(result, "results/raw/E01_baseline_seed42.csv")
+    save_predictions(result, "results/raw/E01_baseline_seed123.csv")
 """
 
 from __future__ import annotations

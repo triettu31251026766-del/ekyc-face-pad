@@ -1,6 +1,6 @@
 # configs/degradation_blur.yaml — cấu hình đánh giá suy giảm chất lượng do mờ (Gaussian blur).
 # Áp dụng làm mờ với kernel_size và sigma cho trước lên tập test, KHÔNG huấn luyện lại model.
-seed: 42
+seed: 123
 
 degradation:
   name: blur

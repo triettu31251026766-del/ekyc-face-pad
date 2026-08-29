@@ -50,12 +50,17 @@ VALID_DEVICES = ("auto", "cpu", "cuda")
 VALID_LOSSES = ("bce_with_logits",)
 VALID_DEGRADATIONS = ("jpeg", "resize", "blur", "noise", "brightness")
 
+# Các phép tăng cường được phép trong khối robustness (bao gồm cả "crop" —
+# cắt ngẫu nhiên theo tỉ lệ để dạy model bất biến với mức crop).
+VALID_AUGMENTATIONS = VALID_DEGRADATIONS + ("crop",)
+
 _RANGE_KEYS = {
     "jpeg": ("quality_range",),
     "resize": ("scale_range",),
     "blur": ("sigma_range",),
     "noise": ("std_range",),
     "brightness": ("factor_range",),
+    "crop": ("scale_range",),
 }
 
 
@@ -282,7 +287,7 @@ def _validate_robustness(robustness: Any) -> None:
 
     augmentations = _require_mapping(robustness.get("augmentations"), "robustness.augmentations")
     for name, spec in augmentations.items():
-        _require_one_of(name, f"robustness.augmentations.{name}", VALID_DEGRADATIONS)
+        _require_one_of(name, f"robustness.augmentations.{name}", VALID_AUGMENTATIONS)
         spec = _require_mapping(spec, f"robustness.augmentations.{name}")
         if not isinstance(spec.get("enabled"), bool):
             raise ConfigError(f"'robustness.augmentations.{name}.enabled' must be a boolean")

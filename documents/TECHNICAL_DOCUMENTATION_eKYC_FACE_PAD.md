@@ -908,8 +908,8 @@ python experiments/train_baseline.py \
 Expected output:
 
 ```text
-results/raw/E01_baseline_seed42.json
-results/raw/E01_baseline_seed42.csv
+results/raw/E01_baseline_seed123.json
+results/raw/E01_baseline_seed123.csv
 ```
 
 ---
@@ -986,7 +986,7 @@ The intended experimental variable is the robustness training strategy.
 ## `configs/base.yaml`
 
 ```yaml
-seed: 42
+seed: 123
 
 dataset:
   name: celeba_spoof
@@ -1021,7 +1021,7 @@ device:
 # 26. Example Degradation Config
 
 ```yaml
-seed: 42
+seed: 123
 
 degradation:
   name: jpeg
@@ -1050,7 +1050,7 @@ degradation:
 # 27. Example Robustness Config
 
 ```yaml
-seed: 42
+seed: 123
 
 robustness:
   enabled: true
@@ -1088,13 +1088,13 @@ Every run gets a unique ID.
 Examples:
 
 ```text
-E01_baseline_seed42
-E02_jpeg90_seed42
-E03_jpeg70_seed42
-E04_jpeg50_seed42
-E05_resize50_seed42
-E06_blur_medium_seed42
-E07_robust_seed42
+E01_baseline_seed123
+E02_jpeg90_seed123
+E03_jpeg70_seed123
+E04_jpeg50_seed123
+E05_resize50_seed123
+E06_blur_medium_seed123
+E07_robust_seed123
 ```
 
 Use IDs consistently in filenames.
@@ -1144,15 +1144,15 @@ Save both CSV and JSON.
 Example:
 
 ```text
-results/raw/E01_baseline_seed42.csv
-results/raw/E01_baseline_seed42.json
+results/raw/E01_baseline_seed123.csv
+results/raw/E01_baseline_seed123.json
 ```
 
 A JSON record may look like:
 
 ```json
 {
-  "experiment_id": "E01_baseline_seed42",
+  "experiment_id": "E01_baseline_seed123",
   "seed": 42,
   "model": "mobilenet_v2",
   "training_mode": "clean",

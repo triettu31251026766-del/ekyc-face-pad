@@ -15,7 +15,7 @@ dataset/config/seed do experiments/ lưu, phần còn lại dùng module này.
 
 Cách dùng:
     from src.reproducibility import set_seed, get_environment_info
-    set_seed(42)
+    set_seed(123)
     env_info = get_environment_info()
 """
 

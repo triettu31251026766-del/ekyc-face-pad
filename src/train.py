@@ -29,6 +29,7 @@ from typing import Callable, Optional
 import torch
 from torch import nn
 from torch.utils.data import DataLoader
+from tqdm.auto import tqdm
 
 # Callback được gọi sau mỗi epoch: nhận (model, epoch, metrics_dict).
 # experiments/ dùng để lưu checkpoint mà không đưa logic thí nghiệm vào đây.
@@ -41,6 +42,7 @@ def train_one_epoch(
     optimizer: torch.optim.Optimizer,
     loss_fn: nn.Module,
     device: str | torch.device,
+    epoch: Optional[int] = None,
 ) -> float:
     """Huấn luyện model đúng 1 epoch, trả về loss trung bình (có trọng số theo batch).
 
@@ -50,6 +52,7 @@ def train_one_epoch(
         optimizer: Optimizer đã khởi tạo với tham số của model.
         loss_fn: Hàm loss, ví dụ nn.BCEWithLogitsLoss.
         device: Thiết bị chạy ("cpu", "cuda") hoặc torch.device.
+        epoch: Số thứ tự epoch (tùy chọn) — chỉ dùng để hiển thị trên thanh tiến độ.
 
     Returns:
         float: loss trung bình toàn epoch (tính theo tổng mẫu, không theo số batch).
@@ -60,7 +63,10 @@ def train_one_epoch(
     total_loss = 0.0
     total_samples = 0
 
-    for batch in dataloader:
+    desc = f"train epoch {epoch}" if epoch is not None else "train"
+    progress = tqdm(dataloader, desc=desc, unit="batch", leave=False, dynamic_ncols=True)
+
+    for batch in progress:
         images = batch["image"].to(device)
         labels = _labels_to_column(batch["label"]).to(device)
 
@@ -74,6 +80,7 @@ def train_one_epoch(
         batch_size = images.shape[0]
         total_loss += loss.item() * batch_size
         total_samples += batch_size
+        progress.set_postfix(loss=f"{loss.item():.4f}")
 
     if total_samples == 0:
         raise ValueError("dataloader is empty: cannot train_one_epoch with 0 samples")
@@ -119,14 +126,21 @@ def train_model(
 
     history: list[dict] = []
     for epoch in range(1, epochs + 1):
-        train_loss = train_one_epoch(model, train_loader, optimizer, loss_fn, device)
+        train_loss = train_one_epoch(model, train_loader, optimizer, loss_fn, device,
+                                     epoch=epoch)
 
         val_loss = None
         if val_loader is not None:
-            val_loss = _compute_loader_loss(model, val_loader, loss_fn, device)
+            val_loss = _compute_loader_loss(model, val_loader, loss_fn, device,
+                                            epoch=epoch)
 
         metrics = {"epoch": epoch, "train_loss": train_loss, "val_loss": val_loss}
         history.append(metrics)
+
+        # In tóm tắt mỗi epoch để người chạy theo dõi được tiến độ (mục 37 tài liệu).
+        val_str = f"{val_loss:.4f}" if val_loss is not None else "n/a"
+        tqdm.write(f"epoch {epoch}/{epochs}: train_loss={train_loss:.4f} | "
+                   f"val_loss={val_str}")
 
         if on_epoch_end is not None:
             on_epoch_end(model, epoch, dict(metrics))
@@ -139,6 +153,7 @@ def _compute_loader_loss(
     dataloader: DataLoader,
     loss_fn: nn.Module,
     device: torch.device,
+    epoch: Optional[int] = None,
 ) -> float:
     """Tính loss trung bình trên một DataLoader ở mode eval() (không cập nhật tham số).
 
@@ -148,14 +163,18 @@ def _compute_loader_loss(
     total_loss = 0.0
     total_samples = 0
 
+    desc = f"val epoch {epoch}" if epoch is not None else "val"
+    progress = tqdm(dataloader, desc=desc, unit="batch", leave=False, dynamic_ncols=True)
+
     with torch.no_grad():
-        for batch in dataloader:
+        for batch in progress:
             images = batch["image"].to(device)
             labels = _labels_to_column(batch["label"]).to(device)
             logits = model(images)
             loss = loss_fn(logits, labels)
             total_loss += loss.item() * images.shape[0]
             total_samples += images.shape[0]
+            progress.set_postfix(loss=f"{loss.item():.4f}")
 
     if total_samples == 0:
         raise ValueError("dataloader is empty: cannot compute loss with 0 samples")

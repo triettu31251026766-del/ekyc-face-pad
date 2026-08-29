@@ -11,10 +11,10 @@ Toàn bộ logic điều phối nằm trong experiments/_common.train_and_evalua
 cấp entry point riêng cho thí nghiệm clean baseline.
 
 Đầu ra mong đợi (mục 22):
-    results/raw/E01_baseline_seed42.json
-    results/raw/E01_baseline_seed42.csv
-    results/raw/E01_baseline_seed42_predictions.csv
-    results/checkpoints/E01_baseline_seed42.pt
+    results/raw/E01_baseline_seed123.json
+    results/raw/E01_baseline_seed123.csv
+    results/raw/E01_baseline_seed123_predictions.csv
+    results/checkpoints/E01_baseline_seed123.pt
     data/splits/<dataset>_seed<seed>_<strategy>.json
 
 Chạy:

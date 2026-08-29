@@ -11,7 +11,7 @@ KHÔNG huấn luyện lại (mục 23). Dùng lại đúng splits đã lưu khi 
 Chạy:
     python experiments/eval_clean.py \
         --config configs/clean.yaml \
-        --checkpoint results/checkpoints/E01_baseline_seed42.pt
+        --checkpoint results/checkpoints/E01_baseline_seed123.pt
 """
 
 from __future__ import annotations

@@ -133,21 +133,21 @@ def test_blur_non_positive_sigma_raises():
 
 def test_noise_output_has_expected_dimensions():
     image = _structured_image()
-    degraded = gaussian_noise(image, std=0.03, seed=42)
+    degraded = gaussian_noise(image, std=0.03, seed=123)
     assert degraded.size == SIZE
     assert degraded.mode == "RGB"
 
 
 def test_noise_output_differs_from_original():
     image = _structured_image()
-    degraded = gaussian_noise(image, std=0.03, seed=42)
+    degraded = gaussian_noise(image, std=0.03, seed=123)
     assert not np.array_equal(np.asarray(degraded), np.asarray(image))
 
 
 def test_noise_deterministic_with_same_seed():
     image = _structured_image()
-    first = gaussian_noise(image, std=0.03, seed=42)
-    second = gaussian_noise(image, std=0.03, seed=42)
+    first = gaussian_noise(image, std=0.03, seed=123)
+    second = gaussian_noise(image, std=0.03, seed=123)
     assert np.array_equal(np.asarray(first), np.asarray(second))
 
 
@@ -160,7 +160,7 @@ def test_noise_different_seed_gives_different_output():
 
 def test_noise_zero_std_keeps_pixels():
     image = _structured_image()
-    degraded = gaussian_noise(image, std=0.0, seed=42)
+    degraded = gaussian_noise(image, std=0.0, seed=123)
     assert np.array_equal(np.asarray(degraded), np.asarray(image))
 
 
@@ -225,7 +225,7 @@ def test_apply_degradation_bad_blur_severity_raises():
 
 def test_apply_degradation_config_from_dict():
     image = _structured_image()
-    config = {"seed": 42, "degradation": {"name": "jpeg", "quality": 50}}
+    config = {"seed": 123, "degradation": {"name": "jpeg", "quality": 50}}
     unified = apply_degradation_config(image, config)
     direct = jpeg_compression(image, quality=50)
     assert np.array_equal(np.asarray(unified), np.asarray(direct))
@@ -233,7 +233,7 @@ def test_apply_degradation_config_from_dict():
 
 def test_apply_degradation_config_noise_uses_seed():
     image = _structured_image()
-    config = {"seed": 42, "degradation": {"name": "noise", "std": 0.03}}
+    config = {"seed": 123, "degradation": {"name": "noise", "std": 0.03}}
     first = apply_degradation_config(image, config)
     second = apply_degradation_config(image, config)
     assert np.array_equal(np.asarray(first), np.asarray(second))

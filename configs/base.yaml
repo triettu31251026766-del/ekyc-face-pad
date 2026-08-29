@@ -1,6 +1,6 @@
 # configs/base.yaml — cấu hình cơ sở dùng chung cho thí nghiệm huấn luyện PAD.
 # Khai báo: seed, dataset, split, model, training, loss, evaluation, device.
-seed: 42
+seed: 123
 
 dataset:
   name: celeba_spoof
@@ -18,6 +18,7 @@ training:
   batch_size: 64
   learning_rate: 0.0001
   weight_decay: 0.00001
+  num_workers: 4
 
 loss:
   name: bce_with_logits
