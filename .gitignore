@@ -22,6 +22,7 @@ __pycache__/
 *.pt
 
 # Không upload bài báo + tài liệu liên quan lên GitHub
+AGENTS.md
 documents/Paper_Robust_Face_PAD_for_eKYC*.docx
 documents/NHAT_KY_THI_NGHIEM.md
 documents/ICDPN 2025, Volume 2.pdf
