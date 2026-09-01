@@ -1,0 +1,32 @@
+# configs/full_clean.yaml — cấu hình E01 giai đoạn CHÍNH (CelebA-Spoof ~200k).
+# Dataset tải bởi scripts/download_celeba_full.py, dùng split chính thức
+# (subject-disjoint) đã khóa trong data/splits/celeba_spoof_full_seed123_subject_disjoint.json.
+seed: 123
+
+dataset:
+  name: celeba_spoof_full
+  root: data/raw/celeba_spoof_full
+
+split:
+  strategy: subject_disjoint
+
+model:
+  name: mobilenet_v2
+  image_size: 224
+
+training:
+  epochs: 20
+  batch_size: 64
+  learning_rate: 0.0001
+  weight_decay: 0.00001
+  num_workers: 4
+
+loss:
+  name: bce_with_logits
+  use_pos_weight: false
+
+evaluation:
+  threshold: 0.5
+
+device:
+  name: auto

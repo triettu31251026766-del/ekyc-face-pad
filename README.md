@@ -15,9 +15,16 @@ Luồng dự án: `Dataset → Preprocessing → PAD Baseline → Clean Evaluati
 ## Trạng thái hiện tại (tóm tắt)
 
 - Code base: **HOÀN CHỈNH** — 14 module `src/`, experiments, 193 test pass.
-- **Giai đoạn pilot 18k: XONG** → kết quả lưu tại `results/pilot_18k/`
-  (E01 F1 .931, E07 F1 .929, E20 fine-tune webcam: P(spoof) live 0.89 → 0.017).
-- **Giai đoạn chính (FULL CelebA-Spoof 625k): ĐANG LÀM** — xem `documents/PROGRESS.md` mục 7.
+- **Giai đoạn pilot 18k: XONG** → kết quả lưu tại `results/pilot_18k/`.
+- **Giai đoạn chính 200k: CORE ĐÃ XONG**:
+  - E01 baseline: F1 .825, ROC-AUC .963, ACER .157
+  - E07 robust: F1 .850, ROC-AUC .961, ACER .142 — **robust cải thiện mạnh nhất
+    ở noise (ACER .433 → .157), clean không bị hy sinh**
+  - Chi tiết đầy đủ: `documents/NHAT_KY_THI_NGHIEM.md` (mục 5.2-5.3)
+- **Còn lại**: P1 tùy chọn (failure analysis, data-scale, ablation, webcam)
+  + điền tên tác giả vào bài báo — xem `documents/PROGRESS.md`.
+- **BÀI BÁO**: `documents/Paper_Robust_Face_PAD_for_eKYC.docx` (12 bảng, 8 hình
+  trong `images/`, 15 refs thật, đã qua peer-review audit + sửa corrections).
 
 ## Cài đặt & kiểm thử (máy mới)
 

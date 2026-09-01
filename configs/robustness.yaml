@@ -1,8 +1,18 @@
-# configs/robustness.yaml — cấu hình huấn luyện robustness (E07).
-# Khi huấn luyện, mỗi ảnh được tăng cường ngẫu nhiên theo các khoảng tham số
-# của jpeg, resize, blur, noise, brightness và crop để model bền vững với
-# suy giảm chất lượng VÀ sự thay đổi mức crop (phát hiện từ Test D: model
-# rất nhạy với tỉ lệ mặt/ảnh).
+# configs/robustness.yaml — cấu hình huấn luyện robustness (E07) cho THÍ NGHIỆM CHÍNH.
+#
+# Cơ chế (src/robustness.py): với MỖI ảnh train, từng augmentation được áp
+# dụng ĐỘC LẬP với xác suất `probability` (nhiều phép CÓ THỂ chồng lên nhau);
+# mức độ lấy ngẫu nhiên đều trong khoảng cho trước. Thứ tự áp dụng cố định:
+# jpeg -> resize -> blur -> noise -> brightness -> crop (crop ĐANG TẮT cho
+# thí nghiệm chính).
+#
+# Lý do chọn probability 0.3 (mỗi phép): với 5 phép bật,
+#   - P(ảnh KHÔNG bị augmentation nào) = 0.7^5 ~ 17%  (model vẫn gặp ảnh sạch)
+#   - số augmentation kỳ vọng trên mỗi ảnh = 5 x 0.3 = 1.5 (đa số ảnh bị 0-2 phép)
+#   - tránh stacking quá nặng (nếu p=0.5 thì P(sạch) chỉ ~3%, ảnh thường bị 2-3 phép cùng lúc)
+#
+# QUAN TRỌNG: các khoảng tham số GIỮ NGUYÊN như trước, KHÔNG chỉnh theo
+# mức của lưới đánh giá (không dùng test severity để tune — quy tắc mentor).
 seed: 123
 
 robustness:
@@ -12,23 +22,30 @@ robustness:
     jpeg:
       enabled: true
       quality_range: [50, 90]
+      probability: 0.3
 
     resize:
       enabled: true
       scale_range: [0.5, 1.0]
+      probability: 0.3
 
     blur:
       enabled: true
       sigma_range: [0.5, 2.0]
+      probability: 0.3
 
     noise:
       enabled: true
       std_range: [0.005, 0.03]
+      probability: 0.3
 
     brightness:
       enabled: true
       factor_range: [0.7, 1.3]
+      probability: 0.3
 
     crop:
-      enabled: true
+      # TẮT cho thí nghiệm chính (chỉ phục vụ demo camera ở giai đoạn pilot;
+      # không thuộc 5 loại suy giảm chất lượng của protocol đánh giá).
+      enabled: false
       scale_range: [0.4, 1.0]

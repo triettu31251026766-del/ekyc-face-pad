@@ -41,8 +41,22 @@ def parse_args() -> argparse.Namespace:
                         help="lưu 1 ảnh sau mỗi N khung có mặt (mặc định 4)")
     parser.add_argument("--out", default="data/webcam_data",
                         help="thư mục lưu ảnh (mặc định data/webcam_data)")
-    parser.add_argument("--camera", type=int, default=0)
+    parser.add_argument("--camera", default="0",
+                        help="chỉ số camera (0, 1, ...) HOẶC URL MJPEG "
+                             "(ví dụ DroidCam: http://192.168.1.5:4747/video)")
     return parser.parse_args()
+
+
+def open_capture(source: str):
+    """Mở nguồn camera: chỉ số (DSHOW -> fallback mặc định) hoặc URL MJPEG."""
+    if str(source).isdigit():
+        capture = cv2.VideoCapture(int(source), cv2.CAP_DSHOW)
+        if not capture.isOpened():
+            capture = cv2.VideoCapture(int(source))
+        if capture.isOpened():
+            capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*"MJPG"))
+        return capture
+    return cv2.VideoCapture(str(source))
 
 
 def main() -> None:
@@ -55,9 +69,9 @@ def main() -> None:
     if not YUNET_MODEL.is_file():
         raise FileNotFoundError(f"Khong tim thay YuNet model: {YUNET_MODEL}")
 
-    capture = cv2.VideoCapture(args.camera)
+    capture = open_capture(args.camera)
     if not capture.isOpened():
-        raise RuntimeError(f"Khong mo duoc camera so {args.camera}")
+        raise RuntimeError(f"Khong mo duoc camera: {args.camera}")
     capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 

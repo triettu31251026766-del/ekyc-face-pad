@@ -6,6 +6,7 @@ venv/
 
 # Bỏ qua thư mục dữ liệu (RẤT QUAN TRỌNG)
 data/
+results/
 *.mp4
 *.jpg
 *.png
@@ -19,3 +20,11 @@ __pycache__/
 # Bỏ qua trọng số mô hình tải về hoặc train ra
 *.pth
 *.pt
+
+# Không upload bài báo + tài liệu liên quan lên GitHub
+documents/Paper_Robust_Face_PAD_for_eKYC*.docx
+documents/NHAT_KY_THI_NGHIEM.md
+documents/ICDPN 2025, Volume 2.pdf
+documents/Mau_Bo_Cuc_Bai_Bao_Khoa_Hoc 2.docx
+images/
+handover/

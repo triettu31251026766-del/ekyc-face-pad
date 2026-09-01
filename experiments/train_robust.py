@@ -78,8 +78,10 @@ def run(
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="E07: train robust PAD model")
-    parser.add_argument("--config", default="configs/clean.yaml",
-                        help="đường dẫn tệp cấu hình huấn luyện cơ sở")
+    parser.add_argument("--config", default="configs/full_clean.yaml",
+                        help="đường dẫn tệp cấu hình huấn luyện cơ sở "
+                             "(mặc định full_clean.yaml — thí nghiệm chính; "
+                             "configs/clean.yaml là dataset pilot 18k)")
     parser.add_argument("--robustness", default=None,
                         help="đường dẫn tệp cấu hình robustness "
                              "(mặc định: lấy khối robustness trong --config)")

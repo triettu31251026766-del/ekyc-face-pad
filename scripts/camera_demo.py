@@ -59,11 +59,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Chạy thử model PAD bằng webcam")
     parser.add_argument(
         "--checkpoint",
-        default="results/pilot_18k/checkpoints/E20_webcam_finetune_seed123.pt",
+        default="results/checkpoints/E01_baseline_seed123.pt",
         help="đường dẫn checkpoint đã huấn luyện",
     )
-    parser.add_argument("--camera", type=int, default=0,
-                        help="chỉ số camera (0 = webcam chính)")
+    parser.add_argument("--camera", default="0",
+                        help="chỉ số camera (0, 1, ...) HOẶC URL MJPEG. "
+                             "Ví dụ DroidCam: http://192.168.1.5:4747/video")
     parser.add_argument("--device", default="auto", choices=["auto", "cpu", "cuda"])
     parser.add_argument(
         "--threshold", type=float, default=0.5,
@@ -126,6 +127,23 @@ def resize_display(frame, width: int = DISPLAY_WIDTH, height: int = DISPLAY_HEIG
     return cv2.resize(frame, (new_w, new_h), interpolation=cv2.INTER_LINEAR)
 
 
+def open_capture(source: str):
+    """Mở nguồn camera: chỉ số (DSHOW -> fallback mặc định) hoặc URL MJPEG.
+
+    URL MJPEG dùng cho camera ảo như DroidCam (http://IP:4747/video).
+    """
+    if str(source).isdigit():
+        capture = cv2.VideoCapture(int(source), cv2.CAP_DSHOW)
+        if not capture.isOpened():
+            capture = cv2.VideoCapture(int(source))
+        if capture.isOpened():
+            # MJPG + DirectShow: tranh hien tuong man hinh xanh le/sai mau
+            # (camera YUYV bi doc nham kenh) tren Windows.
+            capture.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*"MJPG"))
+        return capture
+    return cv2.VideoCapture(str(source))
+
+
 def main() -> None:
     """Mở webcam, phát hiện khuôn mặt, dự đoán, vẽ khung + log + lưu crop."""
     args = parse_args()
@@ -148,9 +166,9 @@ def main() -> None:
     save_dir = Path(args.save_dir)
     save_dir.mkdir(parents=True, exist_ok=True)
 
-    capture = cv2.VideoCapture(args.camera)
+    capture = open_capture(args.camera)
     if not capture.isOpened():
-        raise RuntimeError(f"Khong mo duoc camera so {args.camera}")
+        raise RuntimeError(f"Khong mo duoc camera: {args.camera}")
     capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
     capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 

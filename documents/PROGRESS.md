@@ -10,7 +10,7 @@
 ## CÂY TIẾN ĐỘ (1 dòng, tick việc đã xong)
 
 ```
-[x] 1. Môi trường (requirements + torch CUDA) -> [x] 2. Skeleton repo theo tài liệu -> [x] 3. src/ 14 module + tests (193 pass) -> [x] 4. PILOT 18k (dataset -> E01 baseline F1 .931 -> E07 robust F1 .929 -> degradation config) -> [x] 5. Camera demo + phát hiện domain shift (Test A/B/C/D) -> [x] 6. E20 fine-tune webcam (P(spoof) live 0.89 -> 0.017) -> [ ] 7. P0: FULL CelebA-Spoof (tải 74 phần -> giải nén -> EDA -> split khóa test -> train 200k) -> [ ] 8. P0: degradation + robust + comparison + bảng/figure -> [ ] 9. P1: data-scale ablation + webcam nhiều người -> [ ] 10. P2: báo cáo cuối
+[x] 1. Môi trường (requirements + torch CUDA) -> [x] 2. Skeleton repo theo tài liệu -> [x] 3. src/ 14 module + tests (193 pass) -> [x] 4. PILOT 18k (dataset -> E01 baseline F1 .931 -> E07 robust F1 .929 -> degradation config) -> [x] 5. Camera demo + phát hiện domain shift (Test A/B/C/D) -> [x] 6. E20 fine-tune webcam (P(spoof) live 0.89 -> 0.017) -> [x] 7. Script tải full ~200k + config full_clean + lưới suy giảm (eval_degradation_grid) -> [x] 8. Tải 200k + train E01 baseline + đánh giá lưới suy giảm (E02-E06) -> [x] 9. Train E07 robust 200k (crop TẮT, p=0.3) -> [x] 10. Đánh giá robust (E08-E12) + SO SÁNH baseline vs robust (robust thắng ở noise: ACER 0.433->0.157) -> [ ] 11. P1: data-scale + ablation + webcam nhiều người -> [x] 12. P2: BÀI BÁO (Paper_Robust_Face_PAD_for_eKYC.docx: 12 bảng + 8 hình + 15 refs thật + peer-review audit + đã sửa corrections) -> [ ] 13. Nộp báo cáo cuối (trước 10/09)
 ```
 
 ## CHI TIẾT TỪNG MỤC
@@ -51,28 +51,44 @@
     [x] experiments/finetune_webcam.py: fine-tune 3 epoch từ E07 (lr 5e-5)
     [x] Kết quả: P(spoof) trên mặt webcam live 0.89 -> 0.017 (bằng chứng domain adaptation)
 
-[ ] 7. P0 — FULL CelebA-Spoof (GIAI ĐOẠN CHÍNH, ĐANG LÀM)
-    [ ] 7.1 Tải full: 74 phần zip (~74GB) từ Google Drive + train_list.txt (người có dataset tải giúp team)
-    [ ] 7.2 Giải nén vào data/raw/celeba_spoof_full/ (cần ~150GB trống)
-    [ ] 7.3 EDA: scripts/eda_dataset.py -> dataset_report.json (subject, live/spoof, spoof type, illumination, environment)
-    [ ] 7.4 Subject-disjoint split + KHÓA test set ~20k (scripts/prepare_full_dataset.py, dùng src/data.py create_splits)
-    [ ] 7.5 Train subset có kiểm soát: ~200k (cân bằng label, trải subject) — config mới (dataset root mới)
-    [ ] 7.6 E01 main baseline (MobileNetV2 224, 20 epoch)
-    [ ] 7.7 Degradation eval (jpeg/resize/blur/noise/brightness) trên model E01
-    [ ] 7.8 E07 main robust -> so sánh baseline vs robust (compare_models)
+[x] 7. P0 — GIAI ĐOẠN CHÍNH (FULL CelebA-Spoof ~200k, KHÔNG tải 74GB)
+    [x] 7.1 scripts/download_celeba_full.py: tải 45 train shard (~200k) + 22 test shard (~20k KHÓA) + 4 valid shard (~20k) từ mirror HF Ar4ikov/celebA_spoof (~24GB, log từng shard + ETA)
+    [x] 7.2 configs/full_clean.yaml (dataset celeba_spoof_full, seed 123, MobileNetV2 224, 20 epochs)
+    [x] 7.3 experiments/eval_degradation_grid.py: lưới suy giảm đầy đủ 16 điều kiện (jpeg 90/70/50/30, resize 75/50/25, blur light/medium/strong, noise low/medium/high, brightness dark/normal/bright) + bảng CSV + 5 biểu đồ
+    [x] 7.4 Smoke test: grid chạy OK trên checkpoint pilot (bảng suy giảm đã đo)
+    [x] 7.5 ĐÃ TẢI: python -m scripts.download_celeba_full (203.215 train / 20.042 test / 20.773 val)
+    [x] 7.6 ĐÃ TRAIN: python -m experiments.train_baseline --config configs/full_clean.yaml (E01: F1 .825, AUC .963, ACER .157, 19.7h)
 
-[ ] 8. P0 — Kết quả
-    [ ] bảng so sánh + figures (results/tables/, results/figures/)
-    [ ] failure analysis (ảnh sai: FP/FN, theo spoof type)
+[x] 8. ĐÁNH GIÁ BASELINE TRƯỚC — XONG (kết quả: documents/NHAT_KY_THI_NGHIEM.md mục 5.2)
+    [x] kiểm tra checkpoint + config E01 full
+    [x] python -m experiments.eval_degradation_grid --checkpoint results/checkpoints/E01_baseline_seed123.pt --tag baseline
+    [x] bảng results/tables/degradation_baseline.csv + biểu đồ results/figures/
+    [x] phân tích: baseline yếu nhất ở NOISE (F1 .27 ở high), sau đó JPEG/brightness
 
-[ ] 9. P1 — Nên làm nếu còn thời gian
-    [ ] data-scale ablation: 10k / 25k / 50k / 100k / 200k (cùng protocol)
-    [ ] webcam evaluation nhiều người (không phải chỉ người train)
-    [ ] ablation từng augmentation (đã có experiments/ablation.py)
+[x] 9. E07 ROBUST 200k — XONG (01/09)
+    [x] config robustness.yaml: crop TẮT, 5 augmentation p=0.3 (P(ảnh sạch)~17%)
+    [x] train_robust --config configs/full_clean.yaml --robustness configs/robustness.yaml (20.6h)
+    [x] eval_degradation_grid --checkpoint results/checkpoints/E07_robust_seed123.pt --tag robust
+    [x] SO SÁNH (mục 5.3 nhật ký): robust cải thiện mạnh nhất ở noise
+        (noise high: F1 .27->.83, ACER .433->.157, AUC .780->.952);
+        clean không bị hy sinh (F1 +.026, AUC -.002); 2 điều kiện F1 tụt nhẹ
+        (blur strong -.008, resize25 -.001) dù AUC tăng
 
-[ ] 10. P2 — Báo cáo cuối (trước 10/09)
-    [ ] viết báo cáo từ results/ (tables + figures)
-    [ ] đưa câu chuyện pilot -> full vào báo cáo (domain shift, data scale)
+[ ] 10. P1 — Nên làm nếu còn thời gian
+    [ ] data-scale: 18k (pilot) vs 50k vs 100k vs 200k (cùng protocol)
+    [ ] webcam evaluation nhiều người (baseline 200k vs robust 200k)
+    [ ] ablation từng augmentation (experiments/ablation.py)
+
+[x] 11. P2 — BÀI BÁO KHOA HỌC (đã xong draft + audit)
+    [x] Paper_Robust_Face_PAD_for_eKYC.docx: ~5.000 từ, 12 bảng, 8 hình, 15 refs thật
+    [x] 8 hình sinh từ dữ liệu thật -> images/ (script: scripts/make_paper_figures.py)
+        fig1 pipeline, fig2 ảnh suy giảm thật, fig3 ROC, fig4 severity, fig5 aggregate,
+        fig6 loss, fig7-8 ảnh code màu (comment tiếng Anh)
+    [x] Peer-review + research audit: 0 lỗi số liệu, 14/14 refs verified (Crossref/arXiv),
+        không novelty giả; corrections đã sửa (subject-disjoint wording, "exceeds",
+        bỏ moiré, thêm nuance abstract)
+    [ ] Điền tên tác giả thay [Author Names] trước khi nộp
+    [ ] failure case analysis (FP/FN) — tùy chọn nếu còn thời gian
 ```
 
 ---
@@ -85,6 +101,8 @@
 | 2 | Inference pipeline **không có bug** | Test B (ảnh dataset live -> P(spoof) 0.0-0.07) | Vấn đề nằm ở dữ liệu, không phải code |
 | 3 | Model **rất nhạy với mức crop** | Test D (full -> .81 spoof; crop 10% -> .10 live) | Model overfit tỉ lệ mặt/ảnh của dataset |
 | 4 | 500 ảnh webcam fine-tune kéo P(spoof) live **0.89 -> 0.017** | E20 (results/pilot_18k/checkpoints/E20) | Domain adaptation với ít dữ liệu đích rất hiệu quả |
+| 5 | F1@0.5 có thể CHE GIẤU suy giảm: baseline resize/blur giữ F1 ~.84 nhưng AUC sụp .96->.82/.78, BPCER tăng tới .57 | bảng 5.2 nhật ký | Phải báo đủ AUC/APCER/BPCER/ACER |
+| 6 | **Robust training cải thiện rõ nhất ở noise** (điểm yếu nhất của baseline): noise high F1 .27->.83, ACER .433->.157, AUC +.17 | bảng 5.3 nhật ký | Quality augmentation có hiệu quả, không hy sinh clean (F1 +.026) |
 
 ## QUY ƯỚC THÍ NGHIỆM (bắt buộc giữ nguyên)
 

@@ -159,6 +159,24 @@ Dùng `Ctrl+C` để dừng giữa chừng nếu cần.
 
 **KHÔNG train lại - chỉ dùng checkpoint của E01, mục 23 tài liệu.**
 
+### Cách 1 (KHUYẾN NGHỊ cho giai đoạn chính) - lưới suy giảm đầy đủ 16 mức
+
+```bash
+python -m experiments.eval_degradation_grid --checkpoint results/checkpoints/E01_baseline_seed123.pt --tag baseline
+```
+
+Tự động chạy **cùng model trên cùng test set** với mọi mức:
+`jpeg 90/70/50/30`, `resize 75/50/25%`, `blur light/medium/strong`,
+`noise low/medium/high`, `brightness dark/normal/bright` (định nghĩa tường
+minh trong `SEVERITY_GRID` của script).
+
+Đầu ra:
+- `results/raw/E02..E06_*_seed123.json/csv/_predictions.csv` (mỗi mức 1 bộ)
+- `results/tables/degradation_baseline.csv` (bảng Condition|Severity|F1|...)
+- `results/figures/fig_baseline_*.png` (5 biểu đồ F1/ACER theo mức suy giảm)
+
+### Cách 2 - từng điều kiện riêng lẻ (nhanh, khi chỉ cần 1 mức)
+
 ```bash
 python -m experiments.eval_degradation --config configs/degradation_jpeg.yaml   --checkpoint results/checkpoints/E01_baseline_seed123.pt
 python -m experiments.eval_degradation --config configs/degradation_resize.yaml --checkpoint results/checkpoints/E01_baseline_seed123.pt
@@ -168,11 +186,10 @@ python -m experiments.eval_degradation --config configs/degradation_noise.yaml  
 
 ### Giải thích
 
-Mỗi lệnh áp MỘT kiểu suy giảm chất lượng nhất định (JPEG quality 50 / resize 0.5 / blur 7+2.0 / noise std 0.03) lên test set rồi đánh giá model baseline - đo xem model "yếu" thế nào khi đầu vào kém chất lượng.
-
-Kết quả lưu `results/raw/E0x_*_seed123.*`
-
-**Không được train lại model trong bước này.**
+Mỗi mức áp suy giảm TẤT ĐỊNH lên test set rồi đánh giá model - đo xem model
+"yếu" thế nào khi đầu vào kém chất lượng (mục 23). **Không được train lại
+model trong bước này.** Sau khi chạy baseline xong, chạy lại đúng lệnh này
+với `--checkpoint .../E07_robust_seed123.pt --tag robust` (E08-E12) để so sánh.
 
 ---
 

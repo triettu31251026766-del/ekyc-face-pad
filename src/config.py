@@ -43,7 +43,7 @@ DEGRADATION_SECTIONS = ("seed", "degradation")
 
 ROBUSTNESS_SECTIONS = ("seed", "robustness")
 
-VALID_DATASETS = ("celeba_spoof",)
+VALID_DATASETS = ("celeba_spoof", "celeba_spoof_full")
 VALID_MODELS = ("mobilenet_v2", "mobilenet_v3", "custom_cnn")
 VALID_SPLIT_STRATEGIES = ("subject_disjoint", "random")
 VALID_DEVICES = ("auto", "cpu", "cuda")
