@@ -166,12 +166,31 @@ def train_and_evaluate(
         f"params={count_parameters(model)}, size={model_size_mb(model):.2f} MB"
     )
 
-    # --- Bước 4: huấn luyện + lưu checkpoint sau mỗi epoch (mục 38) ---
+    # --- Bước 4: huấn luyện + lưu checkpoint (mục 38) ---
     checkpoints_dir = Path(checkpoints_dir)
     checkpoints_dir.mkdir(parents=True, exist_ok=True)
     checkpoint_path = checkpoints_dir / f"{experiment_id}.pt"
 
+    # Lưu checkpoint theo epoch có validation loss TỐT NHẤT (mục 38).
+    # Nếu không có val_loader (val_loss = None) thì lưu epoch cuối cùng.
+    best = {"val_loss": float("inf"), "epoch": None, "has_val": val_loader is not None}
+
     def save_checkpoint(current_model: nn.Module, epoch: int, metrics: dict) -> None:
+        val_loss = metrics.get("val_loss")
+        is_best = (not best["has_val"]) or (
+            val_loss is not None and val_loss < best["val_loss"]
+        )
+        if not is_best:
+            logger.info(
+                f"epoch {epoch}/{config['training']['epochs']}: "
+                f"train_loss={metrics['train_loss']:.4f} | "
+                f"val_loss={(f'{val_loss:.4f}' if val_loss is not None else 'n/a')} "
+                f"(không cải thiện, bỏ qua checkpoint)"
+            )
+            return
+
+        best["val_loss"] = val_loss if val_loss is not None else best["val_loss"]
+        best["epoch"] = epoch
         torch.save(
             {
                 "model_state_dict": current_model.state_dict(),
@@ -180,16 +199,16 @@ def train_and_evaluate(
                 "config": config,
                 "seed": seed,
                 "last_metrics": metrics,
+                "best_val_loss": best["val_loss"],
+                "best_epoch": epoch,
             },
             checkpoint_path,
         )
-        # Ghi lại tiến độ từng epoch vào log (mục 37 tài liệu) để theo dõi được.
-        val_loss = metrics.get("val_loss")
-        val_str = f"{val_loss:.4f}" if val_loss is not None else "n/a"
         logger.info(
             f"epoch {epoch}/{config['training']['epochs']}: "
-            f"train_loss={metrics['train_loss']:.4f} | val_loss={val_str} "
-            f"(checkpoint đã lưu)"
+            f"train_loss={metrics['train_loss']:.4f} | "
+            f"val_loss={(f'{val_loss:.4f}' if val_loss is not None else 'n/a')} "
+            f"(checkpoint TỐT NHẤT đã lưu)"
         )
 
     history = train_model(
@@ -207,6 +226,11 @@ def train_and_evaluate(
         f"epoch cuối: train_loss={history[-1]['train_loss']:.4f}, "
         f"val_loss={history[-1]['val_loss']}"
     )
+    if best["epoch"] is not None:
+        logger.info(
+            f"checkpoint giữ epoch TỐT NHẤT: epoch {best['epoch']} "
+            f"(val_loss={best['val_loss']:.4f})"
+        )
 
     # --- Bước 5: đánh giá trên tập test SẠCH (mục 22, 24) ---
     threshold = config["evaluation"]["threshold"]
