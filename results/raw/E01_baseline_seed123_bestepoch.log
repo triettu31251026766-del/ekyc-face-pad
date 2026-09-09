@@ -1,0 +1,6 @@
+2026-09-07 23:20:27 | INFO | ===== BẮT ĐẦU E01_baseline_seed123_bestepoch (clean evaluation) =====
+2026-09-07 23:20:27 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-07 23:26:32 | INFO | ===== BẮT ĐẦU E01_baseline_seed123_bestepoch (clean evaluation) =====
+2026-09-07 23:26:32 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-07 23:29:37 | INFO | clean test: f1=0.9868, roc_auc=0.9977671603394782
+2026-09-07 23:29:37 | INFO | kết quả đã lưu: results\raw\E01_baseline_seed123_bestepoch.json

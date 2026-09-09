@@ -1,0 +1,5 @@
+2026-09-07 23:44:04 | INFO | ===== BẮT ĐẦU E09_robust_blur3_seed123 (degradation evaluation) =====
+2026-09-07 23:44:04 | INFO | checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-07 23:44:04 | INFO | degradation: {'name': 'blur', 'kernel_size': 3, 'sigma': 1.0}
+2026-09-07 23:44:04 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:04 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\results\E09_robust_blur3_seed123.json

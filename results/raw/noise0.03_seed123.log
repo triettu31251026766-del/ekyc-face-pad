@@ -1,0 +1,10 @@
+2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-07 23:44:09 | INFO | checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-07 23:44:09 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-07 23:44:09 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:09 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-07 23:44:09 | INFO | checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-07 23:44:09 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-07 23:44:09 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:09 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json

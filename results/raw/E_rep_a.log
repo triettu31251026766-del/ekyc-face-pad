@@ -1,0 +1,16 @@
+2026-09-07 23:44:11 | INFO | ===== BẮT ĐẦU E_rep_a (training_mode=clean) =====
+2026-09-07 23:44:11 | INFO | seed=123
+2026-09-07 23:44:11 | INFO | device=cpu
+2026-09-07 23:44:11 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\dataset
+2026-09-07 23:44:11 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:11 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:11 | INFO | split train: 28 mẫu
+2026-09-07 23:44:11 | INFO | split val: 4 mẫu
+2026-09-07 23:44:11 | INFO | split test: 4 mẫu
+2026-09-07 23:44:11 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:11 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:11 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\checkpoints\E_rep_a.pt
+2026-09-07 23:44:11 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:11 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:11 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:12 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\results\E_rep_a.json (runtime=0.17s)

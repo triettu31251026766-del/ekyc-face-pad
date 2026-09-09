@@ -1,0 +1,4 @@
+2026-09-07 23:29:38 | INFO | ===== BẮT ĐẦU E07_robust_seed123_bestepoch (clean evaluation) =====
+2026-09-07 23:29:38 | INFO | checkpoint: results\checkpoints\E07_robust_seed123.pt
+2026-09-07 23:32:33 | INFO | clean test: f1=0.9831, roc_auc=0.9969436427262366
+2026-09-07 23:32:34 | INFO | kết quả đã lưu: results\raw\E07_robust_seed123_bestepoch.json

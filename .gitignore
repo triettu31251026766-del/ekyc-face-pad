@@ -4,29 +4,13 @@ venv/
 .venv/
 .env
 
-# Bỏ qua thư mục dữ liệu (RẤT QUAN TRỌNG)
+# Bỏ qua dữ liệu TẢI VỀ (dataset nặng — KHÔNG push lên git)
 data/
-results/
-*.mp4
-*.jpg
-*.png
-*.zip
 
 # Bỏ qua các file rác của Python và hệ điều hành
 __pycache__/
 *.pyc
 .DS_Store
 
-# Bỏ qua trọng số mô hình tải về hoặc train ra
-*.pth
-*.pt
-
-# Không upload bài báo + tài liệu liên quan lên GitHub
-AGENTS.md
-documents/Paper_Robust_Face_PAD_for_eKYC*.docx
-documents/NHAT_KY_THI_NGHIEM.md
-documents/ICDPN 2025, Volume 2.pdf
-documents/Mau_Bo_Cuc_Bai_Bao_Khoa_Hoc 2.docx
-images/
-handover/
-scripts/make_paper_figures.py
+# Bỏ qua file khóa tạm của Microsoft Office (Word/Excel khi đang mở)
+~$*

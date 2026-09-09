@@ -4,7 +4,7 @@ seed: 123
 
 dataset:
   name: celeba_spoof
-  root: data/raw/celeba_spoof
+  root: data/raw/celeba_spoof_full
 
 split:
   strategy: subject_disjoint
@@ -18,7 +18,8 @@ training:
   batch_size: 64
   learning_rate: 0.0001
   weight_decay: 0.00001
-  num_workers: 4
+  # num_workers: 0 = tải dữ liệu ngay trong tiến trình chính (an toàn trên Windows).
+  num_workers: 0
 
 loss:
   name: bce_with_logits

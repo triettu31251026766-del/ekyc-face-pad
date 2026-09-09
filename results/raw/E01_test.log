@@ -1,0 +1,84 @@
+2026-09-07 23:44:08 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-07 23:44:08 | INFO | seed=123
+2026-09-07 23:44:08 | INFO | device=cpu
+2026-09-07 23:44:08 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\dataset
+2026-09-07 23:44:08 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:08 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:08 | INFO | split train: 28 mẫu
+2026-09-07 23:44:08 | INFO | split val: 4 mẫu
+2026-09-07 23:44:08 | INFO | split test: 4 mẫu
+2026-09-07 23:44:08 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:08 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:08 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-07 23:44:08 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:08 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:08 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.17s)
+2026-09-07 23:44:08 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-07 23:44:08 | INFO | checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-07 23:44:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:08 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-07 23:44:08 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-07 23:44:08 | INFO | seed=123
+2026-09-07 23:44:08 | INFO | device=cpu
+2026-09-07 23:44:08 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_jpeg_det0\dataset
+2026-09-07 23:44:08 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:08 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:08 | INFO | split train: 28 mẫu
+2026-09-07 23:44:08 | INFO | split val: 4 mẫu
+2026-09-07 23:44:08 | INFO | split test: 4 mẫu
+2026-09-07 23:44:08 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:08 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:08 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-07 23:44:08 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:08 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:08 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.15s)
+2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-07 23:44:09 | INFO | seed=123
+2026-09-07 23:44:09 | INFO | device=cpu
+2026-09-07 23:44:09 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\dataset
+2026-09-07 23:44:09 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:09 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:09 | INFO | split train: 28 mẫu
+2026-09-07 23:44:09 | INFO | split val: 4 mẫu
+2026-09-07 23:44:09 | INFO | split test: 4 mẫu
+2026-09-07 23:44:09 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:09 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:09 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-07 23:44:09 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:09 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:09 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:09 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.17s)
+2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-07 23:44:09 | INFO | seed=123
+2026-09-07 23:44:09 | INFO | device=cpu
+2026-09-07 23:44:09 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_missing_0\dataset
+2026-09-07 23:44:09 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:09 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:09 | INFO | split train: 28 mẫu
+2026-09-07 23:44:09 | INFO | split val: 4 mẫu
+2026-09-07 23:44:09 | INFO | split test: 4 mẫu
+2026-09-07 23:44:09 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:09 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:09 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-07 23:44:09 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:09 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:09 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:09 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.16s)
+2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-07 23:44:09 | INFO | seed=123
+2026-09-07 23:44:09 | INFO | device=cpu
+2026-09-07 23:44:09 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_load_checkpoint_missing_f0\dataset
+2026-09-07 23:44:09 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-07 23:44:09 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-07 23:44:09 | INFO | split train: 28 mẫu
+2026-09-07 23:44:09 | INFO | split val: 4 mẫu
+2026-09-07 23:44:09 | INFO | split test: 4 mẫu
+2026-09-07 23:44:09 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-07 23:44:10 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-07 23:44:10 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-07 23:44:10 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
+2026-09-07 23:44:10 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-07 23:44:10 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-07 23:44:10 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.17s)

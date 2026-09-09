@@ -18,7 +18,10 @@
 ```
 [x] 1. Môi trường
     [x] requirements.txt (torch, torchvision, numpy, pandas, sklearn, pillow, pyyaml, matplotlib, tqdm, pytest, ...)
-    [x] torch 2.13.0+cu126 (CUDA, RTX 3050) — cài: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+    [x] torch 2.14.0+cu130 (CUDA, RTX 5060 Laptop 8GB, cc=sm_120) — cài: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu130
+    [x] Lưu ý WINDOWS (máy mới RTX 5060):
+        [x] Đặt biến môi trường PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True (thuộc quyền User) — tránh OOM do phân mảnh bộ nhớ CUDA.
+        [x] Đặt training.num_workers = 0 trong configs/base.yaml, clean.yaml, full_clean.yaml (DataLoader num_workers>0 trên Windows dùng spawn => lỗi shm.dll WinError 1114; 0 = tải trong tiến trình chính, đúng ghi chú HUONG_DAN_TRAINING_MODEL mục lỗi).
     [x] smoke test môi trường PASS
 
 [x] 2. Skeleton repo
@@ -92,6 +95,32 @@
 ```
 
 ---
+
+## CẬP NHẬT 07/09/2026 — TRAIN LẠI FINAL (máy RTX 5060) + GÓI DỮ LIỆU BÁO CÁO
+
+- [x] E01 baseline train lại 05/09 (best-epoch logic, 5h02m): F1 .982957, AUC .997219, ACER .024479 (epoch 20); checkpoint best epoch 18 (val .058560) — clean F1 .986776, ACER .021111.
+- [x] E07 robust train lại 07/09 (9h33m): F1 .982159, AUC .997093, ACER .024386 (epoch 20); checkpoint best epoch 18 (val .068120) — clean F1 .983057, ACER .025553.
+- [x] Lưới suy giảm đánh giá lại cho cả 2 checkpoint mới: `results/tables/degradation_baseline.csv` (06/09), `degradation_robust.csv` (07/09); 10 fig trong `results/figures/`.
+- [x] GÓI DỮ LIỆU CUỐI CÙNG cho viết lại báo cáo: `handover/paper/FINAL_EXPERIMENT_DATA.md` (experiment summary, final metrics 2 bộ + confusion matrix, bảng degradation 16 điều kiện E01 vs E07 kèm delta, aggregates, training curves, figures, reproducibility, raw paths, missing data).
+- [x] PAPER VIẾT LẠI BẰNG SỐ MỚI (07/09 tối, dùng BỘ B best-epoch epoch 18):
+      `handover/paper/Paper_Robust_Face_PAD_for_eKYC.docx` — abstract, dataset/split,
+      hardware (RTX 5060), checkpoint best-epoch, toàn bộ 12 bảng + 8 hình từ số mới.
+      Sinh thêm `results/raw/E01|E07_*_bestepoch.json/_predictions.csv` qua
+      `scripts/eval_best_epoch_clean.py` (không ghi đè file epoch-20).
+- [x] 8 hình paper vẽ lại từ số mới (fix scripts/make_paper_figures.py: splits path,
+      fig3 đọc predictions best-epoch, fig4/5 đọc degradation tables) → images/ + handover/images/.
+- [x] Dọn file cũ gây nhầm: xóa grid_baseline_stdout/stderr + 13 log pytest thừa trong results/raw.
+- [x] RÚT GỌN PAPER VỀ 11 TRANG (07/09 đêm): single-column journal format (TNR 11pt, 1.15 spacing),
+      11 tables (I-XI), 6 figures (1-6); giữ toàn bộ số liệu + refs [1]-[15] + main evidence
+      (clean, 16 điều kiện degradation, aggregate, worst-case, loss); cắt Fig 7-8 (code images),
+      §implementation details, TABLE VII cũ (loss — nay là Table X nhưng vẫn giữ vì reproducibility),
+      gộp appendix; đã re-audit 481 checks số liệu 0 lỗi + cross-refs đầy đủ; page count kiểm
+      bằng Word COM = 11 trang (<=12).
+- [x] REFERENCES CÓ LINK XANH CLICK ĐƯỢC (08/09): 15 URL (doi.org/arxiv/idiap — đã verify web),
+      chữ URL xanh gạch chân; citation [n] trong bài xanh + bấm nhảy tới reference n
+      (bookmark ref1-ref15 + w:anchor); verify 24 anchor links / 15 bookmarks khớp, 0 anchor
+      hỏng; page count = 12 trang (vẫn <=12); re-audit số liệu 481 checks vẫn 0 lỗi.
+- [ ] VIỆC TIẾP: điền tên tác giả vào paper; (tùy chọn) cập nhật NHAT_KY 5.1-5.3 bằng số mới.
 
 ## NHẬT KÝ CÁC PHÁT HIỆN QUAN TRỌNG (dùng cho báo cáo)
 

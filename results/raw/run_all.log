@@ -1,0 +1,12 @@
+2026-09-07 23:44:03 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-07 23:44:03 | INFO | [OK] E01_baseline_seed123
+2026-09-07 23:44:03 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-07 23:44:03 | INFO | [OK] E02_jpeg70_seed123
+2026-09-07 23:44:03 | INFO | [OK] E03_blur3_seed123
+2026-09-07 23:44:03 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-07 23:44:04 | INFO | [OK] E07_robust_seed123
+2026-09-07 23:44:04 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-07 23:44:04 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-07 23:44:04 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-07 23:44:04 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-07 23:44:04 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====

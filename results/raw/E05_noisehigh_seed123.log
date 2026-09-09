@@ -1,0 +1,15 @@
+2026-08-31 07:12:32 | INFO | ===== BẮT ĐẦU E05_noisehigh_seed123 (degradation evaluation) =====
+2026-08-31 07:12:32 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-08-31 07:12:32 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-08-31 07:16:24 | INFO | degraded test: f1=0.2678, roc_auc=0.7804475801789523
+2026-08-31 07:16:24 | INFO | kết quả đã lưu: results\raw\E05_noisehigh_seed123.json
+2026-08-31 07:20:42 | INFO | ===== BẮT ĐẦU E05_noisehigh_seed123 (degradation evaluation) =====
+2026-08-31 07:20:42 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-08-31 07:20:42 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-08-31 07:23:37 | INFO | degraded test: f1=0.2678, roc_auc=0.7804475801789523
+2026-08-31 07:23:37 | INFO | kết quả đã lưu: results\raw\E05_noisehigh_seed123.json
+2026-09-06 01:47:21 | INFO | ===== BẮT ĐẦU E05_noisehigh_seed123 (degradation evaluation) =====
+2026-09-06 01:47:21 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-06 01:47:21 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-06 01:57:42 | INFO | degraded test: f1=0.8487, roc_auc=0.9638110527952237
+2026-09-06 01:57:42 | INFO | kết quả đã lưu: results\raw\E05_noisehigh_seed123.json
