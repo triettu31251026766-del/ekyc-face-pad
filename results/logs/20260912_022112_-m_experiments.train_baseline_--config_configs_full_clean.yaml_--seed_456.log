@@ -1,0 +1,52 @@
+2026-09-12 02:21:26 | INFO | ===== BẮT ĐẦU E01_baseline_seed456 (training_mode=clean) =====
+
+2026-09-12 02:21:26 | INFO | seed=456
+
+2026-09-12 02:21:26 | INFO | device=cuda
+
+2026-09-12 02:21:26 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-12 02:21:36 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-12 02:21:37 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-12 02:21:37 | INFO | split train: 203215 mẫu
+
+2026-09-12 02:21:37 | INFO | split val: 20773 mẫu
+
+2026-09-12 02:21:37 | INFO | split test: 20042 mẫu
+
+2026-09-12 02:21:37 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+
+train epoch 1: 100%|██████████| 3176/3176 [1:03:29<00:00,  1.02batch/s, loss=0.0906]
+                                                                                    
+val epoch 1: 100%|██████████| 325/325 [01:28<00:00,  3.66batch/s, loss=0.2543]
+                                                                              
+epoch 1/20: train_loss=0.2453 | val_loss=0.2713
+
+2026-09-12 03:26:37 | INFO | epoch 1/20: train_loss=0.2453 | val_loss=0.2713 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 2: 100%|██████████| 3176/3176 [1:02:38<00:00,  1.01batch/s, loss=0.1404]
+                                                                                    
+val epoch 2: 100%|██████████| 325/325 [01:27<00:00,  3.78batch/s, loss=0.1119]
+                                                                              
+epoch 2/20: train_loss=0.1434 | val_loss=0.1318
+
+2026-09-12 04:30:43 | INFO | epoch 2/20: train_loss=0.1434 | val_loss=0.1318 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 3: 100%|██████████| 3176/3176 [1:02:37<00:00,  1.03batch/s, loss=0.0340]
+                                                                                    
+val epoch 3: 100%|██████████| 325/325 [01:26<00:00,  3.64batch/s, loss=0.0554]
+                                                                              
+epoch 3/20: train_loss=0.1051 | val_loss=0.1005
+
+2026-09-12 05:34:48 | INFO | epoch 3/20: train_loss=0.1051 | val_loss=0.1005 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 4: 100%|██████████| 3176/3176 [1:02:40<00:00,  1.00batch/s, loss=0.0179]
+                                                                                    
+val epoch 4: 100%|██████████| 325/325 [01:26<00:00,  3.80batch/s, loss=0.0834]
+                                                                              
+epoch 4/20: train_loss=0.0844 | val_loss=0.0948
+
+2026-09-12 06:38:56 | INFO | epoch 4/20: train_loss=0.0844 | val_loss=0.0948 (checkpoint TỐT NHẤT đã lưu)
+

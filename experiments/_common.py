@@ -93,15 +93,18 @@ def train_and_evaluate(
     )
 
     strategy = config["split"]["strategy"]
+    # Split seed TÁCH khỏi training seed: multi-seed dùng CÙNG split đã freeze
+    # (split.seed trong config; mặc định = training seed để tương thích ngược).
+    split_seed = int(config["split"].get("seed", seed))
     splits_dir = Path(splits_dir)
-    splits_path = splits_dir / f"{config['dataset']['name']}_seed{seed}_{strategy}.json"
+    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
 
     if splits_path.is_file():
         # Tái sử dụng splits đã lưu -> các thí nghiệm dùng cùng test set (mục 24).
         splits = load_splits(splits_path)
         logger.info(f"tái sử dụng splits: {splits_path}")
     else:
-        splits = create_splits(samples, seed=seed, strategy=strategy)
+        splits = create_splits(samples, seed=split_seed, strategy=strategy)
         save_splits(splits, splits_path)
         logger.info(f"tạo splits mới ({strategy}) và lưu: {splits_path}")
 
@@ -306,17 +309,18 @@ def load_test_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, 
         (test_loader, splits)
     """
     seed = config["seed"]
+    split_seed = int(config["split"].get("seed", seed))
     strategy = config["split"]["strategy"]
     info = discover_dataset(config["dataset"]["root"])
     rows = load_metadata(info["root"], annotation_file=info["annotation_file"])
     samples = build_samples(rows, image_root=info["image_root"])
 
     splits_dir = Path(splits_dir)
-    splits_path = splits_dir / f"{config['dataset']['name']}_seed{seed}_{strategy}.json"
+    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
     if splits_path.is_file():
         splits = load_splits(splits_path)
     else:
-        splits = create_splits(samples, seed=seed, strategy=strategy)
+        splits = create_splits(samples, seed=split_seed, strategy=strategy)
         save_splits(splits, splits_path)
 
     transform = build_eval_transform(config)
@@ -328,6 +332,38 @@ def load_test_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, 
         num_workers=num_workers,
     )
     return test_loader, splits
+
+
+def load_val_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, dict]:
+    """Nạp tập VALIDATION theo splits đã lưu — dùng để CHỌN THRESHOLD (không đụng test).
+
+    Returns:
+        (val_loader, splits)
+    """
+    seed = config["seed"]
+    split_seed = int(config["split"].get("seed", seed))
+    strategy = config["split"]["strategy"]
+    info = discover_dataset(config["dataset"]["root"])
+    rows = load_metadata(info["root"], annotation_file=info["annotation_file"])
+    samples = build_samples(rows, image_root=info["image_root"])
+
+    splits_dir = Path(splits_dir)
+    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
+    if splits_path.is_file():
+        splits = load_splits(splits_path)
+    else:
+        splits = create_splits(samples, seed=split_seed, strategy=strategy)
+        save_splits(splits, splits_path)
+
+    transform = build_eval_transform(config)
+    num_workers = int(config["training"].get("num_workers", 0))
+    val_loader = DataLoader(
+        PADDataset(splits["val"], transform=transform),
+        batch_size=config["training"]["batch_size"],
+        shuffle=False,
+        num_workers=num_workers,
+    )
+    return val_loader, splits
 
 
 def finalize(

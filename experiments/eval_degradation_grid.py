@@ -101,6 +101,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--results-dir", default="results/raw")
     parser.add_argument("--tables-dir", default="results/tables")
     parser.add_argument("--figures-dir", default="results/figures")
+    parser.add_argument("--threshold", type=float, default=None,
+                        help="ghi đè threshold đánh giá (validation-selected, đã freeze)")
     return parser.parse_args()
 
 
@@ -108,9 +110,10 @@ def clean_evaluation(model, checkpoint_config: dict, device: torch.device,
                      splits_dir: str) -> dict:
     """Đánh giá model trên test set SẠCH (hàng 'Clean' của bảng)."""
     seed = checkpoint_config["seed"]
+    split_seed = int(checkpoint_config["split"].get("seed", seed))
     strategy = checkpoint_config["split"]["strategy"]
     splits_file = (Path(splits_dir)
-                   / f"{checkpoint_config['dataset']['name']}_seed{seed}_{strategy}.json")
+                   / f"{checkpoint_config['dataset']['name']}_seed{split_seed}_{strategy}.json")
     if not splits_file.is_file():
         raise FileNotFoundError(
             f"Splits file not found: {splits_file}. "
@@ -179,8 +182,11 @@ def main() -> None:
     device = resolve_device(checkpoint_config["device"]["name"])
     model.to(device)
     seed = checkpoint_config["seed"]
+    if args.threshold is not None:
+        checkpoint_config["evaluation"]["threshold"] = args.threshold
 
     prefix = EXP_PREFIX[args.tag]
+    tag = f"{args.tag}_seed{seed}"
     print(f"=== LUOI SUY GIAM [{args.tag}] | checkpoint: {checkpoint_path} ===")
     print(f"device={device} | seed={seed} | threshold="
           f"{checkpoint_config['evaluation']['threshold']}")
@@ -203,6 +209,7 @@ def main() -> None:
                 config, checkpoint_path,
                 splits_dir=args.splits_dir,
                 results_dir=args.results_dir,
+                threshold=args.threshold,
             )
             rows.append({
                 "condition": category,
@@ -211,10 +218,10 @@ def main() -> None:
             })
             print(f"  f1={record['f1']:.4f} acer={record['acer']:.4f}")
 
-    table_path = save_summary_table(rows, tables_dir, args.tag)
+    table_path = save_summary_table(rows, tables_dir, tag)
     print(f"\nBang tong hop: {table_path}")
 
-    figure_paths = [plot_category(rows, category, figures_dir, args.tag)
+    figure_paths = [plot_category(rows, category, figures_dir, tag)
                     for category in SEVERITY_GRID]
     print("Bieu do:")
     for path in figure_paths:

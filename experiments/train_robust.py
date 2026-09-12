@@ -85,9 +85,14 @@ def main() -> None:
     parser.add_argument("--robustness", default=None,
                         help="đường dẫn tệp cấu hình robustness "
                              "(mặc định: lấy khối robustness trong --config)")
+    parser.add_argument("--seed", type=int, default=None,
+                        help="ghi đè TRAINING seed (split seed luôn lấy split.seed "
+                             "trong config để dùng chung split đã freeze)")
     args = parser.parse_args()
 
     config = load_config(args.config)
+    if args.seed is not None:
+        config["seed"] = args.seed
     robustness_config = load_config(args.robustness) if args.robustness else None
     run(config, robustness_config)
 

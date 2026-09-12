@@ -32,6 +32,7 @@ def run(
     checkpoint_path: str | Path,
     splits_dir: str | Path = "data/splits",
     results_dir: str | Path = "results/raw",
+    threshold: float | None = None,
 ) -> dict:
     """Đánh giá checkpoint trên tập test sạch, trả về record kết quả."""
     start = time.time()
@@ -39,9 +40,10 @@ def run(
 
     checkpoint_path = Path(checkpoint_path)
     model, checkpoint_config, _ = load_checkpoint(checkpoint_path, torch_device(config))
-    experiment_id = config.get(
-        "experiment_id", f"{checkpoint_config.get('experiment_id', 'E01')}_eval_clean_seed{config['seed']}"
-    )
+    if threshold is not None:
+        checkpoint_config["evaluation"]["threshold"] = threshold
+    threshold = checkpoint_config["evaluation"]["threshold"]
+    experiment_id = config.get("experiment_id") or f"{checkpoint_path.stem}_clean"
 
     logger = get_experiment_logger(experiment_id)
     logger.info(f"===== BẮT ĐẦU {experiment_id} (clean evaluation) =====")
@@ -49,7 +51,6 @@ def run(
 
     # Dùng config trong checkpoint (cùng dataset/split/threshold với lúc train).
     test_loader, _ = load_test_loader(checkpoint_config, splits_dir)
-    threshold = checkpoint_config["evaluation"]["threshold"]
 
     eval_result = evaluate_model(model, test_loader, device=torch_device(checkpoint_config),
                                  threshold=threshold)
@@ -73,10 +74,12 @@ def main() -> None:
                         help="đường dẫn tệp cấu hình YAML")
     parser.add_argument("--checkpoint", required=True,
                         help="đường dẫn checkpoint cần đánh giá")
+    parser.add_argument("--threshold", type=float, default=None,
+                        help="ghi đè threshold đánh giá (validation-selected, đã freeze)")
     args = parser.parse_args()
 
     config = load_config(args.config)
-    run(config, args.checkpoint)
+    run(config, args.checkpoint, threshold=args.threshold)
 
 
 if __name__ == "__main__":

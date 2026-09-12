@@ -1,14 +1,42 @@
-2026-09-07 23:44:04 | INFO | đã đọc 6 record từ C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\results
-2026-09-07 23:44:04 | INFO | bảng so sánh: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\tables\comparison_table.csv (6 dòng)
-2026-09-07 23:44:04 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\figures\fig_f1_baseline_vs_robust.png
-2026-09-07 23:44:04 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\figures\fig_acer_vs_jpeg_quality.png
-2026-09-07 23:44:04 | INFO | bỏ qua figure fig_f1_vs_resolution.png (chưa đủ dữ liệu)
-2026-09-07 23:44:04 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\figures\fig_apcer_bpcer_comparison.png
-2026-09-07 23:44:06 | INFO | đã đọc 7 record từ C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\results
-2026-09-07 23:44:06 | INFO | bảng so sánh: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\tables\comparison_table.csv (7 dòng)
-2026-09-07 23:44:06 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\figures\fig_f1_baseline_vs_robust.png
-2026-09-07 23:44:06 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\figures\fig_acer_vs_jpeg_quality.png
-2026-09-07 23:44:06 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\figures\fig_f1_vs_resolution.png
-2026-09-07 23:44:06 | INFO | đã tạo figure: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_creates_table_and_fig0\figures\fig_apcer_bpcer_comparison.png
-2026-09-07 23:44:07 | INFO | đã đọc 0 record từ C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_empty_dir_does_not_cr0\empty
-2026-09-07 23:44:07 | WARNING | chưa có record nào để so sánh — hãy chạy thí nghiệm trước
+2026-09-09 20:09:03 | INFO | đã đọc 6 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\results
+2026-09-09 20:09:03 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\tables\comparison_table.csv (6 dòng)
+2026-09-09 20:09:03 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 20:09:03 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 20:09:03 | INFO | bỏ qua figure fig_f1_vs_resolution.png (chưa đủ dữ liệu)
+2026-09-09 20:09:03 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 20:09:04 | INFO | đã đọc 7 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\results
+2026-09-09 20:09:04 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\tables\comparison_table.csv (7 dòng)
+2026-09-09 20:09:04 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 20:09:04 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 20:09:04 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\figures\fig_f1_vs_resolution.png
+2026-09-09 20:09:04 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_creates_table_and_fig0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 20:09:04 | INFO | đã đọc 0 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_empty_dir_does_not_cr0\empty
+2026-09-09 20:09:04 | WARNING | chưa có record nào để so sánh — hãy chạy thí nghiệm trước
+2026-09-09 20:17:55 | INFO | đã đọc 6 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\results
+2026-09-09 20:17:55 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\tables\comparison_table.csv (6 dòng)
+2026-09-09 20:17:55 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 20:17:55 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 20:17:55 | INFO | bỏ qua figure fig_f1_vs_resolution.png (chưa đủ dữ liệu)
+2026-09-09 20:17:56 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 20:17:56 | INFO | đã đọc 7 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\results
+2026-09-09 20:17:56 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\tables\comparison_table.csv (7 dòng)
+2026-09-09 20:17:56 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 20:17:57 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 20:17:57 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\figures\fig_f1_vs_resolution.png
+2026-09-09 20:17:57 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_creates_table_and_fig0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 20:17:57 | INFO | đã đọc 0 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_empty_dir_does_not_cr0\empty
+2026-09-09 20:17:57 | WARNING | chưa có record nào để so sánh — hãy chạy thí nghiệm trước
+2026-09-09 22:57:27 | INFO | đã đọc 6 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\results
+2026-09-09 22:57:27 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\tables\comparison_table.csv (6 dòng)
+2026-09-09 22:57:27 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 22:57:27 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 22:57:27 | INFO | bỏ qua figure fig_f1_vs_resolution.png (chưa đủ dữ liệu)
+2026-09-09 22:57:27 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 22:57:28 | INFO | đã đọc 7 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\results
+2026-09-09 22:57:28 | INFO | bảng so sánh: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\tables\comparison_table.csv (7 dòng)
+2026-09-09 22:57:28 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\figures\fig_f1_baseline_vs_robust.png
+2026-09-09 22:57:28 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\figures\fig_acer_vs_jpeg_quality.png
+2026-09-09 22:57:28 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\figures\fig_f1_vs_resolution.png
+2026-09-09 22:57:29 | INFO | đã tạo figure: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_creates_table_and_fig0\figures\fig_apcer_bpcer_comparison.png
+2026-09-09 22:57:29 | INFO | đã đọc 0 record từ C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_empty_dir_does_not_cr0\empty
+2026-09-09 22:57:29 | WARNING | chưa có record nào để so sánh — hãy chạy thí nghiệm trước

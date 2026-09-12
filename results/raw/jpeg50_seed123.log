@@ -1,3 +1,9 @@
-2026-09-07 23:44:09 | INFO | ===== BẮT ĐẦU jpeg50_seed123 (degradation evaluation) =====
-2026-09-07 23:44:09 | INFO | checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_eval_degradation_missing_0\checkpoints\E01_test.pt
-2026-09-07 23:44:09 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+2026-09-09 20:09:06 | INFO | ===== BẮT ĐẦU jpeg50_seed123 (degradation evaluation) =====
+2026-09-09 20:09:06 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-09 20:09:06 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+2026-09-09 20:17:58 | INFO | ===== BẮT ĐẦU jpeg50_seed123 (degradation evaluation) =====
+2026-09-09 20:17:58 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-09 20:17:58 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+2026-09-09 22:57:31 | INFO | ===== BẮT ĐẦU jpeg50_seed123 (degradation evaluation) =====
+2026-09-09 22:57:31 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-09 22:57:31 | INFO | degradation: {'name': 'jpeg', 'quality': 50}

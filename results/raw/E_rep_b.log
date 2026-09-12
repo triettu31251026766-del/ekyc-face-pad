@@ -1,16 +1,48 @@
-2026-09-07 23:44:12 | INFO | ===== BẮT ĐẦU E_rep_b (training_mode=clean) =====
-2026-09-07 23:44:12 | INFO | seed=123
-2026-09-07 23:44:12 | INFO | device=cpu
-2026-09-07 23:44:12 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\dataset
-2026-09-07 23:44:12 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:12 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:12 | INFO | split train: 28 mẫu
-2026-09-07 23:44:12 | INFO | split val: 4 mẫu
-2026-09-07 23:44:12 | INFO | split test: 4 mẫu
-2026-09-07 23:44:12 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:12 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:12 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\checkpoints\E_rep_b.pt
-2026-09-07 23:44:12 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.29765409231185913
-2026-09-07 23:44:12 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
-2026-09-07 23:44:12 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:12 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_e01_reproducible_metric0\results\E_rep_b.json (runtime=0.17s)
+2026-09-09 20:09:07 | INFO | ===== BẮT ĐẦU E_rep_b (training_mode=clean) =====
+2026-09-09 20:09:07 | INFO | seed=123
+2026-09-09 20:09:07 | INFO | device=cpu
+2026-09-09 20:09:07 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_e01_reproducible_metric0\dataset
+2026-09-09 20:09:07 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:07 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_e01_reproducible_metric0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:07 | INFO | split train: 28 mẫu
+2026-09-09 20:09:07 | INFO | split val: 4 mẫu
+2026-09-09 20:09:07 | INFO | split test: 4 mẫu
+2026-09-09 20:09:07 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:07 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:07 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_e01_reproducible_metric0\checkpoints\E_rep_b.pt
+2026-09-09 20:09:07 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-09 20:09:07 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-09 20:09:07 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:07 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_e01_reproducible_metric0\results\E_rep_b.json (runtime=0.09s)
+2026-09-09 20:18:00 | INFO | ===== BẮT ĐẦU E_rep_b (training_mode=clean) =====
+2026-09-09 20:18:00 | INFO | seed=123
+2026-09-09 20:18:00 | INFO | device=cpu
+2026-09-09 20:18:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_e01_reproducible_metric0\dataset
+2026-09-09 20:18:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:18:00 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_e01_reproducible_metric0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:18:00 | INFO | split train: 28 mẫu
+2026-09-09 20:18:00 | INFO | split val: 4 mẫu
+2026-09-09 20:18:00 | INFO | split test: 4 mẫu
+2026-09-09 20:18:00 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:18:00 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:18:00 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_e01_reproducible_metric0\checkpoints\E_rep_b.pt
+2026-09-09 20:18:00 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-09 20:18:00 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-09 20:18:00 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:18:00 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_e01_reproducible_metric0\results\E_rep_b.json (runtime=0.08s)
+2026-09-09 22:57:32 | INFO | ===== BẮT ĐẦU E_rep_b (training_mode=clean) =====
+2026-09-09 22:57:32 | INFO | seed=123
+2026-09-09 22:57:32 | INFO | device=cpu
+2026-09-09 22:57:32 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_e01_reproducible_metric0\dataset
+2026-09-09 22:57:32 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:32 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_e01_reproducible_metric0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:32 | INFO | split train: 28 mẫu
+2026-09-09 22:57:32 | INFO | split val: 4 mẫu
+2026-09-09 22:57:32 | INFO | split test: 4 mẫu
+2026-09-09 22:57:32 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:32 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:32 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_e01_reproducible_metric0\checkpoints\E_rep_b.pt
+2026-09-09 22:57:32 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-09 22:57:32 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-09 22:57:32 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:32 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_e01_reproducible_metric0\results\E_rep_b.json (runtime=0.1s)

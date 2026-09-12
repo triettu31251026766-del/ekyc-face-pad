@@ -56,9 +56,14 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="E01: train clean baseline PAD model")
     parser.add_argument("--config", default="configs/clean.yaml",
                         help="đường dẫn tệp cấu hình YAML")
+    parser.add_argument("--seed", type=int, default=None,
+                        help="ghi đè TRAINING seed (split seed luôn lấy split.seed "
+                             "trong config để dùng chung split đã freeze)")
     args = parser.parse_args()
 
     config = load_config(args.config)
+    if args.seed is not None:
+        config["seed"] = args.seed
     run(config)
 
 

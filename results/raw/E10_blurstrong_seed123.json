@@ -1,7 +1,7 @@
 {
   "experiment_id": "E10_blurstrong_seed123",
   "seed": 123,
-  "dataset": "celeba_spoof",
+  "dataset": "celeba_spoof_full",
   "split_strategy": "subject_disjoint",
   "model": "mobilenet_v2",
   "training_mode": "clean",
@@ -10,27 +10,27 @@
     "kernel_size": 11,
     "sigma": 3.0
   },
-  "threshold": 0.5,
-  "accuracy": 0.9572128041729203,
-  "precision": 0.9576604745263932,
-  "recall": 0.9779130042821726,
-  "f1": 0.9676807850279704,
-  "roc_auc": 0.990612897957763,
-  "pr_auc": 0.9947459879088554,
-  "apcer": 0.02208699571782736,
-  "bpcer": 0.08209114899079951,
-  "acer": 0.05208907235431344,
+  "threshold": 0.47500000000000003,
+  "accuracy": 0.7892425905598244,
+  "precision": 0.9481468121561908,
+  "recall": 0.7423568453011368,
+  "f1": 0.8327261207033106,
+  "roc_auc": 0.9095089422322132,
+  "pr_auc": 0.9608784977993017,
+  "apcer": 0.25764315469886323,
+  "bpcer": 0.09780574927708793,
+  "acer": 0.1777244519879756,
   "parameter_count": 2225153,
   "model_size_mb": 8.6188,
   "environment": {
-    "python_version": "3.14.7",
-    "torch_version": "2.14.0+cu130",
-    "torchvision_version": "0.29.0+cu130",
+    "python_version": "3.14.6",
+    "torch_version": "2.13.0+cu126",
+    "torchvision_version": "0.28.0+cu126",
     "numpy_version": "2.5.2",
     "platform": "Windows-11-10.0.26200-SP0",
-    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
     "cuda_available": true,
-    "git_commit": "296643e1ec9194e4cb5d4c6023fa5e3fd574e40f"
+    "git_commit": "229ae0e9d7c37b46170365b26fd706764e4f2f8a"
   },
-  "runtime_seconds": 203.48
+  "runtime_seconds": 73.29
 }

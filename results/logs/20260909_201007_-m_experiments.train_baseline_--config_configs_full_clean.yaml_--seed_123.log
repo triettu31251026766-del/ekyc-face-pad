@@ -1,0 +1,59 @@
+2026-09-09 20:10:11 | INFO | ===== BẮT ĐẦU E01_baseline_seed123 (training_mode=clean) =====
+2026-09-09 20:10:11 | INFO | seed=123
+2026-09-09 20:10:11 | INFO | device=cuda
+2026-09-09 20:10:11 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
+2026-09-09 20:10:21 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+2026-09-09 20:10:22 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+2026-09-09 20:10:22 | INFO | split train: 203215 mẫu
+2026-09-09 20:10:22 | INFO | split val: 20773 mẫu
+2026-09-09 20:10:22 | INFO | split test: 20042 mẫu
+2026-09-09 20:10:22 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+
+train epoch 1:   0%|          | 0/3176 [00:00<?, ?batch/s]
+train epoch 1:   0%|          | 0/3176 [00:04<?, ?batch/s, loss=0.7566]
+train epoch 1:   0%|          | 1/3176 [00:04<3:34:49,  4.06s/batch, loss=0.7566]
+train epoch 1:   0%|          | 1/3176 [00:05<3:34:49,  4.06s/batch, loss=0.7483]
+train epoch 1:   0%|          | 2/3176 [00:05<2:10:14,  2.46s/batch, loss=0.7483]
+train epoch 1:   0%|          | 2/3176 [00:06<2:10:14,  2.46s/batch, loss=0.6688]
+train epoch 1:   0%|          | 3/3176 [00:06<1:43:28,  1.96s/batch, loss=0.6688]
+train epoch 1:   0%|          | 3/3176 [00:08<1:43:28,  1.96s/batch, loss=0.7063]
+train epoch 1:   0%|          | 4/3176 [00:08<1:30:24,  1.71s/batch, loss=0.7063]
+train epoch 1:   0%|          | 4/3176 [00:09<1:30:24,  1.71s/batch, loss=0.6672]
+train epoch 1:   0%|          | 5/3176 [00:09<1:23:01,  1.57s/batch, loss=0.6672]
+train epoch 1:   0%|          | 5/3176 [00:10<1:23:01,  1.57s/batch, loss=0.6394]
+train epoch 1:   0%|          | 6/3176 [00:10<1:18:44,  1.49s/batch, loss=0.6394]
+train epoch 1:   0%|          | 6/3176 [00:12<1:18:44,  1.49s/batch, loss=0.6081]
+train epoch 1:   0%|          | 7/3176 [00:12<1:15:45,  1.43s/batch, loss=0.6081]
+train epoch 1:   0%|          | 7/3176 [00:13<1:15:45,  1.43s/batch, loss=0.6316]
+train epoch 1:   0%|          | 8/3176 [00:13<1:13:46,  1.40s/batch, loss=0.6316]
+train epoch 1:   0%|          | 8/3176 [00:14<1:13:46,  1.40s/batch, loss=0.6832]
+train epoch 1:   0%|          | 9/3176 [00:14<1:12:53,  1.38s/batch, loss=0.6832]
+train epoch 1:   0%|          | 9/3176 [00:16<1:12:53,  1.38s/batch, loss=0.6307]
+train epoch 1:   0%|          | 10/3176 [00:16<1:11:47,  1.36s/batch, loss=0.6307]
+train epoch 1:   0%|          | 10/3176 [00:17<1:11:47,  1.36s/batch, loss=0.6304]
+train epoch 1:   0%|          | 11/3176 [00:17<1:11:17,  1.35s/batch, loss=0.6304]
+train epoch 1:   0%|          | 11/3176 [00:18<1:11:17,  1.35s/batch, loss=0.5894]
+train epoch 1:   0%|          | 12/3176 [00:18<1:10:44,  1.34s/batch, loss=0.5894]
+train epoch 1:   0%|          | 12/3176 [00:20<1:10:44,  1.34s/batch, loss=0.6940]
+train epoch 1:   0%|          | 13/3176 [00:20<1:10:56,  1.35s/batch, loss=0.6940]
+train epoch 1:   0%|          | 13/3176 [00:21<1:10:56,  1.35s/batch, loss=0.5752]
+train epoch 1:   0%|          | 14/3176 [00:21<1:10:26,  1.34s/batch, loss=0.5752]
+train epoch 1:   0%|          | 14/3176 [00:22<1:10:26,  1.34s/batch, loss=0.5441]
+train epoch 1:   0%|          | 15/3176 [00:22<1:10:15,  1.33s/batch, loss=0.5441]
+train epoch 1:   0%|          | 15/3176 [00:24<1:10:15,  1.33s/batch, loss=0.5477]
+train epoch 1:   1%|          | 16/3176 [00:24<1:09:55,  1.33s/batch, loss=0.5477]
+train epoch 1:   1%|          | 16/3176 [00:25<1:09:55,  1.33s/batch, loss=0.5333]
+train epoch 1:   1%|          | 17/3176 [00:25<1:10:32,  1.34s/batch, loss=0.5333]
+train epoch 1:   1%|          | 17/3176 [00:26<1:10:32,  1.34s/batch, loss=0.5347]
+train epoch 1:   1%|          | 18/3176 [00:26<1:12:02,  1.37s/batch, loss=0.5347]
+train epoch 1:   1%|          | 18/3176 [00:28<1:12:02,  1.37s/batch, loss=0.6641]
+train epoch 1:   1%|          | 19/3176 [00:28<1:11:37,  1.36s/batch, loss=0.6641]
+train epoch 1:   1%|          | 19/3176 [00:29<1:11:37,  1.36s/batch, loss=0.5168]
+train epoch 1:   1%|          | 20/3176 [00:29<1:12:16,  1.37s/batch, loss=0.5168]
+train epoch 1:   1%|          | 20/3176 [00:30<1:12:16,  1.37s/batch, loss=0.6242]
+train epoch 1:   1%|          | 21/3176 [00:30<1:12:15,  1.37s/batch, loss=0.6242]
+train epoch 1:   1%|          | 21/3176 [00:32<1:12:15,  1.37s/batch, loss=0.5049]
+train epoch 1:   1%|          | 22/3176 [00:32<1:11:52,  1.37s/batch, loss=0.5049]
+train epoch 1:   1%|          | 22/3176 [00:33<1:11:52,  1.37s/batch, loss=0.6021]
+train epoch 1:   1%|          | 23/3176 [00:33<1:12:15,  1.38s/batch, loss=0.6021]
+train epoch 1:   1%|          | 23/3176 [00:35<1:12:15,  1.38s/batch, loss=0.5699]

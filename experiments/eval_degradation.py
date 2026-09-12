@@ -43,6 +43,7 @@ def run(
     checkpoint_path: str | Path,
     splits_dir: str | Path = "data/splits",
     results_dir: str | Path = "results/raw",
+    threshold: float | None = None,
 ) -> dict:
     """Đánh giá checkpoint trên tập test đã suy giảm chất lượng (tất định)."""
     start = time.time()
@@ -57,6 +58,8 @@ def run(
     checkpoint_path = Path(checkpoint_path)
     # Nạp checkpoint về CPU trước, rồi chọn device theo config trong checkpoint.
     model, checkpoint_config, _ = load_checkpoint(checkpoint_path, torch.device("cpu"))
+    if threshold is not None:
+        checkpoint_config["evaluation"]["threshold"] = threshold
     device = resolve_device(checkpoint_config["device"]["name"])
     model.to(device)
 
@@ -72,9 +75,10 @@ def run(
 
     # Dùng đúng splits đã lưu khi huấn luyện (cùng test set — mục 24).
     strategy = checkpoint_config["split"]["strategy"]
+    split_seed = int(checkpoint_config["split"].get("seed", seed))
     splits_file = (
         Path(splits_dir)
-        / f"{checkpoint_config['dataset']['name']}_seed{seed}_{strategy}.json"
+        / f"{checkpoint_config['dataset']['name']}_seed{split_seed}_{strategy}.json"
     )
     if not splits_file.is_file():
         raise FileNotFoundError(

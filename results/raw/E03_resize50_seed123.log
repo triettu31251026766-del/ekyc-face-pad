@@ -1,15 +1,5 @@
-2026-08-31 06:56:27 | INFO | ===== BẮT ĐẦU E03_resize50_seed123 (degradation evaluation) =====
-2026-08-31 06:56:27 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 06:56:27 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
-2026-08-31 06:58:13 | INFO | degraded test: f1=0.8427, roc_auc=0.8959919029861989
-2026-08-31 06:58:13 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed123.json
-2026-08-31 07:05:09 | INFO | ===== BẮT ĐẦU E03_resize50_seed123 (degradation evaluation) =====
-2026-08-31 07:05:09 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 07:05:09 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
-2026-08-31 07:06:50 | INFO | degraded test: f1=0.8427, roc_auc=0.8959919029861989
-2026-08-31 07:06:50 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed123.json
-2026-09-06 01:00:24 | INFO | ===== BẮT ĐẦU E03_resize50_seed123 (degradation evaluation) =====
-2026-09-06 01:00:24 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-09-06 01:00:24 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
-2026-09-06 01:05:37 | INFO | degraded test: f1=0.9339, roc_auc=0.9848731898021048
-2026-09-06 01:05:37 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed123.json
+2026-09-12 01:33:07 | INFO | ===== BẮT ĐẦU E03_resize50_seed123 (degradation evaluation) =====
+2026-09-12 01:33:07 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-12 01:33:07 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
+2026-09-12 01:34:31 | INFO | degraded test: f1=0.8831, roc_auc=0.9037154192787863
+2026-09-12 01:34:31 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed123.json

@@ -1,0 +1,20 @@
+2026-09-09 20:18:58 | INFO | ===== BẮT ĐẦU E01_baseline_seed123 (training_mode=clean) =====
+
+2026-09-09 20:18:58 | INFO | seed=123
+
+2026-09-09 20:18:58 | INFO | device=cuda
+
+2026-09-09 20:18:58 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-09 20:19:03 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-09 20:19:04 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-09 20:19:04 | INFO | split train: 203215 mẫu
+
+2026-09-09 20:19:04 | INFO | split val: 20773 mẫu
+
+2026-09-09 20:19:04 | INFO | split test: 20042 mẫu
+
+2026-09-09 20:19:04 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+

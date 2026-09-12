@@ -1,15 +1,5 @@
-2026-08-31 06:49:29 | INFO | ===== BẮT ĐẦU E02_jpeg90_seed123 (degradation evaluation) =====
-2026-08-31 06:49:29 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 06:49:29 | INFO | degradation: {'name': 'jpeg', 'quality': 90}
-2026-08-31 06:50:51 | INFO | degraded test: f1=0.8253, roc_auc=0.9625622162070776
-2026-08-31 06:50:51 | INFO | kết quả đã lưu: results\raw\E02_jpeg90_seed123.json
-2026-08-31 06:56:37 | INFO | ===== BẮT ĐẦU E02_jpeg90_seed123 (degradation evaluation) =====
-2026-08-31 06:56:37 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 06:56:37 | INFO | degradation: {'name': 'jpeg', 'quality': 90}
-2026-08-31 06:58:15 | INFO | degraded test: f1=0.8253, roc_auc=0.9625622162070776
-2026-08-31 06:58:15 | INFO | kết quả đã lưu: results\raw\E02_jpeg90_seed123.json
-2026-09-06 00:34:40 | INFO | ===== BẮT ĐẦU E02_jpeg90_seed123 (degradation evaluation) =====
-2026-09-06 00:34:40 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-09-06 00:34:40 | INFO | degradation: {'name': 'jpeg', 'quality': 90}
-2026-09-06 00:38:19 | INFO | degraded test: f1=0.9866, roc_auc=0.9977448398594571
-2026-09-06 00:38:20 | INFO | kết quả đã lưu: results\raw\E02_jpeg90_seed123.json
+2026-09-12 01:26:24 | INFO | ===== BẮT ĐẦU E02_jpeg90_seed123 (degradation evaluation) =====
+2026-09-12 01:26:24 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-12 01:26:24 | INFO | degradation: {'name': 'jpeg', 'quality': 90}
+2026-09-12 01:27:44 | INFO | degraded test: f1=0.8647, roc_auc=0.9745433266657679
+2026-09-12 01:27:44 | INFO | kết quả đã lưu: results\raw\E02_jpeg90_seed123.json

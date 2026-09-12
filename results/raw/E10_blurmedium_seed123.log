@@ -1,15 +1,5 @@
-2026-09-01 06:34:08 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed123 (degradation evaluation) =====
-2026-09-01 06:34:08 | INFO | checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-01 06:34:08 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
-2026-09-01 06:35:20 | INFO | degraded test: f1=0.8513, roc_auc=0.9411199655285544
-2026-09-01 06:35:20 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed123.json
-2026-09-06 22:24:16 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed123 (degradation evaluation) =====
-2026-09-06 22:24:16 | INFO | checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-06 22:24:16 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
-2026-09-06 22:27:36 | INFO | degraded test: f1=0.9757, roc_auc=0.9947258043893517
-2026-09-06 22:27:37 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed123.json
-2026-09-07 19:41:03 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed123 (degradation evaluation) =====
-2026-09-07 19:41:03 | INFO | checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-07 19:41:03 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
-2026-09-07 19:44:23 | INFO | degraded test: f1=0.9757, roc_auc=0.9947258043893517
-2026-09-07 19:44:24 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed123.json
+2026-09-12 02:05:35 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed123 (degradation evaluation) =====
+2026-09-12 02:05:35 | INFO | checkpoint: results\checkpoints\E07_robust_seed123.pt
+2026-09-12 02:05:35 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-12 02:06:47 | INFO | degraded test: f1=0.8584, roc_auc=0.9289962729154545
+2026-09-12 02:06:47 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed123.json

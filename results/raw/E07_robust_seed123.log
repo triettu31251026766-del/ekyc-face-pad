@@ -1,589 +1,275 @@
-2026-08-31 09:09:53 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:09:53 | INFO | seed=123
-2026-08-31 09:09:53 | INFO | device=cpu
-2026-08-31 09:09:53 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_run_all_end_to_end_order0\dataset
-2026-08-31 09:09:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-08-31 09:09:53 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-08-31 09:09:53 | INFO | split train: 28 mẫu
-2026-08-31 09:09:53 | INFO | split val: 4 mẫu
-2026-08-31 09:09:53 | INFO | split test: 4 mẫu
-2026-08-31 09:09:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-08-31 09:09:53 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint đã lưu)
-2026-08-31 09:09:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-08-31 09:09:53 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-08-31 09:09:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-08-31 09:09:53 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.06s)
-2026-08-31 09:09:59 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:09:59 | INFO | seed=123
-2026-08-31 09:09:59 | INFO | device=cpu
-2026-08-31 09:09:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_end_to_end0\dataset
-2026-08-31 09:09:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-08-31 09:09:59 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-08-31 09:09:59 | INFO | split train: 28 mẫu
-2026-08-31 09:09:59 | INFO | split val: 4 mẫu
-2026-08-31 09:09:59 | INFO | split test: 4 mẫu
-2026-08-31 09:09:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-08-31 09:09:59 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-08-31 09:09:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-08-31 09:09:59 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-08-31 09:09:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-08-31 09:09:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.09s)
-2026-08-31 09:09:59 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:09:59 | INFO | seed=123
-2026-08-31 09:09:59 | INFO | device=cpu
-2026-08-31 09:09:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reuses_basel0\dataset
-2026-08-31 09:09:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-08-31 09:09:59 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-08-31 09:09:59 | INFO | split train: 28 mẫu
-2026-08-31 09:09:59 | INFO | split val: 4 mẫu
-2026-08-31 09:09:59 | INFO | split test: 4 mẫu
-2026-08-31 09:09:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-08-31 09:09:59 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-08-31 09:09:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-08-31 09:09:59 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-08-31 09:09:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-08-31 09:09:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.06s)
-2026-08-31 09:09:59 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:09:59 | INFO | seed=123
-2026-08-31 09:09:59 | INFO | device=cpu
-2026-08-31 09:09:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\dataset
-2026-08-31 09:09:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-08-31 09:09:59 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-08-31 09:09:59 | INFO | split train: 28 mẫu
-2026-08-31 09:09:59 | INFO | split val: 4 mẫu
-2026-08-31 09:09:59 | INFO | split test: 4 mẫu
-2026-08-31 09:09:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-08-31 09:09:59 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-08-31 09:09:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-08-31 09:09:59 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-08-31 09:09:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-08-31 09:09:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.09s)
-2026-08-31 09:09:59 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:09:59 | INFO | seed=123
-2026-08-31 09:09:59 | INFO | device=cpu
-2026-08-31 09:09:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\dataset
-2026-08-31 09:09:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-08-31 09:09:59 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-08-31 09:09:59 | INFO | split train: 28 mẫu
-2026-08-31 09:09:59 | INFO | split val: 4 mẫu
-2026-08-31 09:09:59 | INFO | split test: 4 mẫu
-2026-08-31 09:09:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-08-31 09:09:59 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-08-31 09:09:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-08-31 09:09:59 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-08-31 09:09:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-08-31 09:09:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-19\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.07s)
-2026-08-31 09:13:29 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-08-31 09:13:29 | INFO | seed=123
-2026-08-31 09:13:29 | INFO | device=cuda
-2026-08-31 09:13:29 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
-2026-08-31 09:13:44 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
-2026-08-31 09:13:45 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
-2026-08-31 09:13:45 | INFO | split train: 203215 mẫu
-2026-08-31 09:13:45 | INFO | split val: 20773 mẫu
-2026-08-31 09:13:45 | INFO | split test: 20042 mẫu
-2026-08-31 09:13:45 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
-2026-08-31 10:12:15 | INFO | epoch 1/20: train_loss=0.2941 | val_loss=0.1833 (checkpoint đã lưu)
-2026-08-31 11:10:42 | INFO | epoch 2/20: train_loss=0.2022 | val_loss=0.1373 (checkpoint đã lưu)
-2026-08-31 12:09:04 | INFO | epoch 3/20: train_loss=0.1646 | val_loss=0.1237 (checkpoint đã lưu)
-2026-08-31 13:07:37 | INFO | epoch 4/20: train_loss=0.1417 | val_loss=0.1103 (checkpoint đã lưu)
-2026-08-31 14:05:58 | INFO | epoch 5/20: train_loss=0.1248 | val_loss=0.0873 (checkpoint đã lưu)
-2026-08-31 15:04:20 | INFO | epoch 6/20: train_loss=0.1151 | val_loss=0.0914 (checkpoint đã lưu)
-2026-08-31 16:05:50 | INFO | epoch 7/20: train_loss=0.1047 | val_loss=0.0780 (checkpoint đã lưu)
-2026-08-31 17:08:58 | INFO | epoch 8/20: train_loss=0.0955 | val_loss=0.0909 (checkpoint đã lưu)
-2026-08-31 18:12:04 | INFO | epoch 9/20: train_loss=0.0896 | val_loss=0.0783 (checkpoint đã lưu)
-2026-08-31 19:15:21 | INFO | epoch 10/20: train_loss=0.0848 | val_loss=0.0654 (checkpoint đã lưu)
-2026-08-31 20:18:29 | INFO | epoch 11/20: train_loss=0.0795 | val_loss=0.0614 (checkpoint đã lưu)
-2026-08-31 21:22:01 | INFO | epoch 12/20: train_loss=0.0750 | val_loss=0.0690 (checkpoint đã lưu)
-2026-08-31 22:25:07 | INFO | epoch 13/20: train_loss=0.0709 | val_loss=0.0782 (checkpoint đã lưu)
-2026-08-31 23:28:21 | INFO | epoch 14/20: train_loss=0.0663 | val_loss=0.0766 (checkpoint đã lưu)
-2026-09-01 00:31:32 | INFO | epoch 15/20: train_loss=0.0617 | val_loss=0.0551 (checkpoint đã lưu)
-2026-09-01 01:34:53 | INFO | epoch 16/20: train_loss=0.0596 | val_loss=0.0635 (checkpoint đã lưu)
-2026-09-01 02:38:04 | INFO | epoch 17/20: train_loss=0.0551 | val_loss=0.0631 (checkpoint đã lưu)
-2026-09-01 03:41:10 | INFO | epoch 18/20: train_loss=0.0541 | val_loss=0.0498 (checkpoint đã lưu)
-2026-09-01 04:44:18 | INFO | epoch 19/20: train_loss=0.0511 | val_loss=0.0565 (checkpoint đã lưu)
-2026-09-01 05:47:33 | INFO | epoch 20/20: train_loss=0.0491 | val_loss=0.0595 (checkpoint đã lưu)
-2026-09-01 05:47:33 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-01 05:47:33 | INFO | epoch cuối: train_loss=0.0491, val_loss=0.05946133730543289
-2026-09-01 05:48:34 | INFO | clean test: f1=0.8502, roc_auc=0.9607138785340081
-2026-09-01 05:48:35 | INFO | kết quả đã lưu: results\raw\E07_robust_seed123.json (runtime=74105.58s)
-2026-09-01 06:56:51 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 06:56:51 | INFO | seed=123
-2026-09-01 06:56:51 | INFO | device=cpu
-2026-09-01 06:56:51 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_run_all_end_to_end_order0\dataset
-2026-09-01 06:56:51 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 06:56:51 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 06:56:51 | INFO | split train: 28 mẫu
-2026-09-01 06:56:51 | INFO | split val: 4 mẫu
-2026-09-01 06:56:51 | INFO | split test: 4 mẫu
-2026-09-01 06:56:51 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 06:56:51 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint đã lưu)
-2026-09-01 06:56:51 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-09-01 06:56:51 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-09-01 06:56:51 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 06:56:51 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.06s)
-2026-09-01 06:56:56 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 06:56:56 | INFO | seed=123
-2026-09-01 06:56:56 | INFO | device=cpu
-2026-09-01 06:56:56 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_end_to_end0\dataset
-2026-09-01 06:56:56 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 06:56:56 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 06:56:56 | INFO | split train: 28 mẫu
-2026-09-01 06:56:56 | INFO | split val: 4 mẫu
-2026-09-01 06:56:56 | INFO | split test: 4 mẫu
-2026-09-01 06:56:56 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 06:56:56 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 06:56:56 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-09-01 06:56:56 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 06:56:56 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 06:56:56 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.09s)
-2026-09-01 06:56:56 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 06:56:56 | INFO | seed=123
-2026-09-01 06:56:56 | INFO | device=cpu
-2026-09-01 06:56:56 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reuses_basel0\dataset
-2026-09-01 06:56:56 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 06:56:56 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 06:56:56 | INFO | split train: 28 mẫu
-2026-09-01 06:56:56 | INFO | split val: 4 mẫu
-2026-09-01 06:56:56 | INFO | split test: 4 mẫu
-2026-09-01 06:56:56 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 06:56:57 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 06:56:57 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-09-01 06:56:57 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 06:56:57 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 06:56:57 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.08s)
-2026-09-01 06:56:57 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 06:56:57 | INFO | seed=123
-2026-09-01 06:56:57 | INFO | device=cpu
-2026-09-01 06:56:57 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\dataset
-2026-09-01 06:56:57 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 06:56:57 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 06:56:57 | INFO | split train: 28 mẫu
-2026-09-01 06:56:57 | INFO | split val: 4 mẫu
-2026-09-01 06:56:57 | INFO | split test: 4 mẫu
-2026-09-01 06:56:57 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 06:56:57 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 06:56:57 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-09-01 06:56:57 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 06:56:57 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 06:56:57 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.09s)
-2026-09-01 06:56:57 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 06:56:57 | INFO | seed=123
-2026-09-01 06:56:57 | INFO | device=cpu
-2026-09-01 06:56:57 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\dataset
-2026-09-01 06:56:57 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 06:56:57 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 06:56:57 | INFO | split train: 28 mẫu
-2026-09-01 06:56:57 | INFO | split val: 4 mẫu
-2026-09-01 06:56:57 | INFO | split test: 4 mẫu
-2026-09-01 06:56:57 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 06:56:57 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 06:56:57 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-09-01 06:56:57 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 06:56:57 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 06:56:57 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-20\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.07s)
-2026-09-01 08:44:50 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 08:44:50 | INFO | seed=123
-2026-09-01 08:44:50 | INFO | device=cpu
-2026-09-01 08:44:50 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_run_all_end_to_end_order0\dataset
-2026-09-01 08:44:50 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 08:44:50 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 08:44:50 | INFO | split train: 28 mẫu
-2026-09-01 08:44:50 | INFO | split val: 4 mẫu
-2026-09-01 08:44:50 | INFO | split test: 4 mẫu
-2026-09-01 08:44:50 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 08:44:50 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint đã lưu)
-2026-09-01 08:44:50 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-09-01 08:44:50 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-09-01 08:44:50 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 08:44:50 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.06s)
-2026-09-01 08:44:55 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 08:44:55 | INFO | seed=123
-2026-09-01 08:44:55 | INFO | device=cpu
-2026-09-01 08:44:55 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_end_to_end0\dataset
-2026-09-01 08:44:55 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 08:44:55 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 08:44:55 | INFO | split train: 28 mẫu
-2026-09-01 08:44:55 | INFO | split val: 4 mẫu
-2026-09-01 08:44:55 | INFO | split test: 4 mẫu
-2026-09-01 08:44:55 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 08:44:55 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 08:44:55 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-09-01 08:44:55 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 08:44:55 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 08:44:55 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.09s)
-2026-09-01 08:44:55 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 08:44:55 | INFO | seed=123
-2026-09-01 08:44:55 | INFO | device=cpu
-2026-09-01 08:44:55 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reuses_basel0\dataset
-2026-09-01 08:44:55 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 08:44:55 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 08:44:55 | INFO | split train: 28 mẫu
-2026-09-01 08:44:55 | INFO | split val: 4 mẫu
-2026-09-01 08:44:55 | INFO | split test: 4 mẫu
-2026-09-01 08:44:55 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 08:44:55 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 08:44:55 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-09-01 08:44:55 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 08:44:55 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 08:44:55 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.06s)
-2026-09-01 08:44:55 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 08:44:55 | INFO | seed=123
-2026-09-01 08:44:55 | INFO | device=cpu
-2026-09-01 08:44:55 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\dataset
-2026-09-01 08:44:55 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 08:44:55 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 08:44:55 | INFO | split train: 28 mẫu
-2026-09-01 08:44:55 | INFO | split val: 4 mẫu
-2026-09-01 08:44:55 | INFO | split test: 4 mẫu
-2026-09-01 08:44:55 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 08:44:55 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 08:44:55 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-09-01 08:44:55 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 08:44:55 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 08:44:56 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.09s)
-2026-09-01 08:44:56 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-01 08:44:56 | INFO | seed=123
-2026-09-01 08:44:56 | INFO | device=cpu
-2026-09-01 08:44:56 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\dataset
-2026-09-01 08:44:56 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-01 08:44:56 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-01 08:44:56 | INFO | split train: 28 mẫu
-2026-09-01 08:44:56 | INFO | split val: 4 mẫu
-2026-09-01 08:44:56 | INFO | split test: 4 mẫu
-2026-09-01 08:44:56 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-01 08:44:56 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint đã lưu)
-2026-09-01 08:44:56 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-09-01 08:44:56 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-01 08:44:56 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-01 08:44:56 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-21\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.07s)
-2026-09-05 11:57:45 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 11:57:45 | INFO | seed=123
-2026-09-05 11:57:45 | INFO | device=cpu
-2026-09-05 11:57:45 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_run_all_end_to_end_order0\dataset
-2026-09-05 11:57:45 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 11:57:45 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 11:57:45 | INFO | split train: 28 mẫu
-2026-09-05 11:57:45 | INFO | split val: 4 mẫu
-2026-09-05 11:57:45 | INFO | split test: 4 mẫu
-2026-09-05 11:57:45 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 11:57:45 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 11:57:45 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-09-05 11:57:45 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-09-05 11:57:45 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
-2026-09-05 11:57:45 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 11:57:45 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.08s)
-2026-09-05 11:57:52 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 11:57:52 | INFO | seed=123
-2026-09-05 11:57:52 | INFO | device=cpu
-2026-09-05 11:57:52 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_end_to_end0\dataset
-2026-09-05 11:57:52 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 11:57:52 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 11:57:52 | INFO | split train: 28 mẫu
-2026-09-05 11:57:52 | INFO | split val: 4 mẫu
-2026-09-05 11:57:52 | INFO | split test: 4 mẫu
-2026-09-05 11:57:52 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 11:57:52 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 11:57:52 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-09-05 11:57:52 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 11:57:52 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 11:57:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 11:57:53 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.15s)
-2026-09-05 11:57:53 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 11:57:53 | INFO | seed=123
-2026-09-05 11:57:53 | INFO | device=cpu
-2026-09-05 11:57:53 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reuses_basel0\dataset
-2026-09-05 11:57:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 11:57:53 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 11:57:53 | INFO | split train: 28 mẫu
-2026-09-05 11:57:53 | INFO | split val: 4 mẫu
-2026-09-05 11:57:53 | INFO | split test: 4 mẫu
-2026-09-05 11:57:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 11:57:53 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 11:57:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-09-05 11:57:53 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 11:57:53 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 11:57:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 11:57:53 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.09s)
-2026-09-05 11:57:53 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 11:57:53 | INFO | seed=123
-2026-09-05 11:57:53 | INFO | device=cpu
-2026-09-05 11:57:53 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\dataset
-2026-09-05 11:57:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 11:57:53 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 11:57:53 | INFO | split train: 28 mẫu
-2026-09-05 11:57:53 | INFO | split val: 4 mẫu
-2026-09-05 11:57:53 | INFO | split test: 4 mẫu
-2026-09-05 11:57:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 11:57:53 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 11:57:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-09-05 11:57:53 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 11:57:53 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 11:57:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 11:57:53 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.15s)
-2026-09-05 11:57:53 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 11:57:53 | INFO | seed=123
-2026-09-05 11:57:53 | INFO | device=cpu
-2026-09-05 11:57:53 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\dataset
-2026-09-05 11:57:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 11:57:53 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 11:57:53 | INFO | split train: 28 mẫu
-2026-09-05 11:57:53 | INFO | split val: 4 mẫu
-2026-09-05 11:57:53 | INFO | split test: 4 mẫu
-2026-09-05 11:57:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 11:57:53 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 11:57:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-09-05 11:57:53 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 11:57:53 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 11:57:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 11:57:53 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-0\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.09s)
-2026-09-05 12:31:16 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 12:31:16 | INFO | seed=123
-2026-09-05 12:31:16 | INFO | device=cpu
-2026-09-05 12:31:16 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_run_all_end_to_end_order0\dataset
-2026-09-05 12:31:16 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 12:31:16 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 12:31:16 | INFO | split train: 28 mẫu
-2026-09-05 12:31:16 | INFO | split val: 4 mẫu
-2026-09-05 12:31:16 | INFO | split test: 4 mẫu
-2026-09-05 12:31:16 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 12:31:16 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 12:31:16 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-09-05 12:31:16 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-09-05 12:31:16 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
-2026-09-05 12:31:16 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 12:31:16 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.09s)
-2026-09-05 12:31:24 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 12:31:24 | INFO | seed=123
-2026-09-05 12:31:24 | INFO | device=cpu
-2026-09-05 12:31:24 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_end_to_end0\dataset
-2026-09-05 12:31:24 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 12:31:24 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 12:31:24 | INFO | split train: 28 mẫu
-2026-09-05 12:31:24 | INFO | split val: 4 mẫu
-2026-09-05 12:31:24 | INFO | split test: 4 mẫu
-2026-09-05 12:31:24 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 12:31:24 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 12:31:24 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-09-05 12:31:24 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 12:31:24 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 12:31:24 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 12:31:24 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.17s)
-2026-09-05 12:31:24 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 12:31:24 | INFO | seed=123
-2026-09-05 12:31:24 | INFO | device=cpu
-2026-09-05 12:31:24 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reuses_basel0\dataset
-2026-09-05 12:31:24 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 12:31:24 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 12:31:24 | INFO | split train: 28 mẫu
-2026-09-05 12:31:24 | INFO | split val: 4 mẫu
-2026-09-05 12:31:24 | INFO | split test: 4 mẫu
-2026-09-05 12:31:24 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 12:31:24 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 12:31:24 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-09-05 12:31:24 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 12:31:24 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 12:31:24 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 12:31:25 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.09s)
-2026-09-05 12:31:25 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 12:31:25 | INFO | seed=123
-2026-09-05 12:31:25 | INFO | device=cpu
-2026-09-05 12:31:25 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\dataset
-2026-09-05 12:31:25 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 12:31:25 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 12:31:25 | INFO | split train: 28 mẫu
-2026-09-05 12:31:25 | INFO | split val: 4 mẫu
-2026-09-05 12:31:25 | INFO | split test: 4 mẫu
-2026-09-05 12:31:25 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 12:31:25 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 12:31:25 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-09-05 12:31:25 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 12:31:25 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 12:31:25 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 12:31:25 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.17s)
-2026-09-05 12:31:25 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-05 12:31:25 | INFO | seed=123
-2026-09-05 12:31:25 | INFO | device=cpu
-2026-09-05 12:31:25 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\dataset
-2026-09-05 12:31:25 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-05 12:31:25 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-05 12:31:25 | INFO | split train: 28 mẫu
-2026-09-05 12:31:25 | INFO | split val: 4 mẫu
-2026-09-05 12:31:25 | INFO | split test: 4 mẫu
-2026-09-05 12:31:25 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-05 12:31:25 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-05 12:31:25 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-09-05 12:31:25 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-05 12:31:25 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-05 12:31:25 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-05 12:31:25 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-1\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.11s)
-2026-09-06 08:53:17 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-06 08:53:17 | INFO | seed=123
-2026-09-06 08:53:17 | INFO | device=cuda
-2026-09-06 08:53:17 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
-2026-09-06 08:53:31 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
-2026-09-06 08:53:32 | INFO | tái sử dụng splits: data\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-06 08:53:32 | INFO | split train: 142250 mẫu
-2026-09-06 08:53:32 | INFO | split val: 20322 mẫu
-2026-09-06 08:53:32 | INFO | split test: 40643 mẫu
-2026-09-06 08:53:32 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
-2026-09-06 09:32:30 | INFO | epoch 1/20: train_loss=0.3215 | val_loss=0.2267 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 10:00:57 | INFO | epoch 2/20: train_loss=0.2326 | val_loss=0.1644 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 10:26:28 | INFO | epoch 3/20: train_loss=0.1920 | val_loss=0.1434 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 10:52:31 | INFO | epoch 4/20: train_loss=0.1678 | val_loss=0.1343 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 11:18:56 | INFO | epoch 5/20: train_loss=0.1486 | val_loss=0.1329 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 11:46:59 | INFO | epoch 6/20: train_loss=0.1356 | val_loss=0.1030 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 12:17:17 | INFO | epoch 7/20: train_loss=0.1238 | val_loss=0.1004 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 12:48:15 | INFO | epoch 8/20: train_loss=0.1143 | val_loss=0.0899 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 13:15:30 | INFO | epoch 9/20: train_loss=0.1059 | val_loss=0.0845 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 13:42:10 | INFO | epoch 10/20: train_loss=0.1005 | val_loss=0.0966 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 14:08:46 | INFO | epoch 11/20: train_loss=0.0952 | val_loss=0.0874 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 14:35:27 | INFO | epoch 12/20: train_loss=0.0872 | val_loss=0.0852 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 15:02:08 | INFO | epoch 13/20: train_loss=0.0820 | val_loss=0.0918 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 15:29:26 | INFO | epoch 14/20: train_loss=0.0782 | val_loss=0.0921 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 15:56:18 | INFO | epoch 15/20: train_loss=0.0756 | val_loss=0.0715 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 16:23:14 | INFO | epoch 16/20: train_loss=0.0718 | val_loss=0.0716 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 16:49:23 | INFO | epoch 17/20: train_loss=0.0675 | val_loss=0.0733 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 17:15:33 | INFO | epoch 18/20: train_loss=0.0651 | val_loss=0.0681 (checkpoint TỐT NHẤT đã lưu)
-2026-09-06 17:40:52 | INFO | epoch 19/20: train_loss=0.0610 | val_loss=0.0735 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 18:05:31 | INFO | epoch 20/20: train_loss=0.0592 | val_loss=0.0719 (không cải thiện, bỏ qua checkpoint)
-2026-09-06 18:05:31 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-06 18:05:31 | INFO | epoch cuối: train_loss=0.0592, val_loss=0.07188030433213294
-2026-09-06 18:05:31 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 18 (val_loss=0.0681)
-2026-09-06 18:08:30 | INFO | clean test: f1=0.9822, roc_auc=0.997093342514106
-2026-09-06 18:08:31 | INFO | kết quả đã lưu: results\raw\E07_robust_seed123.json (runtime=33313.37s)
-2026-09-07 02:58:20 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 02:58:20 | INFO | seed=123
-2026-09-07 02:58:20 | INFO | device=cuda
-2026-09-07 02:58:20 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
-2026-09-07 02:58:28 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
-2026-09-07 02:58:29 | INFO | tái sử dụng splits: data\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 02:58:29 | INFO | split train: 142250 mẫu
-2026-09-07 02:58:29 | INFO | split val: 20322 mẫu
-2026-09-07 02:58:29 | INFO | split test: 40643 mẫu
-2026-09-07 02:58:29 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
-2026-09-07 03:25:26 | INFO | epoch 1/20: train_loss=0.3215 | val_loss=0.2267 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 03:52:00 | INFO | epoch 2/20: train_loss=0.2326 | val_loss=0.1644 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 04:18:19 | INFO | epoch 3/20: train_loss=0.1920 | val_loss=0.1434 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 04:44:49 | INFO | epoch 4/20: train_loss=0.1678 | val_loss=0.1343 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 05:11:51 | INFO | epoch 5/20: train_loss=0.1486 | val_loss=0.1329 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 05:38:34 | INFO | epoch 6/20: train_loss=0.1356 | val_loss=0.1030 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 06:05:09 | INFO | epoch 7/20: train_loss=0.1238 | val_loss=0.1004 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 06:31:49 | INFO | epoch 8/20: train_loss=0.1143 | val_loss=0.0899 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 06:58:36 | INFO | epoch 9/20: train_loss=0.1059 | val_loss=0.0845 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 07:25:28 | INFO | epoch 10/20: train_loss=0.1005 | val_loss=0.0966 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 07:45:40 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 07:45:40 | INFO | seed=123
-2026-09-07 07:45:40 | INFO | device=cuda
-2026-09-07 07:45:40 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
-2026-09-07 07:45:44 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
-2026-09-07 07:45:45 | INFO | tái sử dụng splits: data\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 07:45:45 | INFO | split train: 142250 mẫu
-2026-09-07 07:45:45 | INFO | split val: 20322 mẫu
-2026-09-07 07:45:45 | INFO | split test: 40643 mẫu
-2026-09-07 07:45:45 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
-2026-09-07 08:12:25 | INFO | epoch 1/20: train_loss=0.3215 | val_loss=0.2267 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 08:39:05 | INFO | epoch 2/20: train_loss=0.2326 | val_loss=0.1644 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 09:05:46 | INFO | epoch 3/20: train_loss=0.1920 | val_loss=0.1434 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 09:32:42 | INFO | epoch 4/20: train_loss=0.1678 | val_loss=0.1343 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 09:59:49 | INFO | epoch 5/20: train_loss=0.1486 | val_loss=0.1329 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 10:26:42 | INFO | epoch 6/20: train_loss=0.1356 | val_loss=0.1030 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 10:53:36 | INFO | epoch 7/20: train_loss=0.1238 | val_loss=0.1004 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 11:20:25 | INFO | epoch 8/20: train_loss=0.1143 | val_loss=0.0899 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 11:47:24 | INFO | epoch 9/20: train_loss=0.1059 | val_loss=0.0845 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 12:23:28 | INFO | epoch 10/20: train_loss=0.1005 | val_loss=0.0966 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 12:59:03 | INFO | epoch 11/20: train_loss=0.0952 | val_loss=0.0874 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 13:28:55 | INFO | epoch 12/20: train_loss=0.0872 | val_loss=0.0852 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 13:58:48 | INFO | epoch 13/20: train_loss=0.0820 | val_loss=0.0918 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 14:28:59 | INFO | epoch 14/20: train_loss=0.0782 | val_loss=0.0921 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 14:56:39 | INFO | epoch 15/20: train_loss=0.0756 | val_loss=0.0715 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 15:22:57 | INFO | epoch 16/20: train_loss=0.0718 | val_loss=0.0716 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 15:49:54 | INFO | epoch 17/20: train_loss=0.0675 | val_loss=0.0733 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 16:16:11 | INFO | epoch 18/20: train_loss=0.0651 | val_loss=0.0681 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 16:45:29 | INFO | epoch 19/20: train_loss=0.0610 | val_loss=0.0735 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 17:15:45 | INFO | epoch 20/20: train_loss=0.0592 | val_loss=0.0719 (không cải thiện, bỏ qua checkpoint)
-2026-09-07 17:15:45 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed123.pt
-2026-09-07 17:15:45 | INFO | epoch cuối: train_loss=0.0592, val_loss=0.07188030433213294
-2026-09-07 17:15:45 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 18 (val_loss=0.0681)
-2026-09-07 17:19:04 | INFO | clean test: f1=0.9822, roc_auc=0.997093342514106
-2026-09-07 17:19:05 | INFO | kết quả đã lưu: results\raw\E07_robust_seed123.json (runtime=34404.42s)
-2026-09-07 23:44:03 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 23:44:03 | INFO | seed=123
-2026-09-07 23:44:03 | INFO | device=cpu
-2026-09-07 23:44:03 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\dataset
-2026-09-07 23:44:03 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:03 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:03 | INFO | split train: 28 mẫu
-2026-09-07 23:44:03 | INFO | split val: 4 mẫu
-2026-09-07 23:44:03 | INFO | split test: 4 mẫu
-2026-09-07 23:44:03 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:03 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:03 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
-2026-09-07 23:44:03 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
-2026-09-07 23:44:03 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
-2026-09-07 23:44:03 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:04 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.09s)
-2026-09-07 23:44:12 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 23:44:12 | INFO | seed=123
-2026-09-07 23:44:12 | INFO | device=cpu
-2026-09-07 23:44:12 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_end_to_end0\dataset
-2026-09-07 23:44:12 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:12 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:12 | INFO | split train: 28 mẫu
-2026-09-07 23:44:12 | INFO | split val: 4 mẫu
-2026-09-07 23:44:12 | INFO | split test: 4 mẫu
-2026-09-07 23:44:12 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:12 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:12 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
-2026-09-07 23:44:12 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-07 23:44:12 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-07 23:44:12 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:12 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.17s)
-2026-09-07 23:44:12 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 23:44:12 | INFO | seed=123
-2026-09-07 23:44:12 | INFO | device=cpu
-2026-09-07 23:44:12 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reuses_basel0\dataset
-2026-09-07 23:44:12 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:12 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:12 | INFO | split train: 28 mẫu
-2026-09-07 23:44:12 | INFO | split val: 4 mẫu
-2026-09-07 23:44:12 | INFO | split test: 4 mẫu
-2026-09-07 23:44:12 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:12 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:12 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
-2026-09-07 23:44:12 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-07 23:44:12 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-07 23:44:12 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:13 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.1s)
-2026-09-07 23:44:13 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 23:44:13 | INFO | seed=123
-2026-09-07 23:44:13 | INFO | device=cpu
-2026-09-07 23:44:13 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\dataset
-2026-09-07 23:44:13 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:13 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:13 | INFO | split train: 28 mẫu
-2026-09-07 23:44:13 | INFO | split val: 4 mẫu
-2026-09-07 23:44:13 | INFO | split test: 4 mẫu
-2026-09-07 23:44:13 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:13 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:13 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
-2026-09-07 23:44:13 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-07 23:44:13 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-07 23:44:13 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:13 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.18s)
-2026-09-07 23:44:13 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
-2026-09-07 23:44:13 | INFO | seed=123
-2026-09-07 23:44:13 | INFO | device=cpu
-2026-09-07 23:44:13 | INFO | dataset root: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\dataset
-2026-09-07 23:44:13 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
-2026-09-07 23:44:13 | INFO | tái sử dụng splits: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
-2026-09-07 23:44:13 | INFO | split train: 28 mẫu
-2026-09-07 23:44:13 | INFO | split val: 4 mẫu
-2026-09-07 23:44:13 | INFO | split test: 4 mẫu
-2026-09-07 23:44:13 | INFO | model=custom_cnn, params=224449, size=0.86 MB
-2026-09-07 23:44:13 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
-2026-09-07 23:44:13 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
-2026-09-07 23:44:13 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
-2026-09-07 23:44:13 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
-2026-09-07 23:44:13 | INFO | clean test: f1=1.0000, roc_auc=1.0
-2026-09-07 23:44:13 | INFO | kết quả đã lưu: C:\Users\LEGION\AppData\Local\Temp\pytest-of-LEGION\pytest-2\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.11s)
+2026-09-09 20:09:03 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:09:03 | INFO | seed=123
+2026-09-09 20:09:03 | INFO | device=cpu
+2026-09-09 20:09:03 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\dataset
+2026-09-09 20:09:03 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:03 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:03 | INFO | split train: 28 mẫu
+2026-09-09 20:09:03 | INFO | split val: 4 mẫu
+2026-09-09 20:09:03 | INFO | split test: 4 mẫu
+2026-09-09 20:09:03 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:03 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:03 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-09 20:09:03 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
+2026-09-09 20:09:03 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
+2026-09-09 20:09:03 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:03 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.06s)
+2026-09-09 20:09:07 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:09:07 | INFO | seed=123
+2026-09-09 20:09:07 | INFO | device=cpu
+2026-09-09 20:09:07 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_end_to_end0\dataset
+2026-09-09 20:09:07 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:07 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:07 | INFO | split train: 28 mẫu
+2026-09-09 20:09:07 | INFO | split val: 4 mẫu
+2026-09-09 20:09:07 | INFO | split test: 4 mẫu
+2026-09-09 20:09:07 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:07 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:07 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
+2026-09-09 20:09:07 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:09:07 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:09:07 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:07 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.08s)
+2026-09-09 20:09:08 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:09:08 | INFO | seed=123
+2026-09-09 20:09:08 | INFO | device=cpu
+2026-09-09 20:09:08 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reuses_basel0\dataset
+2026-09-09 20:09:08 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:08 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:08 | INFO | split train: 28 mẫu
+2026-09-09 20:09:08 | INFO | split val: 4 mẫu
+2026-09-09 20:09:08 | INFO | split test: 4 mẫu
+2026-09-09 20:09:08 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:08 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:08 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
+2026-09-09 20:09:08 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:09:08 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:09:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:08 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.05s)
+2026-09-09 20:09:08 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:09:08 | INFO | seed=123
+2026-09-09 20:09:08 | INFO | device=cpu
+2026-09-09 20:09:08 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\dataset
+2026-09-09 20:09:08 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:08 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:08 | INFO | split train: 28 mẫu
+2026-09-09 20:09:08 | INFO | split val: 4 mẫu
+2026-09-09 20:09:08 | INFO | split test: 4 mẫu
+2026-09-09 20:09:08 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:08 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:08 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
+2026-09-09 20:09:08 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:09:08 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:09:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:08 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.08s)
+2026-09-09 20:09:08 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:09:08 | INFO | seed=123
+2026-09-09 20:09:08 | INFO | device=cpu
+2026-09-09 20:09:08 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\dataset
+2026-09-09 20:09:08 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:09:08 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:09:08 | INFO | split train: 28 mẫu
+2026-09-09 20:09:08 | INFO | split val: 4 mẫu
+2026-09-09 20:09:08 | INFO | split test: 4 mẫu
+2026-09-09 20:09:08 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:09:08 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:09:08 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
+2026-09-09 20:09:08 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:09:08 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:09:08 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:09:08 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-26\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.07s)
+2026-09-09 20:17:55 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:17:55 | INFO | seed=123
+2026-09-09 20:17:55 | INFO | device=cpu
+2026-09-09 20:17:55 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\dataset
+2026-09-09 20:17:55 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:17:55 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:17:55 | INFO | split train: 28 mẫu
+2026-09-09 20:17:55 | INFO | split val: 4 mẫu
+2026-09-09 20:17:55 | INFO | split test: 4 mẫu
+2026-09-09 20:17:55 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:17:55 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:17:55 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-09 20:17:55 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
+2026-09-09 20:17:55 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
+2026-09-09 20:17:55 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:17:55 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.05s)
+2026-09-09 20:18:00 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:18:00 | INFO | seed=123
+2026-09-09 20:18:00 | INFO | device=cpu
+2026-09-09 20:18:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_end_to_end0\dataset
+2026-09-09 20:18:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:18:00 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:18:00 | INFO | split train: 28 mẫu
+2026-09-09 20:18:00 | INFO | split val: 4 mẫu
+2026-09-09 20:18:00 | INFO | split test: 4 mẫu
+2026-09-09 20:18:00 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:18:00 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:18:00 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
+2026-09-09 20:18:00 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:18:00 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:18:00 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:18:00 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.08s)
+2026-09-09 20:18:00 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:18:00 | INFO | seed=123
+2026-09-09 20:18:00 | INFO | device=cpu
+2026-09-09 20:18:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reuses_basel0\dataset
+2026-09-09 20:18:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:18:00 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:18:00 | INFO | split train: 28 mẫu
+2026-09-09 20:18:00 | INFO | split val: 4 mẫu
+2026-09-09 20:18:00 | INFO | split test: 4 mẫu
+2026-09-09 20:18:00 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:18:00 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:18:00 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
+2026-09-09 20:18:00 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:18:00 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:18:00 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:18:00 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.06s)
+2026-09-09 20:18:00 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:18:00 | INFO | seed=123
+2026-09-09 20:18:00 | INFO | device=cpu
+2026-09-09 20:18:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\dataset
+2026-09-09 20:18:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:18:00 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:18:00 | INFO | split train: 28 mẫu
+2026-09-09 20:18:00 | INFO | split val: 4 mẫu
+2026-09-09 20:18:00 | INFO | split test: 4 mẫu
+2026-09-09 20:18:00 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:18:00 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:18:00 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
+2026-09-09 20:18:00 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:18:00 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:18:00 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:18:00 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.08s)
+2026-09-09 20:18:00 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 20:18:00 | INFO | seed=123
+2026-09-09 20:18:00 | INFO | device=cpu
+2026-09-09 20:18:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\dataset
+2026-09-09 20:18:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 20:18:00 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 20:18:00 | INFO | split train: 28 mẫu
+2026-09-09 20:18:00 | INFO | split val: 4 mẫu
+2026-09-09 20:18:00 | INFO | split test: 4 mẫu
+2026-09-09 20:18:00 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 20:18:00 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 20:18:00 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
+2026-09-09 20:18:00 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 20:18:00 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 20:18:00 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 20:18:00 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-27\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.07s)
+2026-09-09 22:57:26 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 22:57:26 | INFO | seed=123
+2026-09-09 22:57:26 | INFO | device=cpu
+2026-09-09 22:57:26 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\dataset
+2026-09-09 22:57:26 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:26 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:26 | INFO | split train: 28 mẫu
+2026-09-09 22:57:26 | INFO | split val: 4 mẫu
+2026-09-09 22:57:26 | INFO | split test: 4 mẫu
+2026-09-09 22:57:26 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:27 | INFO | epoch 1/1: train_loss=0.6289 | val_loss=0.3053 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:27 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-09 22:57:27 | INFO | epoch cuối: train_loss=0.6289, val_loss=0.30529850721359253
+2026-09-09 22:57:27 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3053)
+2026-09-09 22:57:27 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:27 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\results\E07_robust_seed123.json (runtime=0.07s)
+2026-09-09 22:57:32 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 22:57:32 | INFO | seed=123
+2026-09-09 22:57:32 | INFO | device=cpu
+2026-09-09 22:57:32 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_end_to_end0\dataset
+2026-09-09 22:57:32 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:32 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_end_to_end0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:32 | INFO | split train: 28 mẫu
+2026-09-09 22:57:32 | INFO | split val: 4 mẫu
+2026-09-09 22:57:32 | INFO | split test: 4 mẫu
+2026-09-09 22:57:32 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:32 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:32 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_end_to_end0\checkpoints\E07_robust_seed123.pt
+2026-09-09 22:57:32 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 22:57:32 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 22:57:32 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:32 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_end_to_end0\results\E07_robust_seed123.json (runtime=0.1s)
+2026-09-09 22:57:33 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 22:57:33 | INFO | seed=123
+2026-09-09 22:57:33 | INFO | device=cpu
+2026-09-09 22:57:33 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reuses_basel0\dataset
+2026-09-09 22:57:33 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:33 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reuses_basel0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:33 | INFO | split train: 28 mẫu
+2026-09-09 22:57:33 | INFO | split val: 4 mẫu
+2026-09-09 22:57:33 | INFO | split test: 4 mẫu
+2026-09-09 22:57:33 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:33 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:33 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reuses_basel0\checkpoints_robust\E07_robust_seed123.pt
+2026-09-09 22:57:33 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 22:57:33 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 22:57:33 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:33 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reuses_basel0\results_robust\E07_robust_seed123.json (runtime=0.07s)
+2026-09-09 22:57:33 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 22:57:33 | INFO | seed=123
+2026-09-09 22:57:33 | INFO | device=cpu
+2026-09-09 22:57:33 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\dataset
+2026-09-09 22:57:33 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:33 | INFO | tạo splits mới (subject_disjoint) và lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:33 | INFO | split train: 28 mẫu
+2026-09-09 22:57:33 | INFO | split val: 4 mẫu
+2026-09-09 22:57:33 | INFO | split test: 4 mẫu
+2026-09-09 22:57:33 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:33 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:33 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\checkpoints_a\E07_robust_seed123.pt
+2026-09-09 22:57:33 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 22:57:33 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 22:57:33 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:33 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\results_a\E07_robust_seed123.json (runtime=0.11s)
+2026-09-09 22:57:33 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-09 22:57:33 | INFO | seed=123
+2026-09-09 22:57:33 | INFO | device=cpu
+2026-09-09 22:57:33 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\dataset
+2026-09-09 22:57:33 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-09 22:57:33 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-09 22:57:33 | INFO | split train: 28 mẫu
+2026-09-09 22:57:33 | INFO | split val: 4 mẫu
+2026-09-09 22:57:33 | INFO | split test: 4 mẫu
+2026-09-09 22:57:33 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-09 22:57:33 | INFO | epoch 1/1: train_loss=0.6365 | val_loss=0.3184 (checkpoint TỐT NHẤT đã lưu)
+2026-09-09 22:57:33 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\checkpoints_b\E07_robust_seed123.pt
+2026-09-09 22:57:33 | INFO | epoch cuối: train_loss=0.6365, val_loss=0.31844455003738403
+2026-09-09 22:57:33 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.3184)
+2026-09-09 22:57:33 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-09 22:57:33 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_train_robust_reproducible0\results_b\E07_robust_seed123.json (runtime=0.08s)
+2026-09-10 20:36:16 | INFO | ===== BẮT ĐẦU E07_robust_seed123 (training_mode=robust) =====
+2026-09-10 20:36:16 | INFO | seed=123
+2026-09-10 20:36:16 | INFO | device=cuda
+2026-09-10 20:36:16 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
+2026-09-10 20:36:25 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+2026-09-10 20:36:26 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+2026-09-10 20:36:26 | INFO | split train: 203215 mẫu
+2026-09-10 20:36:26 | INFO | split val: 20773 mẫu
+2026-09-10 20:36:26 | INFO | split test: 20042 mẫu
+2026-09-10 20:36:26 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+2026-09-10 22:06:51 | INFO | epoch 1/20: train_loss=0.2989 | val_loss=0.1844 (checkpoint TỐT NHẤT đã lưu)
+2026-09-10 23:49:35 | INFO | epoch 2/20: train_loss=0.1999 | val_loss=0.1391 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 01:13:29 | INFO | epoch 3/20: train_loss=0.1657 | val_loss=0.1219 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 02:36:50 | INFO | epoch 4/20: train_loss=0.1428 | val_loss=0.1142 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 04:00:03 | INFO | epoch 5/20: train_loss=0.1252 | val_loss=0.0980 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 05:23:13 | INFO | epoch 6/20: train_loss=0.1143 | val_loss=0.1203 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 06:46:45 | INFO | epoch 7/20: train_loss=0.1047 | val_loss=0.0768 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 08:10:29 | INFO | epoch 8/20: train_loss=0.0970 | val_loss=0.0691 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 09:33:58 | INFO | epoch 9/20: train_loss=0.0909 | val_loss=0.0703 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 10:57:28 | INFO | epoch 10/20: train_loss=0.0851 | val_loss=0.0653 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 12:20:52 | INFO | epoch 11/20: train_loss=0.0788 | val_loss=0.0791 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 13:44:11 | INFO | epoch 12/20: train_loss=0.0743 | val_loss=0.0595 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 15:07:43 | INFO | epoch 13/20: train_loss=0.0699 | val_loss=0.0626 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 16:31:06 | INFO | epoch 14/20: train_loss=0.0672 | val_loss=0.0604 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 17:54:31 | INFO | epoch 15/20: train_loss=0.0632 | val_loss=0.0556 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 19:24:26 | INFO | epoch 16/20: train_loss=0.0605 | val_loss=0.0556 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 20:51:52 | INFO | epoch 17/20: train_loss=0.0563 | val_loss=0.0542 (checkpoint TỐT NHẤT đã lưu)
+2026-09-11 22:29:28 | INFO | epoch 18/20: train_loss=0.0544 | val_loss=0.0545 (không cải thiện, bỏ qua checkpoint)
+2026-09-11 23:54:30 | INFO | epoch 19/20: train_loss=0.0520 | val_loss=0.0580 (không cải thiện, bỏ qua checkpoint)
+2026-09-12 01:19:18 | INFO | epoch 20/20: train_loss=0.0501 | val_loss=0.0553 (không cải thiện, bỏ qua checkpoint)
+2026-09-12 01:19:18 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed123.pt
+2026-09-12 01:19:18 | INFO | epoch cuối: train_loss=0.0501, val_loss=0.055251062159168585
+2026-09-12 01:19:18 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 17 (val_loss=0.0542)
+2026-09-12 01:20:57 | INFO | clean test: f1=0.8737, roc_auc=0.9637707536930873
+2026-09-12 01:20:57 | INFO | kết quả đã lưu: results\raw\E07_robust_seed123.json (runtime=103480.99s)

@@ -1,15 +1,5 @@
-2026-08-31 07:19:10 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed123 (degradation evaluation) =====
-2026-08-31 07:19:10 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 07:19:10 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
-2026-08-31 07:20:45 | INFO | degraded test: f1=0.5160, roc_auc=0.906337245923603
-2026-08-31 07:20:46 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed123.json
-2026-08-31 07:25:45 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed123 (degradation evaluation) =====
-2026-08-31 07:25:45 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-08-31 07:25:45 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
-2026-08-31 07:26:56 | INFO | degraded test: f1=0.5160, roc_auc=0.906337245923603
-2026-08-31 07:26:56 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed123.json
-2026-09-06 02:04:44 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed123 (degradation evaluation) =====
-2026-09-06 02:04:44 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
-2026-09-06 02:04:44 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
-2026-09-06 02:08:13 | INFO | degraded test: f1=0.7985, roc_auc=0.9744458473006117
-2026-09-06 02:08:13 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed123.json
+2026-09-12 01:51:17 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed123 (degradation evaluation) =====
+2026-09-12 01:51:17 | INFO | checkpoint: results\checkpoints\E01_baseline_seed123.pt
+2026-09-12 01:51:17 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
+2026-09-12 01:52:35 | INFO | degraded test: f1=0.6679, roc_auc=0.9104028790161716
+2026-09-12 01:52:35 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed123.json

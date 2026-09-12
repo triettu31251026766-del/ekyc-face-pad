@@ -9,6 +9,11 @@ dataset:
 
 split:
   strategy: subject_disjoint
+  # Split seed TÁCH khỏi training seed: mọi training seed DÙNG CHUNG split này
+  # (file celeba_spoof_full_seed123_subject_disjoint.json — train 203,215 /
+  # val 20,773 / test 20,042). KHÔNG đổi khi chạy multi-seed (training seed
+  # truyền qua --seed). Xem handover/PROTOCOL_THUC_HIEN.md.
+  seed: 123
 
 model:
   name: mobilenet_v2
