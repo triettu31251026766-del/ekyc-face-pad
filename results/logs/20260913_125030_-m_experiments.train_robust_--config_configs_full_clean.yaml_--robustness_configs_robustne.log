@@ -1,0 +1,190 @@
+2026-09-13 12:50:52 | INFO | ===== BẮT ĐẦU E07_robust_seed789 (training_mode=robust) =====
+
+2026-09-13 12:50:52 | INFO | seed=789
+
+2026-09-13 12:50:52 | INFO | device=cuda
+
+2026-09-13 12:50:52 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-13 12:51:02 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-13 12:51:02 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-13 12:51:02 | INFO | split train: 142250 mẫu
+
+2026-09-13 12:51:02 | INFO | split val: 20322 mẫu
+
+2026-09-13 12:51:02 | INFO | split test: 40643 mẫu
+
+2026-09-13 12:51:03 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+
+train epoch 1: 100%|██████████| 2223/2223 [23:53<00:00,  1.95batch/s, loss=0.1308]
+                                                                                  
+val epoch 1: 100%|██████████| 318/318 [01:21<00:00,  4.32batch/s, loss=0.2100]
+                                                                              
+epoch 1/20: train_loss=0.3189 | val_loss=0.2387
+
+2026-09-13 13:16:20 | INFO | epoch 1/20: train_loss=0.3189 | val_loss=0.2387 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 2: 100%|██████████| 2223/2223 [23:40<00:00,  1.76batch/s, loss=0.2934]
+                                                                                  
+val epoch 2: 100%|██████████| 318/318 [01:20<00:00,  4.48batch/s, loss=0.1271]
+                                                                              
+epoch 2/20: train_loss=0.2199 | val_loss=0.1714
+
+2026-09-13 13:41:21 | INFO | epoch 2/20: train_loss=0.2199 | val_loss=0.1714 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 3: 100%|██████████| 2223/2223 [23:42<00:00,  1.81batch/s, loss=0.1757]
+                                                                                  
+val epoch 3: 100%|██████████| 318/318 [01:20<00:00,  4.40batch/s, loss=0.1237]
+                                                                              
+epoch 3/20: train_loss=0.1849 | val_loss=0.1341
+
+2026-09-13 14:06:25 | INFO | epoch 3/20: train_loss=0.1849 | val_loss=0.1341 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 4: 100%|██████████| 2223/2223 [23:23<00:00,  2.02batch/s, loss=0.1670]
+                                                                                  
+val epoch 4: 100%|██████████| 318/318 [01:22<00:00,  4.22batch/s, loss=0.1209]
+                                                                              
+epoch 4/20: train_loss=0.1618 | val_loss=0.1265
+
+2026-09-13 14:31:10 | INFO | epoch 4/20: train_loss=0.1618 | val_loss=0.1265 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 5: 100%|██████████| 2223/2223 [23:34<00:00,  1.89batch/s, loss=0.0554]
+                                                                                  
+val epoch 5: 100%|██████████| 318/318 [01:19<00:00,  4.65batch/s, loss=0.0721]
+                                                                              
+epoch 5/20: train_loss=0.1474 | val_loss=0.1240
+
+2026-09-13 14:56:04 | INFO | epoch 5/20: train_loss=0.1474 | val_loss=0.1240 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 6: 100%|██████████| 2223/2223 [23:33<00:00,  1.69batch/s, loss=0.0674]
+                                                                                  
+val epoch 6: 100%|██████████| 318/318 [01:21<00:00,  4.32batch/s, loss=0.1045]
+                                                                              
+epoch 6/20: train_loss=0.1328 | val_loss=0.1037
+
+2026-09-13 15:20:59 | INFO | epoch 6/20: train_loss=0.1328 | val_loss=0.1037 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 7: 100%|██████████| 2223/2223 [23:33<00:00,  1.68batch/s, loss=0.0982]
+                                                                                  
+val epoch 7: 100%|██████████| 318/318 [01:22<00:00,  4.28batch/s, loss=0.0986]
+                                                                              
+epoch 7/20: train_loss=0.1235 | val_loss=0.0961
+
+2026-09-13 15:45:54 | INFO | epoch 7/20: train_loss=0.1235 | val_loss=0.0961 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 8: 100%|██████████| 2223/2223 [23:32<00:00,  1.66batch/s, loss=0.1528]
+                                                                                  
+val epoch 8: 100%|██████████| 318/318 [01:24<00:00,  4.38batch/s, loss=0.1473]
+                                                                              
+epoch 8/20: train_loss=0.1163 | val_loss=0.1000
+
+2026-09-13 16:10:52 | INFO | epoch 8/20: train_loss=0.1163 | val_loss=0.1000 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 9: 100%|██████████| 2223/2223 [23:53<00:00,  1.68batch/s, loss=0.1962]
+                                                                                  
+val epoch 9: 100%|██████████| 318/318 [01:24<00:00,  4.12batch/s, loss=0.1484]
+                                                                              
+epoch 9/20: train_loss=0.1074 | val_loss=0.0884
+
+2026-09-13 16:36:10 | INFO | epoch 9/20: train_loss=0.1074 | val_loss=0.0884 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 10: 100%|██████████| 2223/2223 [24:08<00:00,  1.55batch/s, loss=0.0788]
+                                                                                   
+val epoch 10: 100%|██████████| 318/318 [01:25<00:00,  4.23batch/s, loss=0.1563]
+                                                                               
+epoch 10/20: train_loss=0.1002 | val_loss=0.0884
+
+2026-09-13 17:01:44 | INFO | epoch 10/20: train_loss=0.1002 | val_loss=0.0884 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 11: 100%|██████████| 2223/2223 [24:17<00:00,  1.80batch/s, loss=0.0949]
+                                                                                   
+val epoch 11: 100%|██████████| 318/318 [01:22<00:00,  4.51batch/s, loss=0.1240]
+                                                                               
+epoch 11/20: train_loss=0.0943 | val_loss=0.0921
+
+2026-09-13 17:27:24 | INFO | epoch 11/20: train_loss=0.0943 | val_loss=0.0921 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 12: 100%|██████████| 2223/2223 [24:08<00:00,  1.97batch/s, loss=0.0418]
+                                                                                   
+val epoch 12: 100%|██████████| 318/318 [01:25<00:00,  4.15batch/s, loss=0.0659]
+                                                                               
+epoch 12/20: train_loss=0.0899 | val_loss=0.0861
+
+2026-09-13 17:52:58 | INFO | epoch 12/20: train_loss=0.0899 | val_loss=0.0861 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 13: 100%|██████████| 2223/2223 [24:26<00:00,  1.76batch/s, loss=0.0939]
+                                                                                   
+val epoch 13: 100%|██████████| 318/318 [01:23<00:00,  4.42batch/s, loss=0.0456]
+                                                                               
+epoch 13/20: train_loss=0.0862 | val_loss=0.0827
+
+2026-09-13 18:18:49 | INFO | epoch 13/20: train_loss=0.0862 | val_loss=0.0827 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 14: 100%|██████████| 2223/2223 [24:26<00:00,  1.80batch/s, loss=0.0174]
+                                                                                   
+val epoch 14: 100%|██████████| 318/318 [01:25<00:00,  4.27batch/s, loss=0.0868]
+                                                                               
+epoch 14/20: train_loss=0.0801 | val_loss=0.0892
+
+2026-09-13 18:44:41 | INFO | epoch 14/20: train_loss=0.0801 | val_loss=0.0892 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 15: 100%|██████████| 2223/2223 [23:47<00:00,  1.84batch/s, loss=0.2548]
+                                                                                   
+val epoch 15: 100%|██████████| 318/318 [01:19<00:00,  4.46batch/s, loss=0.0612]
+                                                                               
+epoch 15/20: train_loss=0.0767 | val_loss=0.0719
+
+2026-09-13 19:09:48 | INFO | epoch 15/20: train_loss=0.0767 | val_loss=0.0719 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 16: 100%|██████████| 2223/2223 [23:34<00:00,  1.56batch/s, loss=0.0310]
+                                                                                   
+val epoch 16: 100%|██████████| 318/318 [01:21<00:00,  4.45batch/s, loss=0.0863]
+                                                                               
+epoch 16/20: train_loss=0.0747 | val_loss=0.0785
+
+2026-09-13 19:34:44 | INFO | epoch 16/20: train_loss=0.0747 | val_loss=0.0785 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 17: 100%|██████████| 2223/2223 [23:45<00:00,  1.71batch/s, loss=0.0572]
+                                                                                   
+val epoch 17: 100%|██████████| 318/318 [01:20<00:00,  4.34batch/s, loss=0.0525]
+                                                                               
+epoch 17/20: train_loss=0.0703 | val_loss=0.0935
+
+2026-09-13 19:59:50 | INFO | epoch 17/20: train_loss=0.0703 | val_loss=0.0935 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 18: 100%|██████████| 2223/2223 [23:31<00:00,  1.85batch/s, loss=0.1024]
+                                                                                   
+val epoch 18: 100%|██████████| 318/318 [01:20<00:00,  4.31batch/s, loss=0.0736]
+                                                                               
+epoch 18/20: train_loss=0.0663 | val_loss=0.0798
+
+2026-09-13 20:24:41 | INFO | epoch 18/20: train_loss=0.0663 | val_loss=0.0798 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 19: 100%|██████████| 2223/2223 [23:41<00:00,  1.34batch/s, loss=0.0276]
+                                                                                   
+val epoch 19: 100%|██████████| 318/318 [01:21<00:00,  4.26batch/s, loss=0.0665]
+                                                                               
+epoch 19/20: train_loss=0.0645 | val_loss=0.0752
+
+2026-09-13 20:49:45 | INFO | epoch 19/20: train_loss=0.0645 | val_loss=0.0752 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 20: 100%|██████████| 2223/2223 [23:47<00:00,  1.86batch/s, loss=0.0112]
+                                                                                   
+val epoch 20: 100%|██████████| 318/318 [01:18<00:00,  4.34batch/s, loss=0.0387]
+                                                                               
+epoch 20/20: train_loss=0.0607 | val_loss=0.0738
+
+2026-09-13 21:14:50 | INFO | epoch 20/20: train_loss=0.0607 | val_loss=0.0738 (không cải thiện, bỏ qua checkpoint)
+
+2026-09-13 21:14:51 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed789.pt
+
+2026-09-13 21:14:51 | INFO | epoch cuối: train_loss=0.0607, val_loss=0.07378752099935047
+
+2026-09-13 21:14:51 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 15 (val_loss=0.0719)
+
+2026-09-13 21:17:35 | INFO | clean test: f1=0.9831, roc_auc=0.9969811694769896
+
+2026-09-13 21:17:36 | INFO | kết quả đã lưu: results\raw\E07_robust_seed789.json (runtime=30403.33s)
+

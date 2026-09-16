@@ -1,0 +1,5 @@
+2026-09-15 14:29:19 | INFO | ===== BẮT ĐẦU E04_blurmedium_seed456 (degradation evaluation) =====
+2026-09-15 14:29:19 | INFO | checkpoint: results\checkpoints\E01_baseline_seed456.pt
+2026-09-15 14:29:19 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-15 14:32:11 | INFO | degraded test: f1=0.9134, roc_auc=0.9498684979067346
+2026-09-15 14:32:11 | INFO | kết quả đã lưu: results\raw\E04_blurmedium_seed456.json

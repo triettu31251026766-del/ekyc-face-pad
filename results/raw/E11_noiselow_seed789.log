@@ -1,0 +1,5 @@
+2026-09-14 18:03:27 | INFO | ===== BẮT ĐẦU E11_noiselow_seed789 (degradation evaluation) =====
+2026-09-14 18:03:27 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-14 18:03:27 | INFO | degradation: {'name': 'noise', 'std': 0.005}
+2026-09-14 18:12:07 | INFO | degraded test: f1=0.9800, roc_auc=0.9964737070746413
+2026-09-14 18:12:07 | INFO | kết quả đã lưu: results\raw\E11_noiselow_seed789.json

@@ -1,0 +1,5 @@
+2026-09-14 17:40:26 | INFO | ===== BẮT ĐẦU E09_resize50_seed789 (degradation evaluation) =====
+2026-09-14 17:40:26 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-14 17:40:26 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
+2026-09-14 17:45:26 | INFO | degraded test: f1=0.9779, roc_auc=0.995206061069487
+2026-09-14 17:45:27 | INFO | kết quả đã lưu: results\raw\E09_resize50_seed789.json

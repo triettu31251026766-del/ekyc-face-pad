@@ -1,0 +1,35 @@
+2026-09-15 17:18:39 | INFO | ===== BẮT ĐẦU E07_robust_seed101 (training_mode=robust) =====
+2026-09-15 17:18:39 | INFO | seed=101
+2026-09-15 17:18:39 | INFO | device=cuda
+2026-09-15 17:18:39 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
+2026-09-15 17:18:44 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+2026-09-15 17:18:45 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+2026-09-15 17:18:45 | INFO | split train: 142250 mẫu
+2026-09-15 17:18:45 | INFO | split val: 20322 mẫu
+2026-09-15 17:18:45 | INFO | split test: 40643 mẫu
+2026-09-15 17:18:45 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+2026-09-15 17:52:01 | INFO | epoch 1/20: train_loss=0.3237 | val_loss=0.2240 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 18:28:19 | INFO | epoch 2/20: train_loss=0.2289 | val_loss=0.1713 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 18:53:36 | INFO | epoch 3/20: train_loss=0.1924 | val_loss=0.1400 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 19:19:21 | INFO | epoch 4/20: train_loss=0.1668 | val_loss=0.1323 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 19:45:19 | INFO | epoch 5/20: train_loss=0.1517 | val_loss=0.1153 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 20:11:03 | INFO | epoch 6/20: train_loss=0.1372 | val_loss=0.1086 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 20:36:27 | INFO | epoch 7/20: train_loss=0.1279 | val_loss=0.1004 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 21:01:58 | INFO | epoch 8/20: train_loss=0.1198 | val_loss=0.0974 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 21:28:01 | INFO | epoch 9/20: train_loss=0.1108 | val_loss=0.0930 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 21:54:30 | INFO | epoch 10/20: train_loss=0.1046 | val_loss=0.0885 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 22:21:38 | INFO | epoch 11/20: train_loss=0.0993 | val_loss=0.0841 (checkpoint TỐT NHẤT đã lưu)
+2026-09-15 22:48:50 | INFO | epoch 12/20: train_loss=0.0939 | val_loss=0.0859 (không cải thiện, bỏ qua checkpoint)
+2026-09-15 23:15:01 | INFO | epoch 13/20: train_loss=0.0877 | val_loss=0.0861 (không cải thiện, bỏ qua checkpoint)
+2026-09-15 23:41:08 | INFO | epoch 14/20: train_loss=0.0827 | val_loss=0.0840 (checkpoint TỐT NHẤT đã lưu)
+2026-09-16 00:06:38 | INFO | epoch 15/20: train_loss=0.0792 | val_loss=0.0844 (không cải thiện, bỏ qua checkpoint)
+2026-09-16 00:32:05 | INFO | epoch 16/20: train_loss=0.0758 | val_loss=0.0729 (checkpoint TỐT NHẤT đã lưu)
+2026-09-16 00:57:40 | INFO | epoch 17/20: train_loss=0.0730 | val_loss=0.0778 (không cải thiện, bỏ qua checkpoint)
+2026-09-16 01:23:22 | INFO | epoch 18/20: train_loss=0.0685 | val_loss=0.0692 (checkpoint TỐT NHẤT đã lưu)
+2026-09-16 01:49:00 | INFO | epoch 19/20: train_loss=0.0652 | val_loss=0.0724 (không cải thiện, bỏ qua checkpoint)
+2026-09-16 02:15:01 | INFO | epoch 20/20: train_loss=0.0616 | val_loss=0.0688 (checkpoint TỐT NHẤT đã lưu)
+2026-09-16 02:15:01 | INFO | hoàn tất huấn luyện 20 epoch, checkpoint: results\checkpoints\E07_robust_seed101.pt
+2026-09-16 02:15:01 | INFO | epoch cuối: train_loss=0.0616, val_loss=0.06882059646645888
+2026-09-16 02:15:01 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 20 (val_loss=0.0688)
+2026-09-16 02:17:55 | INFO | clean test: f1=0.9829, roc_auc=0.9965938087513331
+2026-09-16 02:17:56 | INFO | kết quả đã lưu: results\raw\E07_robust_seed101.json (runtime=32356.26s)

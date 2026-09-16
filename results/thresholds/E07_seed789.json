@@ -1,0 +1,8 @@
+{
+  "checkpoint": "C:\\Users\\LEGION\\Desktop\\New folder\\ekyc-face-pad\\results\\checkpoints\\E07_robust_seed789.pt",
+  "seed": 789,
+  "threshold": 0.5750000000000001,
+  "validation_acer": 0.028190189153048016,
+  "validation_apcer": 0.024618377731218197,
+  "validation_bpcer": 0.03176200057487784
+}

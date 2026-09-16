@@ -1,0 +1,5 @@
+2026-09-14 16:34:45 | INFO | ===== BẮT ĐẦU E06_brightnessnormal_seed789 (degradation evaluation) =====
+2026-09-14 16:34:45 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
+2026-09-14 16:34:45 | INFO | degradation: {'name': 'brightness', 'factor': 1.0}
+2026-09-14 16:37:10 | INFO | degraded test: f1=0.9865, roc_auc=0.9980077387594408
+2026-09-14 16:37:10 | INFO | kết quả đã lưu: results\raw\E06_brightnessnormal_seed789.json

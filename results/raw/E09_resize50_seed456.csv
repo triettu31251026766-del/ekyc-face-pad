@@ -1,0 +1,2 @@
+experiment_id,seed,dataset,split_strategy,model,training_mode,degradation_name,degradation_parameters,threshold,accuracy,precision,recall,f1,roc_auc,pr_auc,apcer,bpcer,acer,parameter_count,model_size_mb,runtime_seconds
+E09_resize50_seed456,456,celeba_spoof_full,subject_disjoint,mobilenet_v2,clean,resize,{'scale': 0.5},0.685,0.9715326132421327,0.978000525584713,0.9785515738862595,0.9782759721361648,0.995626443728378,0.9975226306905838,0.021448426113740517,0.0417944511803723,0.03162143864705641,2225153,8.6188,204.18

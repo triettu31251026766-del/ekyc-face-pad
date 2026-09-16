@@ -1,0 +1,5 @@
+2026-09-14 17:59:58 | INFO | ===== BẮT ĐẦU E10_blurstrong_seed789 (degradation evaluation) =====
+2026-09-14 17:59:58 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-14 17:59:58 | INFO | degradation: {'name': 'blur', 'kernel_size': 11, 'sigma': 3.0}
+2026-09-14 18:03:27 | INFO | degraded test: f1=0.9676, roc_auc=0.9911463363997544
+2026-09-14 18:03:27 | INFO | kết quả đã lưu: results\raw\E10_blurstrong_seed789.json

@@ -1,0 +1,5 @@
+2026-09-14 15:28:47 | INFO | ===== BẮT ĐẦU E02_jpeg70_seed789 (degradation evaluation) =====
+2026-09-14 15:28:47 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
+2026-09-14 15:28:47 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-14 15:32:54 | INFO | degraded test: f1=0.9658, roc_auc=0.9961273451446407
+2026-09-14 15:32:54 | INFO | kết quả đã lưu: results\raw\E02_jpeg70_seed789.json

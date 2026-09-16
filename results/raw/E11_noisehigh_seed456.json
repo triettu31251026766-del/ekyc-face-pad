@@ -1,0 +1,35 @@
+{
+  "experiment_id": "E11_noisehigh_seed456",
+  "seed": 456,
+  "dataset": "celeba_spoof_full",
+  "split_strategy": "subject_disjoint",
+  "model": "mobilenet_v2",
+  "training_mode": "clean",
+  "degradation_name": "noise",
+  "degradation_parameters": {
+    "std": 0.03
+  },
+  "threshold": 0.685,
+  "accuracy": 0.967497478040499,
+  "precision": 0.9843779913466325,
+  "recall": 0.9657050559687477,
+  "f1": 0.9749521227175335,
+  "roc_auc": 0.9955666996409128,
+  "pr_auc": 0.9974808727751999,
+  "apcer": 0.03429494403125235,
+  "bpcer": 0.0290992083303616,
+  "acer": 0.03169707618080697,
+  "parameter_count": 2225153,
+  "model_size_mb": 8.6188,
+  "environment": {
+    "python_version": "3.14.7",
+    "torch_version": "2.14.0+cu130",
+    "torchvision_version": "0.29.0+cu130",
+    "numpy_version": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "cuda_available": true,
+    "git_commit": "577c0c89a5b320f1ce3544b49102c12fdcba7905"
+  },
+  "runtime_seconds": 509.15
+}

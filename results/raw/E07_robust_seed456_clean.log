@@ -1,0 +1,4 @@
+2026-09-15 15:09:13 | INFO | ===== BẮT ĐẦU E07_robust_seed456_clean (clean evaluation) =====
+2026-09-15 15:09:13 | INFO | checkpoint: results\checkpoints\E07_robust_seed456.pt
+2026-09-15 15:11:37 | INFO | clean test: f1=0.9805, roc_auc=0.9967813353432188
+2026-09-15 15:11:38 | INFO | kết quả đã lưu: results\raw\E07_robust_seed456_clean.json

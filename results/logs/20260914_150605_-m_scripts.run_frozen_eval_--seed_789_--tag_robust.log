@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\scripts\run_frozen_eval.py", line 64, in <module>
+
+    main()
+
+    ~~~~^^
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\scripts\run_frozen_eval.py", line 41, in main
+
+    raise FileNotFoundError(
+
+    ...<2 lines>...
+
+    )
+
+FileNotFoundError: threshold không tồn tại: results\thresholds\E07_seed789.json. Hãy chạy experiments.select_threshold trước.
+

@@ -1,0 +1,36 @@
+{
+  "experiment_id": "E04_blurlight_seed456",
+  "seed": 456,
+  "dataset": "celeba_spoof_full",
+  "split_strategy": "subject_disjoint",
+  "model": "mobilenet_v2",
+  "training_mode": "clean",
+  "degradation_name": "blur",
+  "degradation_parameters": {
+    "kernel_size": 3,
+    "sigma": 0.6
+  },
+  "threshold": 0.62,
+  "accuracy": 0.9728120463548459,
+  "precision": 0.9781867246355084,
+  "recall": 0.9803545939448577,
+  "f1": 0.9792694595050935,
+  "roc_auc": 0.9955931659461555,
+  "pr_auc": 0.9974077244620658,
+  "apcer": 0.019645406055142364,
+  "bpcer": 0.041509164824192285,
+  "acer": 0.030577285439667326,
+  "parameter_count": 2225153,
+  "model_size_mb": 8.6188,
+  "environment": {
+    "python_version": "3.14.7",
+    "torch_version": "2.14.0+cu130",
+    "torchvision_version": "0.29.0+cu130",
+    "numpy_version": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
+    "cuda_available": true,
+    "git_commit": "577c0c89a5b320f1ce3544b49102c12fdcba7905"
+  },
+  "runtime_seconds": 169.05
+}

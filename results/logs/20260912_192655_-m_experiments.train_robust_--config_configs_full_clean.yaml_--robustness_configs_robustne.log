@@ -1,0 +1,214 @@
+2026-09-12 19:27:05 | INFO | ===== BẮT ĐẦU E07_robust_seed789 (training_mode=robust) =====
+
+2026-09-12 19:27:05 | INFO | seed=789
+
+2026-09-12 19:27:05 | INFO | device=cuda
+
+2026-09-12 19:27:05 | INFO | dataset root: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-12 19:27:10 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-12 19:27:11 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-12 19:27:11 | INFO | split train: 142250 mẫu
+
+2026-09-12 19:27:11 | INFO | split val: 20322 mẫu
+
+2026-09-12 19:27:11 | INFO | split test: 40643 mẫu
+
+2026-09-12 19:27:11 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+
+train epoch 1: 100%|██████████| 2223/2223 [24:39<00:00,  1.86batch/s, loss=0.1308]
+                                                                                  
+val epoch 1: 100%|██████████| 318/318 [01:25<00:00,  4.03batch/s, loss=0.2100]
+                                                                              
+epoch 1/20: train_loss=0.3189 | val_loss=0.2387
+
+2026-09-12 19:53:17 | INFO | epoch 1/20: train_loss=0.3189 | val_loss=0.2387 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 2: 100%|██████████| 2223/2223 [24:54<00:00,  1.69batch/s, loss=0.2934]
+                                                                                  
+val epoch 2: 100%|██████████| 318/318 [01:25<00:00,  4.24batch/s, loss=0.1271]
+                                                                              
+epoch 2/20: train_loss=0.2199 | val_loss=0.1714
+
+2026-09-12 20:19:37 | INFO | epoch 2/20: train_loss=0.2199 | val_loss=0.1714 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 3: 100%|██████████| 2223/2223 [24:39<00:00,  1.77batch/s, loss=0.1757]
+                                                                                  
+val epoch 3: 100%|██████████| 318/318 [01:24<00:00,  4.32batch/s, loss=0.1237]
+                                                                              
+epoch 3/20: train_loss=0.1849 | val_loss=0.1341
+
+2026-09-12 20:45:40 | INFO | epoch 3/20: train_loss=0.1849 | val_loss=0.1341 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 4: 100%|██████████| 2223/2223 [24:24<00:00,  1.91batch/s, loss=0.1670]
+                                                                                  
+val epoch 4: 100%|██████████| 318/318 [01:26<00:00,  4.12batch/s, loss=0.1209]
+                                                                              
+epoch 4/20: train_loss=0.1618 | val_loss=0.1265
+
+2026-09-12 21:11:31 | INFO | epoch 4/20: train_loss=0.1618 | val_loss=0.1265 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 5: 100%|██████████| 2223/2223 [24:24<00:00,  1.85batch/s, loss=0.0554]
+                                                                                  
+val epoch 5: 100%|██████████| 318/318 [01:25<00:00,  4.18batch/s, loss=0.0721]
+                                                                              
+epoch 5/20: train_loss=0.1474 | val_loss=0.1240
+
+2026-09-12 21:37:21 | INFO | epoch 5/20: train_loss=0.1474 | val_loss=0.1240 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 6: 100%|██████████| 2223/2223 [24:30<00:00,  1.63batch/s, loss=0.0674]
+                                                                                  
+val epoch 6: 100%|██████████| 318/318 [01:26<00:00,  4.14batch/s, loss=0.1045]
+                                                                              
+epoch 6/20: train_loss=0.1328 | val_loss=0.1037
+
+2026-09-12 22:03:18 | INFO | epoch 6/20: train_loss=0.1328 | val_loss=0.1037 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 7: 100%|██████████| 2223/2223 [24:49<00:00,  1.57batch/s, loss=0.0982]
+                                                                                  
+val epoch 7: 100%|██████████| 318/318 [01:26<00:00,  4.08batch/s, loss=0.0986]
+                                                                              
+epoch 7/20: train_loss=0.1235 | val_loss=0.0961
+
+2026-09-12 22:29:34 | INFO | epoch 7/20: train_loss=0.1235 | val_loss=0.0961 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 8: 100%|██████████| 2223/2223 [24:44<00:00,  1.63batch/s, loss=0.1528]
+                                                                                  
+val epoch 8: 100%|██████████| 318/318 [01:25<00:00,  4.19batch/s, loss=0.1473]
+                                                                              
+epoch 8/20: train_loss=0.1163 | val_loss=0.1000
+
+2026-09-12 22:55:44 | INFO | epoch 8/20: train_loss=0.1163 | val_loss=0.1000 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 9: 100%|██████████| 2223/2223 [24:55<00:00,  1.67batch/s, loss=0.1962]
+                                                                                  
+val epoch 9: 100%|██████████| 318/318 [01:25<00:00,  4.07batch/s, loss=0.1484]
+                                                                              
+epoch 9/20: train_loss=0.1074 | val_loss=0.0884
+
+2026-09-12 23:22:05 | INFO | epoch 9/20: train_loss=0.1074 | val_loss=0.0884 (checkpoint TỐT NHẤT đã lưu)
+
+train epoch 10: 100%|██████████| 2223/2223 [25:19<00:00,  1.44batch/s, loss=0.0788]
+                                                                                   
+val epoch 10: 100%|██████████| 318/318 [01:28<00:00,  4.02batch/s, loss=0.1563]
+                                                                               
+epoch 10/20: train_loss=0.1002 | val_loss=0.0884
+
+2026-09-12 23:48:52 | INFO | epoch 10/20: train_loss=0.1002 | val_loss=0.0884 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 11: 100%|██████████| 2223/2223 [26:10<00:00,  1.74batch/s, loss=0.0949]
+                                                                                   
+val epoch 11: 100%|██████████| 318/318 [01:27<00:00,  4.08batch/s, loss=0.1240]
+                                                                               
+epoch 11/20: train_loss=0.0943 | val_loss=0.0921
+
+2026-09-13 00:16:31 | INFO | epoch 11/20: train_loss=0.0943 | val_loss=0.0921 (không cải thiện, bỏ qua checkpoint)
+
+train epoch 12:  37%|███▋      | 828/2223 [09:25<15:13,  1.53batch/s, loss=0.0710]
+                                                                                  
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\experiments\train_robust.py", line 101, in <module>
+
+    main()
+
+    ~~~~^^
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\experiments\train_robust.py", line 97, in main
+
+    run(config, robustness_config)
+
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\experiments\train_robust.py", line 70, in run
+
+    return train_and_evaluate(
+
+        full_config,
+
+    ...<3 lines>...
+
+        checkpoints_dir=checkpoints_dir,
+
+    )
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\experiments\_common.py", line 217, in train_and_evaluate
+
+    history = train_model(
+
+        model,
+
+    ...<6 lines>...
+
+        on_epoch_end=save_checkpoint,
+
+    )
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\train.py", line 129, in train_model
+
+    train_loss = train_one_epoch(model, train_loader, optimizer, loss_fn, device,
+
+                                 epoch=epoch)
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\train.py", line 69, in train_one_epoch
+
+    for batch in progress:
+
+                 ^^^^^^^^
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\tqdm\std.py", line 1187, in __iter__
+
+    for obj in iterable:
+
+               ^^^^^^^^
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\dataloader.py", line 725, in __next__
+
+    data = self._next_data()
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\dataloader.py", line 785, in _next_data
+
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 54, in fetch
+
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+
+            ~~~~~~~~~~~~^^^^^
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\dataset.py", line 78, in __getitem__
+
+    image = self.transform(image)
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torchvision\transforms\transforms.py", line 95, in __call__
+
+    img = t(img)
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torchvision\transforms\transforms.py", line 487, in __call__
+
+    return self.lambd(img)
+
+           ~~~~~~~~~~^^^^^
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\robustness.py", line 131, in apply_training_quality_augmentation
+
+    image = _apply_one(name, image, spec)
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\robustness.py", line 173, in _apply_one
+
+    return gaussian_noise(image, std, seed=noise_seed)
+
+  File "C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\src\degradation.py", line 183, in gaussian_noise
+
+    return Image.fromarray((noisy * 255.0).round().astype(np.uint8))
+
+                           ~~~~~~~~~~~~~~~~~~~~~^^
+
+numpy._core._exceptions._ArrayMemoryError: Unable to allocate 303. MiB for an array with shape (4358, 3040, 3) and data type float64
+
