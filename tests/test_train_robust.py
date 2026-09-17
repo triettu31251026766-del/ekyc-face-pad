@@ -39,7 +39,7 @@ def _base_config(dataset_root):
     return {
         "seed": 123,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
-        "split": {"strategy": "subject_disjoint"},
+        "split": {"strategy": "subject_disjoint", "require_existing": False},
         "model": {"name": "custom_cnn", "image_size": 32},
         "training": {"epochs": 1, "batch_size": 8,
                      "learning_rate": 0.001, "weight_decay": 0.00001},

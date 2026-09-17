@@ -12,6 +12,8 @@ split:
   # (image-level split, xem handover/PROTOCOL_THUC_HIEN.md). KHÔNG đổi khi
   # chạy multi-seed (training seed truyền qua --seed).
   seed: 123
+  # BẮT BUỘC file split phải tồn tại: thiếu -> DỪNG (không tự tạo split mới).
+  require_existing: true
 
 model:
   name: mobilenet_v2

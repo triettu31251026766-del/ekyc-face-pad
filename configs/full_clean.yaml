@@ -14,6 +14,9 @@ split:
   # val 20,773 / test 20,042). KHÔNG đổi khi chạy multi-seed (training seed
   # truyền qua --seed). Xem handover/PROTOCOL_THUC_HIEN.md.
   seed: 123
+  # BẮT BUỘC file split phải tồn tại: thiếu -> DỪNG (không tự tạo split mới,
+  # tránh test set khác nhau giữa các máy). Kiểm tra: python -m scripts.check_data
+  require_existing: true
 
 model:
   name: mobilenet_v2

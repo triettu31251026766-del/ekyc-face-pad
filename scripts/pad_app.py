@@ -246,6 +246,22 @@ def step_report() -> int:
     return run_cmd(cmd)
 
 
+def check_data_ok() -> bool:
+    """Chạy scripts.check_data để xác minh dataset + split trước khi train."""
+    print("\n[kiểm tra dữ liệu trước khi train]")
+    proc = subprocess.run([sys.executable, "-m", "scripts.check_data"],
+                          cwd=str(ROOT), env=_env())
+    return proc.returncode == 0
+
+
+def _split_line() -> str:
+    """Dòng trạng thái ngắn cho file split (không load file nặng)."""
+    p = _p("data", "splits", "celeba_spoof_full_seed123_subject_disjoint.json")
+    if not p.is_file():
+        return "THIẾU file split -> chạy scripts.download_celeba_full hoặc copy từ máy khác"
+    return (f"có ({p.stat().st_size / 1e6:.0f} MB) — xác minh: python -m scripts.check_data")
+
+
 # --------------------------------------------------------------------------- #
 # trạng thái
 # --------------------------------------------------------------------------- #
@@ -274,6 +290,7 @@ def _fmt_thr(seed: int, model_id: str) -> str:
 def do_status() -> None:
     print("\n=== TRẠNG THÁI THÍ NGHIỆM (5 seed) ===")
     print(f"config: {CONFIG} | robustness: {ROBUSTNESS_CONFIG}")
+    print(f"split : {_split_line()}")
     done = 0
     for seed in SEEDS:
         e01_ck = _ckpt_info(seed, "E01")
@@ -309,6 +326,11 @@ def do_status() -> None:
 # pipeline cho 1 seed
 # --------------------------------------------------------------------------- #
 def pipeline_seed(seed: int, skip_done: bool = True) -> int:
+    if not check_data_ok():
+        print("!!! DỮ LIỆU KHÔNG ĐẠT (dataset/split sai hoặc thiếu) — dừng pipeline.")
+        print("    Sửa theo hướng dẫn ở trên rồi chạy lại. KHÔNG train với dữ liệu sai.")
+        return 1
+
     steps = []
     if not (skip_done and _train_done(seed, "E01")):
         steps.append(("train E01", lambda: step_train(seed, "E01")))

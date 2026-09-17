@@ -270,8 +270,12 @@ def main() -> None:
     print(json.dumps(report, ensure_ascii=False, indent=2))
     print(f"Tổng thời gian: {total_min:.0f} phút")
     print(f"Splits đã lưu: {split_path}")
-    print("Bước tiếp theo: python -m experiments.train_baseline "
-          "--config configs/full_clean.yaml")
+    from src.data import splits_fingerprint
+
+    print("Fingerprint (đối chiếu với configs/split_manifest.json):")
+    print(json.dumps(splits_fingerprint(splits), ensure_ascii=False, indent=2))
+    print("Bước tiếp theo: python -m scripts.check_data  (xác minh dataset + split)")
+    print("Sau đó: python -m experiments.train_baseline --config configs/full_clean.yaml")
 
 
 if __name__ == "__main__":

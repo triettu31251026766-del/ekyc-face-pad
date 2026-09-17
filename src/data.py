@@ -18,6 +18,7 @@ Cách dùng:
 
 from __future__ import annotations
 
+import hashlib
 import json
 import random
 from dataclasses import dataclass, field, asdict
@@ -378,14 +379,18 @@ def create_splits(
 def save_splits(splits: dict, path: str | Path) -> None:
     """Lưu thông tin splits ra tệp JSON (đường dẫn, nhãn, subject, attack_type).
 
-    Tệp lưu bao gồm phần "meta" (seed, strategy, counts) để có thể tái lập
-    và kiểm tra chiến lược split khi viết kết quả thí nghiệm.
+    Tệp lưu bao gồm phần "meta" (seed, strategy, counts, fingerprint) để có thể
+    tái lập và xác minh split giống nhau giữa các máy (xem scripts/check_data.py).
     """
     path = Path(path)
     path.parent.mkdir(parents=True, exist_ok=True)
 
+    meta = dict(splits["meta"])
+    # Dấu vân tay nội dung split (subject_id + label) — không phụ thuộc đường dẫn.
+    meta.setdefault("fingerprint", splits_fingerprint(splits))
+
     data = {
-        "meta": dict(splits["meta"]),
+        "meta": meta,
         "created_at": datetime.now().isoformat(timespec="seconds"),
         "splits": {
             name: [asdict(sample) for sample in splits[name]]
@@ -394,6 +399,27 @@ def save_splits(splits: dict, path: str | Path) -> None:
     }
     with path.open("w", encoding="utf-8") as handle:
         json.dump(data, handle, ensure_ascii=False, indent=2)
+
+
+def splits_fingerprint(splits: dict) -> dict:
+    """Tính "dấu vân tay" (SHA-256) cho từng split — dùng để xác minh 2 máy giống nhau.
+
+    CHỈ hash trên (subject_id, label) đã sắp xếp, KHÔNG đưa path vào hash
+    (path tuyệt đối khác nhau giữa các máy nên không dùng để so sánh được).
+
+    Args:
+        splits: dict {"train": [...], "val": [...], "test": [...]} (như create_splits).
+
+    Returns:
+        {"counts": {...}, "sha256": {...}} — mỗi split một hash hex.
+    """
+    result: dict[str, dict[str, Any]] = {"counts": {}, "sha256": {}}
+    for name in ("train", "val", "test"):
+        items = sorted(f"{sample.subject_id}:{int(sample.label)}" for sample in splits[name])
+        digest = hashlib.sha256("\n".join(items).encode("utf-8")).hexdigest()
+        result["counts"][name] = len(items)
+        result["sha256"][name] = digest
+    return result
 
 
 def load_splits(path: str | Path) -> dict:

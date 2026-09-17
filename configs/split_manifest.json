@@ -1,0 +1,18 @@
+{
+  "dataset": "celeba_spoof_full",
+  "source": "Ar4ikov/celebA_spoof",
+  "split_file": "data/splits/celeba_spoof_full_seed123_subject_disjoint.json",
+  "protocol": "official train/valid/test split cua mirror",
+  "note": "Fingerprint tinh tren (subject_id, label) da sap xep — KHONG phu thuoc duong dan tuyet doi. Dung de xac minh 2 may co CUNG split truoc khi train. Kiem tra: python -m scripts.check_data",
+  "expected_total_images": 244030,
+  "counts": {
+    "train": 203215,
+    "val": 20773,
+    "test": 20042
+  },
+  "sha256": {
+    "train": "68aeb66e2e3839961e52d4840431871dfdfaaca71cf9add0883bc3dd0a891448",
+    "val": "b1021adc6aabc5938b327a35139dd1a366f9895a7e90912a829ccf0442133e93",
+    "test": "868734ed0c581a555253f4a04006377258b9a7a5c03578d4c198829ff542e3bc"
+  }
+}

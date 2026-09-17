@@ -14,6 +14,7 @@ Các script eval_clean.py / eval_degradation.py dùng chung các hàm ở đây.
 
 from __future__ import annotations
 
+import logging
 import time
 from pathlib import Path
 
@@ -46,6 +47,51 @@ from src.utils import (
     save_csv,
     save_json,
 )
+
+
+def _resolve_splits(config: dict, samples: list, splits_dir: str | Path,
+                    logger=None) -> dict:
+    """Nạp split đã lưu; TUYỆT ĐỐI không tự tạo split mới trừ khi được cho phép.
+
+    Lý do: tự tạo split ngẫu nhiên trong lúc train sẽ khiến test set khác nhau
+    giữa các máy / các lần chạy -> kết quả KHÔNG so sánh được (đã từng xảy ra
+    với seed 456/789). Mặc định `split.require_existing = true`.
+
+    Chỉ khi config ghi rõ `split.require_existing: false` mới tạo split mới
+    (kèm cảnh báo rõ ràng — dành cho thử nghiệm, không dùng cho kết quả chính).
+    """
+    if logger is None:
+        logger = logging.getLogger("experiments._common")
+
+    seed = config["seed"]
+    split_seed = int(config["split"].get("seed", seed))
+    strategy = config["split"]["strategy"]
+    splits_dir = Path(splits_dir)
+    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
+
+    if splits_path.is_file():
+        # Tái sử dụng splits đã lưu -> mọi thí nghiệm dùng CÙNG test set (mục 24).
+        logger.info(f"tái sử dụng splits: {splits_path}")
+        return load_splits(splits_path)
+
+    if bool(config["split"].get("require_existing", True)):
+        raise FileNotFoundError(
+            f"KHÔNG tìm thấy file split: {splits_path}\n"
+            f"DỪNG LẠI để tránh vô tình tạo split mới (test set sẽ khác giữa các máy).\n"
+            f"Cách xử lý:\n"
+            f"  1) Chạy: python -m scripts.download_celeba_full  (tạo dataset + split chuẩn)\n"
+            f"  2) Hoặc copy file split từ máy đã train, rồi kiểm tra bằng:\n"
+            f"     python -m scripts.check_data"
+        )
+
+    logger.warning(
+        "⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, "
+        "KHÔNG so sánh được với split chuẩn!"
+    )
+    splits = create_splits(samples, seed=split_seed, strategy=strategy)
+    save_splits(splits, splits_path)
+    logger.warning(f"split mới đã lưu: {splits_path}")
+    return splits
 
 
 def train_and_evaluate(
@@ -94,19 +140,9 @@ def train_and_evaluate(
 
     strategy = config["split"]["strategy"]
     # Split seed TÁCH khỏi training seed: multi-seed dùng CÙNG split đã freeze
-    # (split.seed trong config; mặc định = training seed để tương thích ngược).
-    split_seed = int(config["split"].get("seed", seed))
-    splits_dir = Path(splits_dir)
-    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
-
-    if splits_path.is_file():
-        # Tái sử dụng splits đã lưu -> các thí nghiệm dùng cùng test set (mục 24).
-        splits = load_splits(splits_path)
-        logger.info(f"tái sử dụng splits: {splits_path}")
-    else:
-        splits = create_splits(samples, seed=split_seed, strategy=strategy)
-        save_splits(splits, splits_path)
-        logger.info(f"tạo splits mới ({strategy}) và lưu: {splits_path}")
+    # (split.seed trong config). Nếu thiếu file split -> báo lỗi dừng ngay,
+    # KHÔNG tự tạo split mới (xem _resolve_splits).
+    splits = _resolve_splits(config, samples, splits_dir, logger=logger)
 
     for name in ("train", "val", "test"):
         logger.info(f"split {name}: {splits['meta']['counts'][name]} mẫu")
@@ -303,25 +339,16 @@ def load_checkpoint(checkpoint_path: str | Path, device: torch.device):
 
 
 def load_test_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, dict]:
-    """Nạp tập test theo splits đã lưu (tái sử dụng nếu có — mục 24 tài liệu).
+    """Nạp tập test theo splits đã lưu (bắt buộc phải có — mục 24 tài liệu).
 
     Returns:
         (test_loader, splits)
     """
-    seed = config["seed"]
-    split_seed = int(config["split"].get("seed", seed))
-    strategy = config["split"]["strategy"]
     info = discover_dataset(config["dataset"]["root"])
     rows = load_metadata(info["root"], annotation_file=info["annotation_file"])
     samples = build_samples(rows, image_root=info["image_root"])
 
-    splits_dir = Path(splits_dir)
-    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
-    if splits_path.is_file():
-        splits = load_splits(splits_path)
-    else:
-        splits = create_splits(samples, seed=split_seed, strategy=strategy)
-        save_splits(splits, splits_path)
+    splits = _resolve_splits(config, samples, splits_dir)
 
     transform = build_eval_transform(config)
     num_workers = int(config["training"].get("num_workers", 0))
@@ -340,20 +367,11 @@ def load_val_loader(config: dict, splits_dir: str | Path) -> tuple[DataLoader, d
     Returns:
         (val_loader, splits)
     """
-    seed = config["seed"]
-    split_seed = int(config["split"].get("seed", seed))
-    strategy = config["split"]["strategy"]
     info = discover_dataset(config["dataset"]["root"])
     rows = load_metadata(info["root"], annotation_file=info["annotation_file"])
     samples = build_samples(rows, image_root=info["image_root"])
 
-    splits_dir = Path(splits_dir)
-    splits_path = splits_dir / f"{config['dataset']['name']}_seed{split_seed}_{strategy}.json"
-    if splits_path.is_file():
-        splits = load_splits(splits_path)
-    else:
-        splits = create_splits(samples, seed=split_seed, strategy=strategy)
-        save_splits(splits, splits_path)
+    splits = _resolve_splits(config, samples, splits_dir)
 
     transform = build_eval_transform(config)
     num_workers = int(config["training"].get("num_workers", 0))

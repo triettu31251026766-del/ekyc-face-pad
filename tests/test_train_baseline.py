@@ -51,7 +51,7 @@ def _config(dataset_root, experiment_id):
         "seed": 123,
         "experiment_id": experiment_id,
         "dataset": {"name": "celeba_spoof", "root": str(dataset_root)},
-        "split": {"strategy": "subject_disjoint"},
+        "split": {"strategy": "subject_disjoint", "require_existing": False},
         "model": {"name": "custom_cnn", "image_size": 32},
         "training": {"epochs": 1, "batch_size": 8,
                      "learning_rate": 0.001, "weight_decay": 0.00001},
@@ -130,3 +130,25 @@ def test_e01_reproducible_metric(tmp_path):
     assert second["f1"] == pytest.approx(first["f1"], abs=1e-6)
     assert second["roc_auc"] == pytest.approx(first["roc_auc"], abs=1e-6)
     assert second["acer"] == pytest.approx(first["acer"], abs=1e-6)
+
+
+def test_missing_split_raises_by_default(tmp_path):
+    """Thiếu file split + require_existing=True (mặc định) -> DỪNG, không tự tạo split.
+
+    Đây là hành vi chống lệch dữ liệu giữa các máy (từng xảy ra với seed 456/789).
+    """
+    root = tmp_path / "dataset"
+    _make_synthetic_dataset(root)
+    config = _config(root, "E_missing_split")
+    config["split"]["require_existing"] = True
+
+    with pytest.raises(FileNotFoundError, match="KHÔNG tìm thấy file split"):
+        run(
+            config,
+            splits_dir=tmp_path / "splits",
+            results_dir=tmp_path / "results",
+            checkpoints_dir=tmp_path / "checkpoints",
+        )
+
+    # Không được tạo file split nào.
+    assert not (tmp_path / "splits" / "celeba_spoof_seed123_subject_disjoint.json").exists()
