@@ -1,0 +1,10 @@
+2026-09-17 00:08:33 | INFO | ===== BẮT ĐẦU E04_blurmedium_seed101 (degradation evaluation) =====
+2026-09-17 00:08:33 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:08:33 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-17 00:13:23 | INFO | degraded test: f1=0.8219, roc_auc=0.8495244004820939
+2026-09-17 00:13:23 | INFO | kết quả đã lưu: results\raw\E04_blurmedium_seed101.json
+2026-09-17 00:40:05 | INFO | ===== BẮT ĐẦU E04_blurmedium_seed101 (degradation evaluation) =====
+2026-09-17 00:40:05 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:40:05 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-17 00:41:17 | INFO | degraded test: f1=0.8219, roc_auc=0.8495424994802994
+2026-09-17 00:41:17 | INFO | kết quả đã lưu: results\raw\E04_blurmedium_seed101.json

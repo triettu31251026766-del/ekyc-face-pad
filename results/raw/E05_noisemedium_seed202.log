@@ -1,0 +1,5 @@
+2026-09-14 19:18:24 | INFO | ===== BẮT ĐẦU E05_noisemedium_seed202 (degradation evaluation) =====
+2026-09-14 19:18:24 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+2026-09-14 19:18:24 | INFO | degradation: {'name': 'noise', 'std': 0.015}
+2026-09-14 19:21:34 | INFO | degraded test: f1=0.6905, roc_auc=0.9109514996449197
+2026-09-14 19:21:34 | INFO | kết quả đã lưu: results\raw\E05_noisemedium_seed202.json

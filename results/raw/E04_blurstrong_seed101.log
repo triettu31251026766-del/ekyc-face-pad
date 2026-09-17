@@ -1,0 +1,10 @@
+2026-09-17 00:13:24 | INFO | ===== BẮT ĐẦU E04_blurstrong_seed101 (degradation evaluation) =====
+2026-09-17 00:13:24 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:13:24 | INFO | degradation: {'name': 'blur', 'kernel_size': 11, 'sigma': 3.0}
+2026-09-17 00:18:13 | INFO | degraded test: f1=0.8178, roc_auc=0.7680210325972084
+2026-09-17 00:18:13 | INFO | kết quả đã lưu: results\raw\E04_blurstrong_seed101.json
+2026-09-17 00:41:17 | INFO | ===== BẮT ĐẦU E04_blurstrong_seed101 (degradation evaluation) =====
+2026-09-17 00:41:17 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:41:17 | INFO | degradation: {'name': 'blur', 'kernel_size': 11, 'sigma': 3.0}
+2026-09-17 00:42:30 | INFO | degraded test: f1=0.8177, roc_auc=0.7680173455418342
+2026-09-17 00:42:30 | INFO | kết quả đã lưu: results\raw\E04_blurstrong_seed101.json

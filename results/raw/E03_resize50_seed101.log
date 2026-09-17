@@ -1,0 +1,10 @@
+2026-09-16 23:54:13 | INFO | ===== BẮT ĐẦU E03_resize50_seed101 (degradation evaluation) =====
+2026-09-16 23:54:13 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-16 23:54:13 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
+2026-09-16 23:58:59 | INFO | degraded test: f1=0.8206, roc_auc=0.8885404721643112
+2026-09-16 23:58:59 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed101.json
+2026-09-17 00:36:11 | INFO | ===== BẮT ĐẦU E03_resize50_seed101 (degradation evaluation) =====
+2026-09-17 00:36:11 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:36:11 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
+2026-09-17 00:37:34 | INFO | degraded test: f1=0.8206, roc_auc=0.8885612013420833
+2026-09-17 00:37:35 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed101.json

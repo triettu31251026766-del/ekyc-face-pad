@@ -1,0 +1,5 @@
+2026-09-14 19:05:59 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed202 (degradation evaluation) =====
+2026-09-14 19:05:59 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+2026-09-14 19:05:59 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-14 19:07:15 | INFO | degraded test: f1=0.5628, roc_auc=0.9104574282197874
+2026-09-14 19:07:15 | INFO | kết quả đã lưu: results\raw\E02_jpeg30_seed202.json

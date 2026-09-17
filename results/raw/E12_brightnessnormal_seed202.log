@@ -1,0 +1,5 @@
+2026-09-14 19:55:36 | INFO | ===== BẮT ĐẦU E12_brightnessnormal_seed202 (degradation evaluation) =====
+2026-09-14 19:55:36 | INFO | checkpoint: results\checkpoints\E07_robust_seed202.pt
+2026-09-14 19:55:36 | INFO | degradation: {'name': 'brightness', 'factor': 1.0}
+2026-09-14 19:56:41 | INFO | degraded test: f1=0.8533, roc_auc=0.9570332905190543
+2026-09-14 19:56:42 | INFO | kết quả đã lưu: results\raw\E12_brightnessnormal_seed202.json

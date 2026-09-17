@@ -1,0 +1,5 @@
+2026-09-17 00:54:10 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed101 (degradation evaluation) =====
+2026-09-17 00:54:10 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:54:10 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
+2026-09-17 00:55:27 | INFO | degraded test: f1=0.6390, roc_auc=0.8694475663314774
+2026-09-17 00:55:28 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed101.json

@@ -1,0 +1,20 @@
+2026-09-17 20:40:39 | INFO | ===== BẮT ĐẦU E07_robust_seed101 (training_mode=robust) =====
+
+2026-09-17 20:40:39 | INFO | seed=101
+
+2026-09-17 20:40:39 | INFO | device=cuda
+
+2026-09-17 20:40:39 | INFO | dataset root: C:\Users\Zander Truong\Documents\coding\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-17 20:40:53 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-17 20:40:53 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-17 20:40:54 | INFO | split train: 203215 mẫu
+
+2026-09-17 20:40:54 | INFO | split val: 20773 mẫu
+
+2026-09-17 20:40:54 | INFO | split test: 20042 mẫu
+
+2026-09-17 20:40:54 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+

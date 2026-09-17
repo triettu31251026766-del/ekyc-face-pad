@@ -1,0 +1,10 @@
+2026-09-17 00:18:13 | INFO | ===== BẮT ĐẦU E05_noiselow_seed101 (degradation evaluation) =====
+2026-09-17 00:18:13 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:18:13 | INFO | degradation: {'name': 'noise', 'std': 0.005}
+2026-09-17 00:25:09 | INFO | degraded test: f1=0.8398, roc_auc=0.9577469098782903
+2026-09-17 00:25:09 | INFO | kết quả đã lưu: results\raw\E05_noiselow_seed101.json
+2026-09-17 00:42:30 | INFO | ===== BẮT ĐẦU E05_noiselow_seed101 (degradation evaluation) =====
+2026-09-17 00:42:30 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:42:30 | INFO | degradation: {'name': 'noise', 'std': 0.005}
+2026-09-17 00:45:37 | INFO | degraded test: f1=0.8399, roc_auc=0.957755484984275
+2026-09-17 00:45:38 | INFO | kết quả đã lưu: results\raw\E05_noiselow_seed101.json

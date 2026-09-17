@@ -1,0 +1,10 @@
+2026-09-16 23:39:45 | INFO | ===== BẮT ĐẦU E02_jpeg50_seed101 (degradation evaluation) =====
+2026-09-16 23:39:45 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-16 23:39:45 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+2026-09-16 23:44:34 | INFO | degraded test: f1=0.6372, roc_auc=0.9127865963455133
+2026-09-16 23:44:35 | INFO | kết quả đã lưu: results\raw\E02_jpeg50_seed101.json
+2026-09-17 00:32:10 | INFO | ===== BẮT ĐẦU E02_jpeg50_seed101 (degradation evaluation) =====
+2026-09-17 00:32:10 | INFO | checkpoint: results\checkpoints\E01_baseline_seed101.pt
+2026-09-17 00:32:10 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+2026-09-17 00:33:26 | INFO | degraded test: f1=0.6371, roc_auc=0.9128061425429779
+2026-09-17 00:33:26 | INFO | kết quả đã lưu: results\raw\E02_jpeg50_seed101.json

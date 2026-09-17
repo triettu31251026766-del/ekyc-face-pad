@@ -1,0 +1,317 @@
+2026-09-14 18:59:48 | INFO | ===== BẮT ĐẦU E01_baseline_seed202_clean (clean evaluation) =====
+
+2026-09-14 18:59:48 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:00:54 | INFO | clean test: f1=0.8431, roc_auc=0.9609742663111097
+
+2026-09-14 19:00:54 | INFO | kết quả đã lưu: results\raw\E01_baseline_seed202_clean.json
+
+=== LUOI SUY GIAM [baseline] | checkpoint: results\checkpoints\E01_baseline_seed202.pt ===
+
+device=cuda | seed=202 | threshold=0.25
+
+
+[clean] Đang đánh giá test sạch ...
+
+  clean: f1=0.8431 acer=0.1446
+
+
+[E02_jpeg90_seed202] degradation={'name': 'jpeg', 'quality': 90}
+
+2026-09-14 19:02:02 | INFO | ===== BẮT ĐẦU E02_jpeg90_seed202 (degradation evaluation) =====
+
+2026-09-14 19:02:02 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:02:02 | INFO | degradation: {'name': 'jpeg', 'quality': 90}
+
+2026-09-14 19:03:23 | INFO | degraded test: f1=0.8433, roc_auc=0.9607888746815155
+
+2026-09-14 19:03:23 | INFO | kết quả đã lưu: results\raw\E02_jpeg90_seed202.json
+
+  f1=0.8433 acer=0.1444
+
+
+[E02_jpeg70_seed202] degradation={'name': 'jpeg', 'quality': 70}
+
+2026-09-14 19:03:23 | INFO | ===== BẮT ĐẦU E02_jpeg70_seed202 (degradation evaluation) =====
+
+2026-09-14 19:03:23 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:03:23 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+
+2026-09-14 19:04:41 | INFO | degraded test: f1=0.7630, roc_auc=0.9478443558694444
+
+2026-09-14 19:04:41 | INFO | kết quả đã lưu: results\raw\E02_jpeg70_seed202.json
+
+  f1=0.7630 acer=0.1985
+
+
+[E02_jpeg50_seed202] degradation={'name': 'jpeg', 'quality': 50}
+
+2026-09-14 19:04:41 | INFO | ===== BẮT ĐẦU E02_jpeg50_seed202 (degradation evaluation) =====
+
+2026-09-14 19:04:41 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:04:41 | INFO | degradation: {'name': 'jpeg', 'quality': 50}
+
+2026-09-14 19:05:58 | INFO | degraded test: f1=0.6800, roc_auc=0.9354397384607087
+
+2026-09-14 19:05:59 | INFO | kết quả đã lưu: results\raw\E02_jpeg50_seed202.json
+
+  f1=0.6800 acer=0.2479
+
+
+[E02_jpeg30_seed202] degradation={'name': 'jpeg', 'quality': 30}
+
+2026-09-14 19:05:59 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed202 (degradation evaluation) =====
+
+2026-09-14 19:05:59 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:05:59 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+
+2026-09-14 19:07:15 | INFO | degraded test: f1=0.5628, roc_auc=0.9104574282197874
+
+2026-09-14 19:07:15 | INFO | kết quả đã lưu: results\raw\E02_jpeg30_seed202.json
+
+  f1=0.5628 acer=0.3084
+
+
+[E03_resize75_seed202] degradation={'name': 'resize', 'scale': 0.75}
+
+2026-09-14 19:07:15 | INFO | ===== BẮT ĐẦU E03_resize75_seed202 (degradation evaluation) =====
+
+2026-09-14 19:07:15 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:07:15 | INFO | degradation: {'name': 'resize', 'scale': 0.75}
+
+2026-09-14 19:08:48 | INFO | degraded test: f1=0.8646, roc_auc=0.9176883262914778
+
+2026-09-14 19:08:48 | INFO | kết quả đã lưu: results\raw\E03_resize75_seed202.json
+
+  f1=0.8646 acer=0.1604
+
+
+[E03_resize50_seed202] degradation={'name': 'resize', 'scale': 0.5}
+
+2026-09-14 19:08:48 | INFO | ===== BẮT ĐẦU E03_resize50_seed202 (degradation evaluation) =====
+
+2026-09-14 19:08:48 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:08:48 | INFO | degradation: {'name': 'resize', 'scale': 0.5}
+
+2026-09-14 19:10:14 | INFO | degraded test: f1=0.8575, roc_auc=0.8754067966025815
+
+2026-09-14 19:10:15 | INFO | kết quả đã lưu: results\raw\E03_resize50_seed202.json
+
+  f1=0.8575 acer=0.2138
+
+
+[E03_resize25_seed202] degradation={'name': 'resize', 'scale': 0.25}
+
+2026-09-14 19:10:15 | INFO | ===== BẮT ĐẦU E03_resize25_seed202 (degradation evaluation) =====
+
+2026-09-14 19:10:15 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:10:15 | INFO | degradation: {'name': 'resize', 'scale': 0.25}
+
+2026-09-14 19:11:35 | INFO | degraded test: f1=0.8356, roc_auc=0.813243463340227
+
+2026-09-14 19:11:35 | INFO | kết quả đã lưu: results\raw\E03_resize25_seed202.json
+
+  f1=0.8356 acer=0.3160
+
+
+[E04_blurlight_seed202] degradation={'name': 'blur', 'kernel_size': 3, 'sigma': 0.6}
+
+2026-09-14 19:11:35 | INFO | ===== BẮT ĐẦU E04_blurlight_seed202 (degradation evaluation) =====
+
+2026-09-14 19:11:35 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:11:35 | INFO | degradation: {'name': 'blur', 'kernel_size': 3, 'sigma': 0.6}
+
+2026-09-14 19:12:48 | INFO | degraded test: f1=0.8608, roc_auc=0.9349466158218127
+
+2026-09-14 19:12:48 | INFO | kết quả đã lưu: results\raw\E04_blurlight_seed202.json
+
+  f1=0.8608 acer=0.1462
+
+
+[E04_blurmedium_seed202] degradation={'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+
+2026-09-14 19:12:48 | INFO | ===== BẮT ĐẦU E04_blurmedium_seed202 (degradation evaluation) =====
+
+2026-09-14 19:12:48 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:12:48 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+
+2026-09-14 19:14:01 | INFO | degraded test: f1=0.8408, roc_auc=0.8271305112035021
+
+2026-09-14 19:14:01 | INFO | kết quả đã lưu: results\raw\E04_blurmedium_seed202.json
+
+  f1=0.8408 acer=0.2882
+
+
+[E04_blurstrong_seed202] degradation={'name': 'blur', 'kernel_size': 11, 'sigma': 3.0}
+
+2026-09-14 19:14:01 | INFO | ===== BẮT ĐẦU E04_blurstrong_seed202 (degradation evaluation) =====
+
+2026-09-14 19:14:01 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:14:01 | INFO | degradation: {'name': 'blur', 'kernel_size': 11, 'sigma': 3.0}
+
+2026-09-14 19:15:15 | INFO | degraded test: f1=0.8281, roc_auc=0.7739698021998076
+
+2026-09-14 19:15:15 | INFO | kết quả đã lưu: results\raw\E04_blurstrong_seed202.json
+
+  f1=0.8281 acer=0.3815
+
+
+[E05_noiselow_seed202] degradation={'name': 'noise', 'std': 0.005}
+
+2026-09-14 19:15:15 | INFO | ===== BẮT ĐẦU E05_noiselow_seed202 (degradation evaluation) =====
+
+2026-09-14 19:15:15 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:15:15 | INFO | degradation: {'name': 'noise', 'std': 0.005}
+
+2026-09-14 19:18:24 | INFO | degraded test: f1=0.8349, roc_auc=0.9650668737566772
+
+2026-09-14 19:18:24 | INFO | kết quả đã lưu: results\raw\E05_noiselow_seed202.json
+
+  f1=0.8349 acer=0.1503
+
+
+[E05_noisemedium_seed202] degradation={'name': 'noise', 'std': 0.015}
+
+2026-09-14 19:18:24 | INFO | ===== BẮT ĐẦU E05_noisemedium_seed202 (degradation evaluation) =====
+
+2026-09-14 19:18:24 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:18:24 | INFO | degradation: {'name': 'noise', 'std': 0.015}
+
+2026-09-14 19:21:34 | INFO | degraded test: f1=0.6905, roc_auc=0.9109514996449197
+
+2026-09-14 19:21:34 | INFO | kết quả đã lưu: results\raw\E05_noisemedium_seed202.json
+
+  f1=0.6905 acer=0.2490
+
+
+[E05_noisehigh_seed202] degradation={'name': 'noise', 'std': 0.03}
+
+2026-09-14 19:21:34 | INFO | ===== BẮT ĐẦU E05_noisehigh_seed202 (degradation evaluation) =====
+
+2026-09-14 19:21:34 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:21:34 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+
+2026-09-14 19:24:46 | INFO | degraded test: f1=0.4659, roc_auc=0.7843170547196369
+
+2026-09-14 19:24:47 | INFO | kết quả đã lưu: results\raw\E05_noisehigh_seed202.json
+
+  f1=0.4659 acer=0.3615
+
+
+[E06_brightnessdark_seed202] degradation={'name': 'brightness', 'factor': 0.6}
+
+2026-09-14 19:24:47 | INFO | ===== BẮT ĐẦU E06_brightnessdark_seed202 (degradation evaluation) =====
+
+2026-09-14 19:24:47 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:24:47 | INFO | degradation: {'name': 'brightness', 'factor': 0.6}
+
+2026-09-14 19:25:57 | INFO | degraded test: f1=0.8399, roc_auc=0.8462237773349068
+
+2026-09-14 19:25:58 | INFO | kết quả đã lưu: results\raw\E06_brightnessdark_seed202.json
+
+  f1=0.8399 acer=0.2381
+
+
+[E06_brightnessnormal_seed202] degradation={'name': 'brightness', 'factor': 1.0}
+
+2026-09-14 19:25:58 | INFO | ===== BẮT ĐẦU E06_brightnessnormal_seed202 (degradation evaluation) =====
+
+2026-09-14 19:25:58 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:25:58 | INFO | degradation: {'name': 'brightness', 'factor': 1.0}
+
+2026-09-14 19:27:10 | INFO | degraded test: f1=0.8431, roc_auc=0.9609742663111097
+
+2026-09-14 19:27:10 | INFO | kết quả đã lưu: results\raw\E06_brightnessnormal_seed202.json
+
+  f1=0.8431 acer=0.1446
+
+
+[E06_brightnessbright_seed202] degradation={'name': 'brightness', 'factor': 1.4}
+
+2026-09-14 19:27:10 | INFO | ===== BẮT ĐẦU E06_brightnessbright_seed202 (degradation evaluation) =====
+
+2026-09-14 19:27:10 | INFO | checkpoint: results\checkpoints\E01_baseline_seed202.pt
+
+2026-09-14 19:27:10 | INFO | degradation: {'name': 'brightness', 'factor': 1.4}
+
+2026-09-14 19:28:33 | INFO | degraded test: f1=0.6240, roc_auc=0.864513625693285
+
+2026-09-14 19:28:33 | INFO | kết quả đã lưu: results\raw\E06_brightnessbright_seed202.json
+
+  f1=0.6240 acer=0.2881
+
+
+Bang tong hop: results\tables\degradation_baseline_seed202.csv
+
+Bieu do:
+
+  results\figures\fig_baseline_seed202_jpeg.png
+
+  results\figures\fig_baseline_seed202_resize.png
+
+  results\figures\fig_baseline_seed202_blur.png
+
+  results\figures\fig_baseline_seed202_noise.png
+
+  results\figures\fig_baseline_seed202_brightness.png
+
+
+=== XONG ===
+
+ condition severity       f1     acer
+
+     clean        - 0.843079 0.144594
+
+      jpeg       90 0.843313 0.144418
+
+      jpeg       70 0.763011 0.198545
+
+      jpeg       50 0.679980 0.247919
+
+      jpeg       30 0.562781 0.308414
+
+    resize       75 0.864625 0.160355
+
+    resize       50 0.857528 0.213819
+
+    resize       25 0.835553 0.316013
+
+      blur    light 0.860828 0.146160
+
+      blur   medium 0.840772 0.288225
+
+      blur   strong 0.828107 0.381497
+
+     noise      low 0.834874 0.150268
+
+     noise   medium 0.690479 0.248984
+
+     noise     high 0.465850 0.361478
+
+brightness     dark 0.839886 0.238138
+
+brightness   normal 0.843079 0.144594
+
+brightness   bright 0.624049 0.288073
+
+[baseline seed 202] frozen threshold = 0.2500
+
+RUN: C:\Users\Zander Truong\AppData\Local\Programs\Python\Python314\python.exe -m experiments.eval_clean --config configs/full_clean.yaml --checkpoint results/checkpoints/E01_baseline_seed202.pt --threshold 0.25
+
+RUN: C:\Users\Zander Truong\AppData\Local\Programs\Python\Python314\python.exe -m experiments.eval_degradation_grid --checkpoint results/checkpoints/E01_baseline_seed202.pt --tag baseline --threshold 0.25
+

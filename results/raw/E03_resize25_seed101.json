@@ -1,0 +1,35 @@
+{
+  "experiment_id": "E03_resize25_seed101",
+  "seed": 101,
+  "dataset": "celeba_spoof_full",
+  "split_strategy": "subject_disjoint",
+  "model": "mobilenet_v2",
+  "training_mode": "clean",
+  "degradation_name": "resize",
+  "degradation_parameters": {
+    "scale": 0.25
+  },
+  "threshold": 0.64,
+  "accuracy": 0.7488773575491467,
+  "precision": 0.8530003093102382,
+  "recall": 0.7788604109298878,
+  "f1": 0.8142461708802362,
+  "roc_auc": 0.8094938180992072,
+  "pr_auc": 0.9074487707558418,
+  "apcer": 0.22113958907011227,
+  "bpcer": 0.32335431195781594,
+  "acer": 0.2722469505139641,
+  "parameter_count": 2225153,
+  "model_size_mb": 8.6188,
+  "environment": {
+    "python_version": "3.14.6",
+    "torch_version": "2.13.0+cu126",
+    "torchvision_version": "0.28.0+cu126",
+    "numpy_version": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "cuda_available": true,
+    "git_commit": "3b697cff1169d323e94018d93ce4618501f373c2"
+  },
+  "runtime_seconds": 79.04
+}

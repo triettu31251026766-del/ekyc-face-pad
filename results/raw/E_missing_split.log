@@ -1,0 +1,25 @@
+2026-09-17 20:20:27 | INFO | ===== BẮT ĐẦU E_missing_split (training_mode=clean) =====
+2026-09-17 20:20:27 | INFO | seed=123
+2026-09-17 20:20:27 | INFO | device=cpu
+2026-09-17 20:20:27 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-30\test_missing_split_raises_by_d0\dataset
+2026-09-17 20:20:27 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:00 | INFO | ===== BẮT ĐẦU E_missing_split (training_mode=clean) =====
+2026-09-17 20:21:00 | INFO | seed=123
+2026-09-17 20:21:00 | INFO | device=cpu
+2026-09-17 20:21:00 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_missing_split_raises_by_d0\dataset
+2026-09-17 20:21:00 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:47 | INFO | ===== BẮT ĐẦU E_missing_split (training_mode=clean) =====
+2026-09-17 20:21:47 | INFO | seed=123
+2026-09-17 20:21:47 | INFO | device=cpu
+2026-09-17 20:21:47 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_missing_split_raises_by_d0\dataset
+2026-09-17 20:21:47 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:56 | INFO | ===== BẮT ĐẦU E_missing_split (training_mode=clean) =====
+2026-09-17 20:24:56 | INFO | seed=123
+2026-09-17 20:24:56 | INFO | device=cpu
+2026-09-17 20:24:56 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_missing_split_raises_by_d0\dataset
+2026-09-17 20:24:56 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:54 | INFO | ===== BẮT ĐẦU E_missing_split (training_mode=clean) =====
+2026-09-17 20:25:54 | INFO | seed=123
+2026-09-17 20:25:54 | INFO | device=cpu
+2026-09-17 20:25:54 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_missing_split_raises_by_d0\dataset
+2026-09-17 20:25:54 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)

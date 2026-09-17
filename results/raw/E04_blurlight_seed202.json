@@ -1,0 +1,36 @@
+{
+  "experiment_id": "E04_blurlight_seed202",
+  "seed": 202,
+  "dataset": "celeba_spoof_full",
+  "split_strategy": "subject_disjoint",
+  "model": "mobilenet_v2",
+  "training_mode": "clean",
+  "degradation_name": "blur",
+  "degradation_parameters": {
+    "kernel_size": 3,
+    "sigma": 0.6
+  },
+  "threshold": 0.25,
+  "accuracy": 0.8223231214449656,
+  "precision": 0.9640231092436975,
+  "recall": 0.7775894937513239,
+  "f1": 0.8608277640989564,
+  "roc_auc": 0.9349466158218127,
+  "pr_auc": 0.9720060180041681,
+  "apcer": 0.22241050624867612,
+  "bpcer": 0.06990984861370982,
+  "acer": 0.14616017743119297,
+  "parameter_count": 2225153,
+  "model_size_mb": 8.6188,
+  "environment": {
+    "python_version": "3.14.6",
+    "torch_version": "2.13.0+cu126",
+    "torchvision_version": "0.28.0+cu126",
+    "numpy_version": "2.5.2",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "device": "NVIDIA GeForce RTX 3050 Laptop GPU",
+    "cuda_available": true,
+    "git_commit": "577c0c89a5b320f1ce3544b49102c12fdcba7905"
+  },
+  "runtime_seconds": 72.27
+}
