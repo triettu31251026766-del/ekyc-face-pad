@@ -1,0 +1,8 @@
+{
+  "checkpoint": "C:\\Users\\Zander Truong\\Documents\\coding\\ekyc-face-pad\\results\\checkpoints\\E07_robust_seed101.pt",
+  "seed": 101,
+  "threshold": 0.625,
+  "validation_acer": 0.021454726783631833,
+  "validation_apcer": 0.019152854511970532,
+  "validation_bpcer": 0.023756599055293138
+}

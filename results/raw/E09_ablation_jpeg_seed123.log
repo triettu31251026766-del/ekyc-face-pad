@@ -46,3 +46,83 @@
 2026-09-09 22:57:26 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
 2026-09-09 22:57:26 | INFO | clean test: f1=1.0000, roc_auc=1.0
 2026-09-09 22:57:26 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.09s)
+2026-09-17 20:20:01 | INFO | ===== BẮT ĐẦU E09_ablation_jpeg_seed123 (training_mode=robust) =====
+2026-09-17 20:20:01 | INFO | seed=123
+2026-09-17 20:20:01 | INFO | device=cpu
+2026-09-17 20:20:01 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_ablation_end_to_end_singl0\dataset
+2026-09-17 20:20:01 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:01 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_ablation_end_to_end_singl0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:01 | INFO | split train: 28 mẫu
+2026-09-17 20:20:01 | INFO | split val: 4 mẫu
+2026-09-17 20:20:01 | INFO | split test: 4 mẫu
+2026-09-17 20:20:01 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:01 | INFO | epoch 1/1: train_loss=0.6235 | val_loss=0.2892 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:01 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_ablation_end_to_end_singl0\checkpoints\E09_ablation_jpeg_seed123.pt
+2026-09-17 20:20:01 | INFO | epoch cuối: train_loss=0.6235, val_loss=0.289195716381073
+2026-09-17 20:20:01 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
+2026-09-17 20:20:01 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:01 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.06s)
+2026-09-17 20:20:54 | INFO | ===== BẮT ĐẦU E09_ablation_jpeg_seed123 (training_mode=robust) =====
+2026-09-17 20:20:54 | INFO | seed=123
+2026-09-17 20:20:54 | INFO | device=cpu
+2026-09-17 20:20:54 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_ablation_end_to_end_singl0\dataset
+2026-09-17 20:20:54 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:54 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_ablation_end_to_end_singl0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:54 | INFO | split train: 28 mẫu
+2026-09-17 20:20:54 | INFO | split val: 4 mẫu
+2026-09-17 20:20:54 | INFO | split test: 4 mẫu
+2026-09-17 20:20:54 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:54 | INFO | epoch 1/1: train_loss=0.6235 | val_loss=0.2892 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:54 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_ablation_end_to_end_singl0\checkpoints\E09_ablation_jpeg_seed123.pt
+2026-09-17 20:20:54 | INFO | epoch cuối: train_loss=0.6235, val_loss=0.289195716381073
+2026-09-17 20:20:54 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
+2026-09-17 20:20:54 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:55 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.06s)
+2026-09-17 20:21:42 | INFO | ===== BẮT ĐẦU E09_ablation_jpeg_seed123 (training_mode=robust) =====
+2026-09-17 20:21:42 | INFO | seed=123
+2026-09-17 20:21:42 | INFO | device=cpu
+2026-09-17 20:21:42 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_ablation_end_to_end_singl0\dataset
+2026-09-17 20:21:42 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:42 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_ablation_end_to_end_singl0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:42 | INFO | split train: 28 mẫu
+2026-09-17 20:21:42 | INFO | split val: 4 mẫu
+2026-09-17 20:21:42 | INFO | split test: 4 mẫu
+2026-09-17 20:21:42 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:42 | INFO | epoch 1/1: train_loss=0.6235 | val_loss=0.2892 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:42 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_ablation_end_to_end_singl0\checkpoints\E09_ablation_jpeg_seed123.pt
+2026-09-17 20:21:42 | INFO | epoch cuối: train_loss=0.6235, val_loss=0.289195716381073
+2026-09-17 20:21:42 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
+2026-09-17 20:21:42 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:42 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.06s)
+2026-09-17 20:24:50 | INFO | ===== BẮT ĐẦU E09_ablation_jpeg_seed123 (training_mode=robust) =====
+2026-09-17 20:24:50 | INFO | seed=123
+2026-09-17 20:24:50 | INFO | device=cpu
+2026-09-17 20:24:50 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_ablation_end_to_end_singl0\dataset
+2026-09-17 20:24:50 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:50 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_ablation_end_to_end_singl0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:50 | INFO | split train: 28 mẫu
+2026-09-17 20:24:50 | INFO | split val: 4 mẫu
+2026-09-17 20:24:50 | INFO | split test: 4 mẫu
+2026-09-17 20:24:50 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:50 | INFO | epoch 1/1: train_loss=0.6235 | val_loss=0.2892 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:50 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_ablation_end_to_end_singl0\checkpoints\E09_ablation_jpeg_seed123.pt
+2026-09-17 20:24:50 | INFO | epoch cuối: train_loss=0.6235, val_loss=0.289195716381073
+2026-09-17 20:24:50 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
+2026-09-17 20:24:50 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:50 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.07s)
+2026-09-17 20:25:48 | INFO | ===== BẮT ĐẦU E09_ablation_jpeg_seed123 (training_mode=robust) =====
+2026-09-17 20:25:48 | INFO | seed=123
+2026-09-17 20:25:48 | INFO | device=cpu
+2026-09-17 20:25:48 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_ablation_end_to_end_singl0\dataset
+2026-09-17 20:25:48 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:48 | INFO | tái sử dụng splits: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_ablation_end_to_end_singl0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:48 | INFO | split train: 28 mẫu
+2026-09-17 20:25:48 | INFO | split val: 4 mẫu
+2026-09-17 20:25:48 | INFO | split test: 4 mẫu
+2026-09-17 20:25:48 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:48 | INFO | epoch 1/1: train_loss=0.6235 | val_loss=0.2892 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:48 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_ablation_end_to_end_singl0\checkpoints\E09_ablation_jpeg_seed123.pt
+2026-09-17 20:25:48 | INFO | epoch cuối: train_loss=0.6235, val_loss=0.289195716381073
+2026-09-17 20:25:48 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2892)
+2026-09-17 20:25:48 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:48 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_ablation_end_to_end_singl0\results\E09_ablation_jpeg_seed123.json (runtime=0.07s)

@@ -250,3 +250,448 @@
 2026-09-09 22:57:31 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
 2026-09-09 22:57:31 | INFO | clean test: f1=1.0000, roc_auc=1.0
 2026-09-09 22:57:31 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:04 | INFO | seed=123
+2026-09-17 20:20:04 | INFO | device=cpu
+2026-09-17 20:20:04 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\dataset
+2026-09-17 20:20:04 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:04 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:04 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:04 | INFO | split train: 28 mẫu
+2026-09-17 20:20:04 | INFO | split val: 4 mẫu
+2026-09-17 20:20:04 | INFO | split test: 4 mẫu
+2026-09-17 20:20:04 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:04 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:04 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:04 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:04 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-17 20:20:04 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:04 | INFO | seed=123
+2026-09-17 20:20:04 | INFO | device=cpu
+2026-09-17 20:20:04 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\dataset
+2026-09-17 20:20:04 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:04 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:04 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:04 | INFO | split train: 28 mẫu
+2026-09-17 20:20:04 | INFO | split val: 4 mẫu
+2026-09-17 20:20:04 | INFO | split test: 4 mẫu
+2026-09-17 20:20:04 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:04 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:04 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:04 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:04 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:04 | INFO | seed=123
+2026-09-17 20:20:04 | INFO | device=cpu
+2026-09-17 20:20:04 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\dataset
+2026-09-17 20:20:04 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:04 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:04 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:04 | INFO | split train: 28 mẫu
+2026-09-17 20:20:04 | INFO | split val: 4 mẫu
+2026-09-17 20:20:04 | INFO | split test: 4 mẫu
+2026-09-17 20:20:04 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:04 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:04 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:04 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:04 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:20:05 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:05 | INFO | seed=123
+2026-09-17 20:20:05 | INFO | device=cpu
+2026-09-17 20:20:05 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_missing_0\dataset
+2026-09-17 20:20:05 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:05 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:05 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:05 | INFO | split train: 28 mẫu
+2026-09-17 20:20:05 | INFO | split val: 4 mẫu
+2026-09-17 20:20:05 | INFO | split test: 4 mẫu
+2026-09-17 20:20:05 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:05 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:05 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-17 20:20:05 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:05 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:05 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:05 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:20:05 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:05 | INFO | seed=123
+2026-09-17 20:20:05 | INFO | device=cpu
+2026-09-17 20:20:05 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_load_checkpoint_missing_f0\dataset
+2026-09-17 20:20:05 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:05 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:05 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:05 | INFO | split train: 28 mẫu
+2026-09-17 20:20:05 | INFO | split val: 4 mẫu
+2026-09-17 20:20:05 | INFO | split test: 4 mẫu
+2026-09-17 20:20:05 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:05 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:05 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-17 20:20:05 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:05 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:05 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:05 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:58 | INFO | seed=123
+2026-09-17 20:20:58 | INFO | device=cpu
+2026-09-17 20:20:58 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\dataset
+2026-09-17 20:20:58 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:58 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:58 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:58 | INFO | split train: 28 mẫu
+2026-09-17 20:20:58 | INFO | split val: 4 mẫu
+2026-09-17 20:20:58 | INFO | split test: 4 mẫu
+2026-09-17 20:20:58 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:58 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:58 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:58 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:58 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:58 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-17 20:20:58 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:58 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:58 | INFO | seed=123
+2026-09-17 20:20:58 | INFO | device=cpu
+2026-09-17 20:20:58 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\dataset
+2026-09-17 20:20:58 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:58 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:58 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:58 | INFO | split train: 28 mẫu
+2026-09-17 20:20:58 | INFO | split val: 4 mẫu
+2026-09-17 20:20:58 | INFO | split test: 4 mẫu
+2026-09-17 20:20:58 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:58 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:58 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:58 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:58 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:58 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:58 | INFO | seed=123
+2026-09-17 20:20:58 | INFO | device=cpu
+2026-09-17 20:20:58 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\dataset
+2026-09-17 20:20:58 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:58 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:58 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:58 | INFO | split train: 28 mẫu
+2026-09-17 20:20:58 | INFO | split val: 4 mẫu
+2026-09-17 20:20:58 | INFO | split test: 4 mẫu
+2026-09-17 20:20:58 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:58 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:58 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:58 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:58 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:20:59 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:59 | INFO | seed=123
+2026-09-17 20:20:59 | INFO | device=cpu
+2026-09-17 20:20:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_missing_0\dataset
+2026-09-17 20:20:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:59 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:59 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:59 | INFO | split train: 28 mẫu
+2026-09-17 20:20:59 | INFO | split val: 4 mẫu
+2026-09-17 20:20:59 | INFO | split test: 4 mẫu
+2026-09-17 20:20:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:59 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-17 20:20:59 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:59 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:20:59 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:20:59 | INFO | seed=123
+2026-09-17 20:20:59 | INFO | device=cpu
+2026-09-17 20:20:59 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_load_checkpoint_missing_f0\dataset
+2026-09-17 20:20:59 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:20:59 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:20:59 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:20:59 | INFO | split train: 28 mẫu
+2026-09-17 20:20:59 | INFO | split val: 4 mẫu
+2026-09-17 20:20:59 | INFO | split test: 4 mẫu
+2026-09-17 20:20:59 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:20:59 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:20:59 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-17 20:20:59 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:20:59 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:20:59 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:21:45 | INFO | seed=123
+2026-09-17 20:21:45 | INFO | device=cpu
+2026-09-17 20:21:45 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\dataset
+2026-09-17 20:21:45 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:45 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:21:45 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:45 | INFO | split train: 28 mẫu
+2026-09-17 20:21:45 | INFO | split val: 4 mẫu
+2026-09-17 20:21:45 | INFO | split test: 4 mẫu
+2026-09-17 20:21:45 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:45 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:45 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:21:45 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:21:45 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:45 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-17 20:21:45 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:45 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:21:45 | INFO | seed=123
+2026-09-17 20:21:45 | INFO | device=cpu
+2026-09-17 20:21:45 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\dataset
+2026-09-17 20:21:45 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:45 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:21:45 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:45 | INFO | split train: 28 mẫu
+2026-09-17 20:21:45 | INFO | split val: 4 mẫu
+2026-09-17 20:21:45 | INFO | split test: 4 mẫu
+2026-09-17 20:21:45 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:45 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:45 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:21:45 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:21:45 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:45 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:21:45 | INFO | seed=123
+2026-09-17 20:21:45 | INFO | device=cpu
+2026-09-17 20:21:45 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\dataset
+2026-09-17 20:21:45 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:45 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:21:45 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:45 | INFO | split train: 28 mẫu
+2026-09-17 20:21:45 | INFO | split val: 4 mẫu
+2026-09-17 20:21:45 | INFO | split test: 4 mẫu
+2026-09-17 20:21:45 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:45 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:45 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:21:45 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:21:45 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:46 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:21:46 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:21:46 | INFO | seed=123
+2026-09-17 20:21:46 | INFO | device=cpu
+2026-09-17 20:21:46 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_missing_0\dataset
+2026-09-17 20:21:46 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:46 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:21:46 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:46 | INFO | split train: 28 mẫu
+2026-09-17 20:21:46 | INFO | split val: 4 mẫu
+2026-09-17 20:21:46 | INFO | split test: 4 mẫu
+2026-09-17 20:21:46 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:46 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:46 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-17 20:21:46 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:21:46 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:21:46 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:46 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:21:46 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:21:46 | INFO | seed=123
+2026-09-17 20:21:46 | INFO | device=cpu
+2026-09-17 20:21:46 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_load_checkpoint_missing_f0\dataset
+2026-09-17 20:21:46 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:21:46 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:21:46 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:21:46 | INFO | split train: 28 mẫu
+2026-09-17 20:21:46 | INFO | split val: 4 mẫu
+2026-09-17 20:21:46 | INFO | split test: 4 mẫu
+2026-09-17 20:21:46 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:21:46 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:21:46 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-17 20:21:46 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:21:46 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:21:46 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:46 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.08s)
+2026-09-17 20:24:53 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:24:53 | INFO | seed=123
+2026-09-17 20:24:53 | INFO | device=cpu
+2026-09-17 20:24:53 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\dataset
+2026-09-17 20:24:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:53 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:24:53 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:53 | INFO | split train: 28 mẫu
+2026-09-17 20:24:53 | INFO | split val: 4 mẫu
+2026-09-17 20:24:53 | INFO | split test: 4 mẫu
+2026-09-17 20:24:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:53 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:24:53 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:24:53 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:24:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:53 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:24:53 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-17 20:24:53 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:24:53 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:53 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-17 20:24:53 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:24:53 | INFO | seed=123
+2026-09-17 20:24:53 | INFO | device=cpu
+2026-09-17 20:24:53 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\dataset
+2026-09-17 20:24:53 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:53 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:24:53 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:53 | INFO | split train: 28 mẫu
+2026-09-17 20:24:53 | INFO | split val: 4 mẫu
+2026-09-17 20:24:53 | INFO | split test: 4 mẫu
+2026-09-17 20:24:53 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:53 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:53 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:24:53 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:24:53 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:24:54 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:24:54 | INFO | seed=123
+2026-09-17 20:24:54 | INFO | device=cpu
+2026-09-17 20:24:54 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\dataset
+2026-09-17 20:24:54 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:54 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:24:54 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:54 | INFO | split train: 28 mẫu
+2026-09-17 20:24:54 | INFO | split val: 4 mẫu
+2026-09-17 20:24:54 | INFO | split test: 4 mẫu
+2026-09-17 20:24:54 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:54 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:54 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:24:54 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:24:54 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:24:54 | INFO | seed=123
+2026-09-17 20:24:54 | INFO | device=cpu
+2026-09-17 20:24:54 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_missing_0\dataset
+2026-09-17 20:24:54 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:54 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:24:54 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:54 | INFO | split train: 28 mẫu
+2026-09-17 20:24:54 | INFO | split val: 4 mẫu
+2026-09-17 20:24:54 | INFO | split test: 4 mẫu
+2026-09-17 20:24:54 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:54 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:54 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:24:54 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:24:54 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:24:54 | INFO | seed=123
+2026-09-17 20:24:54 | INFO | device=cpu
+2026-09-17 20:24:54 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_load_checkpoint_missing_f0\dataset
+2026-09-17 20:24:54 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:24:54 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:24:54 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:24:54 | INFO | split train: 28 mẫu
+2026-09-17 20:24:54 | INFO | split val: 4 mẫu
+2026-09-17 20:24:54 | INFO | split test: 4 mẫu
+2026-09-17 20:24:54 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:24:54 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:24:54 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:24:54 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:24:54 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:25:51 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:25:51 | INFO | seed=123
+2026-09-17 20:25:51 | INFO | device=cpu
+2026-09-17 20:25:51 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\dataset
+2026-09-17 20:25:51 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:51 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:25:51 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:51 | INFO | split train: 28 mẫu
+2026-09-17 20:25:51 | INFO | split val: 4 mẫu
+2026-09-17 20:25:51 | INFO | split test: 4 mẫu
+2026-09-17 20:25:51 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:51 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:51 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:25:51 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:25:51 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:25:51 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:51 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:25:51 | INFO | ===== BẮT ĐẦU E01_test (clean evaluation) =====
+2026-09-17 20:25:51 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_clean_matches_baseli0\results_eval\E01_test.json
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:25:52 | INFO | seed=123
+2026-09-17 20:25:52 | INFO | device=cpu
+2026-09-17 20:25:52 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\dataset
+2026-09-17 20:25:52 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:52 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:25:52 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:52 | INFO | split train: 28 mẫu
+2026-09-17 20:25:52 | INFO | split val: 4 mẫu
+2026-09-17 20:25:52 | INFO | split test: 4 mẫu
+2026-09-17 20:25:52 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:52 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:52 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:25:52 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:25:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:25:52 | INFO | seed=123
+2026-09-17 20:25:52 | INFO | device=cpu
+2026-09-17 20:25:52 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\dataset
+2026-09-17 20:25:52 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:52 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:25:52 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:52 | INFO | split train: 28 mẫu
+2026-09-17 20:25:52 | INFO | split val: 4 mẫu
+2026-09-17 20:25:52 | INFO | split test: 4 mẫu
+2026-09-17 20:25:52 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:52 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:52 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:25:52 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:25:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\results\E01_test.json (runtime=0.09s)
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:25:52 | INFO | seed=123
+2026-09-17 20:25:52 | INFO | device=cpu
+2026-09-17 20:25:52 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_missing_0\dataset
+2026-09-17 20:25:52 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:52 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:25:52 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_missing_0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:52 | INFO | split train: 28 mẫu
+2026-09-17 20:25:52 | INFO | split val: 4 mẫu
+2026-09-17 20:25:52 | INFO | split test: 4 mẫu
+2026-09-17 20:25:52 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:52 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:52 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_missing_0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:25:52 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:25:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_missing_0\results\E01_test.json (runtime=0.1s)
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E01_test (training_mode=clean) =====
+2026-09-17 20:25:52 | INFO | seed=123
+2026-09-17 20:25:52 | INFO | device=cpu
+2026-09-17 20:25:52 | INFO | dataset root: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_load_checkpoint_missing_f0\dataset
+2026-09-17 20:25:52 | INFO | samples: total=36, bona_fide=18, spoof=18, spoof_ratio=0.5000 (mục 15)
+2026-09-17 20:25:52 | WARNING | ⚠ TẠO SPLIT MỚI vì split.require_existing=false — CHỈ dùng cho thử nghiệm, KHÔNG so sánh được với split chuẩn!
+2026-09-17 20:25:52 | WARNING | split mới đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_load_checkpoint_missing_f0\splits\celeba_spoof_seed123_subject_disjoint.json
+2026-09-17 20:25:52 | INFO | split train: 28 mẫu
+2026-09-17 20:25:52 | INFO | split val: 4 mẫu
+2026-09-17 20:25:52 | INFO | split test: 4 mẫu
+2026-09-17 20:25:52 | INFO | model=custom_cnn, params=224449, size=0.86 MB
+2026-09-17 20:25:52 | INFO | epoch 1/1: train_loss=0.6237 | val_loss=0.2977 (checkpoint TỐT NHẤT đã lưu)
+2026-09-17 20:25:52 | INFO | hoàn tất huấn luyện 1 epoch, checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_load_checkpoint_missing_f0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | epoch cuối: train_loss=0.6237, val_loss=0.2976541221141815
+2026-09-17 20:25:52 | INFO | checkpoint giữ epoch TỐT NHẤT: epoch 1 (val_loss=0.2977)
+2026-09-17 20:25:52 | INFO | clean test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_load_checkpoint_missing_f0\results\E01_test.json (runtime=0.08s)

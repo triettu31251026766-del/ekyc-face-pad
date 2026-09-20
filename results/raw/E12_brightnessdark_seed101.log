@@ -1,0 +1,5 @@
+2026-09-19 01:23:54 | INFO | ===== BẮT ĐẦU E12_brightnessdark_seed101 (degradation evaluation) =====
+2026-09-19 01:23:54 | INFO | checkpoint: results\checkpoints\E07_robust_seed101.pt
+2026-09-19 01:23:54 | INFO | degradation: {'name': 'brightness', 'factor': 0.6}
+2026-09-19 01:25:06 | INFO | degraded test: f1=0.8778, roc_auc=0.9093128377251147
+2026-09-19 01:25:06 | INFO | kết quả đã lưu: results\raw\E12_brightnessdark_seed101.json

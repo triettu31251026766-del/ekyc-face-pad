@@ -1,0 +1,5 @@
+2026-09-19 01:17:34 | INFO | ===== BẮT ĐẦU E11_noisemedium_seed101 (degradation evaluation) =====
+2026-09-19 01:17:34 | INFO | checkpoint: results\checkpoints\E07_robust_seed101.pt
+2026-09-19 01:17:34 | INFO | degradation: {'name': 'noise', 'std': 0.015}
+2026-09-19 01:20:45 | INFO | degraded test: f1=0.8427, roc_auc=0.9516514086827417
+2026-09-19 01:20:45 | INFO | kết quả đã lưu: results\raw\E11_noisemedium_seed101.json

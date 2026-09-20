@@ -28,3 +28,53 @@
 2026-09-09 22:57:30 | INFO | degradation: {'name': 'noise', 'std': 0.03}
 2026-09-09 22:57:30 | INFO | degraded test: f1=1.0000, roc_auc=1.0
 2026-09-09 22:57:30 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:20:04 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:20:04 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:05 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:20:05 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:20:05 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:05 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:20:05 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:05 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:20:59 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:20:59 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:59 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:20:59 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:20:59 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:20:59 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:20:59 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:20:59 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:59 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:21:46 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:21:46 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:21:46 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:21:46 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:46 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:21:46 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:21:46 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:21:46 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:21:46 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:46 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:24:54 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:24:54 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:24:54 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:24:54 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:25:52 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:25:52 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU noise0.03_seed123 (degradation evaluation) =====
+2026-09-17 20:25:52 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-17 20:25:52 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_noise_us0\results_noise\noise0.03_seed123.json

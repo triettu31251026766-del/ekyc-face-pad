@@ -1,0 +1,84 @@
+
+=== CLEAN TEST (mean ± SD over seeds, frozen threshold) ===
+
+         exp    metric   mean     sd
+
+E01_baseline  accuracy 0.8053 0.0216
+
+E01_baseline precision 0.9865 0.0026
+
+E01_baseline    recall 0.7344 0.0291
+
+E01_baseline        f1 0.8417 0.0201
+
+E01_baseline   roc_auc 0.9623 0.0096
+
+E01_baseline    pr_auc 0.9839 0.0042
+
+E01_baseline     apcer 0.2656 0.0291
+
+E01_baseline     bpcer 0.0241 0.0038
+
+E01_baseline      acer 0.1448 0.0163
+
+  E07_robust  accuracy 0.8175 0.0118
+
+  E07_robust precision 0.9779 0.0034
+
+  E07_robust    recall 0.7590 0.0190
+
+  E07_robust        f1 0.8545 0.0111
+
+  E07_robust   roc_auc 0.9536 0.0028
+
+  E07_robust    pr_auc 0.9800 0.0012
+
+  E07_robust     apcer 0.2410 0.0190
+
+  E07_robust     bpcer 0.0414 0.0075
+
+  E07_robust      acer 0.1412 0.0069
+
+
+=== 16 DEGRADATION (mean ± SD over seeds) ===
+
+  mean over 16 conditions (per seed):
+
+         mean_f1         mean_roc_auc  ... mean_bpcer mean_acer        
+
+            mean     std         mean  ...        std      mean     std
+
+tag                                    ...                             
+
+baseline  0.7507  0.0177       0.8956  ...     0.0260    0.2389  0.0079
+
+robust    0.8365  0.0118       0.9362  ...     0.0121    0.1610  0.0052
+
+
+[2 rows x 10 columns]
+
+
+=== PAIRED BOOTSTRAP 95% CI (B=5000, frozen threshold) ===
+
+  seed 123 dF1: -0.0030 [-0.0076,+0.0015]
+
+  seed 123 dACER: -0.0088 [-0.0131,-0.0043]
+
+  seed 123 dAUC: +0.0245 [+0.0222,+0.0267]
+
+  seed 456: thiếu clean predictions (chạy eval_clean --threshold trước)
+
+  seed 789: thiếu clean predictions (chạy eval_clean --threshold trước)
+
+  seed 101 dF1: -0.0251 [-0.0299,-0.0204]
+
+  seed 101 dACER: +0.0147 [+0.0105,+0.0189]
+
+  seed 101 dAUC: -0.0022 [-0.0043,-0.0000]
+
+  seed 202 dF1: -0.0103 [-0.0151,-0.0053]
+
+  seed 202 dACER: +0.0050 [+0.0007,+0.0093]
+
+  seed 202 dAUC: +0.0039 [+0.0019,+0.0061]
+

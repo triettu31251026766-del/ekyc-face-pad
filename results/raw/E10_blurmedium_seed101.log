@@ -1,0 +1,5 @@
+2026-09-19 01:11:56 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed101 (degradation evaluation) =====
+2026-09-19 01:11:56 | INFO | checkpoint: results\checkpoints\E07_robust_seed101.pt
+2026-09-19 01:11:56 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-19 01:13:09 | INFO | degraded test: f1=0.8540, roc_auc=0.931997596039896
+2026-09-19 01:13:09 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed101.json

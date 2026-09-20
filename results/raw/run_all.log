@@ -34,3 +34,63 @@
 2026-09-09 22:57:27 | INFO | [OK] E09_robust_blur3_seed123
 2026-09-09 22:57:27 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
 2026-09-09 22:57:27 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====
+2026-09-17 20:20:01 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-17 20:20:01 | INFO | [OK] E01_baseline_seed123
+2026-09-17 20:20:01 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-17 20:20:01 | INFO | [OK] E02_jpeg70_seed123
+2026-09-17 20:20:01 | INFO | [OK] E03_blur3_seed123
+2026-09-17 20:20:01 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-17 20:20:01 | INFO | [OK] E07_robust_seed123
+2026-09-17 20:20:01 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-17 20:20:01 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-17 20:20:01 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-17 20:20:01 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-17 20:20:02 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====
+2026-09-17 20:20:55 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-17 20:20:55 | INFO | [OK] E01_baseline_seed123
+2026-09-17 20:20:55 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-17 20:20:55 | INFO | [OK] E02_jpeg70_seed123
+2026-09-17 20:20:55 | INFO | [OK] E03_blur3_seed123
+2026-09-17 20:20:55 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-17 20:20:55 | INFO | [OK] E07_robust_seed123
+2026-09-17 20:20:55 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-17 20:20:55 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-17 20:20:55 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-17 20:20:55 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-17 20:20:56 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====
+2026-09-17 20:21:42 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-17 20:21:42 | INFO | [OK] E01_baseline_seed123
+2026-09-17 20:21:42 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-17 20:21:42 | INFO | [OK] E02_jpeg70_seed123
+2026-09-17 20:21:42 | INFO | [OK] E03_blur3_seed123
+2026-09-17 20:21:42 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-17 20:21:42 | INFO | [OK] E07_robust_seed123
+2026-09-17 20:21:42 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-17 20:21:42 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-17 20:21:43 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-17 20:21:43 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-17 20:21:43 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====
+2026-09-17 20:24:50 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-17 20:24:50 | INFO | [OK] E01_baseline_seed123
+2026-09-17 20:24:50 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-17 20:24:50 | INFO | [OK] E02_jpeg70_seed123
+2026-09-17 20:24:50 | INFO | [OK] E03_blur3_seed123
+2026-09-17 20:24:50 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-17 20:24:51 | INFO | [OK] E07_robust_seed123
+2026-09-17 20:24:51 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-17 20:24:51 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-17 20:24:51 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-17 20:24:51 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-17 20:24:51 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====
+2026-09-17 20:25:48 | INFO | ===== BƯỚC 1: E01 clean baseline =====
+2026-09-17 20:25:49 | INFO | [OK] E01_baseline_seed123
+2026-09-17 20:25:49 | INFO | ===== BƯỚC 2: baseline dưới suy giảm chất lượng =====
+2026-09-17 20:25:49 | INFO | [OK] E02_jpeg70_seed123
+2026-09-17 20:25:49 | INFO | [OK] E03_blur3_seed123
+2026-09-17 20:25:49 | INFO | ===== BƯỚC 3: E07 robust training =====
+2026-09-17 20:25:49 | INFO | [OK] E07_robust_seed123
+2026-09-17 20:25:49 | INFO | ===== BƯỚC 4: robust dưới suy giảm chất lượng =====
+2026-09-17 20:25:49 | INFO | [OK] E08_robust_jpeg70_seed123
+2026-09-17 20:25:49 | INFO | [OK] E09_robust_blur3_seed123
+2026-09-17 20:25:49 | INFO | ===== BƯỚC 6: bảng so sánh + figures =====
+2026-09-17 20:25:49 | INFO | ===== HOÀN TẤT run_all: 6 thí nghiệm =====

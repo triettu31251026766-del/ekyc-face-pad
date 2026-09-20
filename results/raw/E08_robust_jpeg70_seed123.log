@@ -13,3 +13,28 @@
 2026-09-09 22:57:27 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
 2026-09-09 22:57:27 | INFO | degraded test: f1=1.0000, roc_auc=1.0
 2026-09-09 22:57:27 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-28\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json
+2026-09-17 20:20:01 | INFO | ===== BẮT ĐẦU E08_robust_jpeg70_seed123 (degradation evaluation) =====
+2026-09-17 20:20:01 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-17 20:20:01 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-17 20:20:01 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:01 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json
+2026-09-17 20:20:55 | INFO | ===== BẮT ĐẦU E08_robust_jpeg70_seed123 (degradation evaluation) =====
+2026-09-17 20:20:55 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-17 20:20:55 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-17 20:20:55 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:55 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json
+2026-09-17 20:21:42 | INFO | ===== BẮT ĐẦU E08_robust_jpeg70_seed123 (degradation evaluation) =====
+2026-09-17 20:21:42 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-17 20:21:42 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-17 20:21:42 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:42 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json
+2026-09-17 20:24:51 | INFO | ===== BẮT ĐẦU E08_robust_jpeg70_seed123 (degradation evaluation) =====
+2026-09-17 20:24:51 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-17 20:24:51 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-17 20:24:51 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:51 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json
+2026-09-17 20:25:49 | INFO | ===== BẮT ĐẦU E08_robust_jpeg70_seed123 (degradation evaluation) =====
+2026-09-17 20:25:49 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_run_all_end_to_end_order0\checkpoints\E07_robust_seed123.pt
+2026-09-17 20:25:49 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-17 20:25:49 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:49 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_run_all_end_to_end_order0\results\E08_robust_jpeg70_seed123.json

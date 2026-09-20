@@ -33,3 +33,53 @@
 2026-09-12 01:30:20 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
 2026-09-12 01:31:37 | INFO | degraded test: f1=0.4780, roc_auc=0.9113929134339327
 2026-09-12 01:31:37 | INFO | kết quả đã lưu: results\raw\E02_jpeg30_seed123.json
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:20:04 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:20:04 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:20:04 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:20:04 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:04 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:20:04 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:04 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-29\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:20:58 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:20:58 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:58 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:20:58 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:20:58 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:20:58 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:20:58 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:20:58 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-31\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:21:45 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:21:45 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:45 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:21:45 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:21:45 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:21:45 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:21:45 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:21:45 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-32\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:24:54 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:24:54 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:24:54 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:24:54 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:24:54 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:24:54 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:24:54 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-33\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:25:52 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:25:52 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json
+2026-09-17 20:25:52 | INFO | ===== BẮT ĐẦU E02_jpeg30_seed123 (degradation evaluation) =====
+2026-09-17 20:25:52 | INFO | checkpoint: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\checkpoints\E01_test.pt
+2026-09-17 20:25:52 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-17 20:25:52 | INFO | degraded test: f1=1.0000, roc_auc=1.0
+2026-09-17 20:25:52 | INFO | kết quả đã lưu: C:\Users\Zander Truong\AppData\Local\Temp\pytest-of-Zander Truong\pytest-34\test_eval_degradation_jpeg_det0\results_deg\E02_jpeg30_seed123.json

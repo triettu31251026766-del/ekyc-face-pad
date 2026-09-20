@@ -1,0 +1,5 @@
+2026-09-19 01:09:25 | INFO | ===== BẮT ĐẦU E09_resize25_seed101 (degradation evaluation) =====
+2026-09-19 01:09:25 | INFO | checkpoint: results\checkpoints\E07_robust_seed101.pt
+2026-09-19 01:09:25 | INFO | degradation: {'name': 'resize', 'scale': 0.25}
+2026-09-19 01:10:45 | INFO | degraded test: f1=0.8449, roc_auc=0.9154272365807008
+2026-09-19 01:10:46 | INFO | kết quả đã lưu: results\raw\E09_resize25_seed101.json
