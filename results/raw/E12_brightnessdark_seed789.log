@@ -1,5 +1,5 @@
-2026-09-14 18:33:22 | INFO | ===== BẮT ĐẦU E12_brightnessdark_seed789 (degradation evaluation) =====
-2026-09-14 18:33:22 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
-2026-09-14 18:33:22 | INFO | degradation: {'name': 'brightness', 'factor': 0.6}
-2026-09-14 18:37:21 | INFO | degraded test: f1=0.9374, roc_auc=0.98494125500953
-2026-09-14 18:37:22 | INFO | kết quả đã lưu: results\raw\E12_brightnessdark_seed789.json
+2026-09-20 00:10:08 | INFO | ===== BẮT ĐẦU E12_brightnessdark_seed789 (degradation evaluation) =====
+2026-09-20 00:10:08 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-20 00:10:08 | INFO | degradation: {'name': 'brightness', 'factor': 0.6}
+2026-09-20 00:11:35 | INFO | degraded test: f1=0.9025, roc_auc=0.927034819506089
+2026-09-20 00:11:35 | INFO | kết quả đã lưu: results\raw\E12_brightnessdark_seed789.json

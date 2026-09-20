@@ -1,5 +1,5 @@
-2026-09-15 16:02:59 | INFO | ===== BẮT ĐẦU E11_noisehigh_seed456 (degradation evaluation) =====
-2026-09-15 16:02:59 | INFO | checkpoint: results\checkpoints\E07_robust_seed456.pt
-2026-09-15 16:02:59 | INFO | degradation: {'name': 'noise', 'std': 0.03}
-2026-09-15 16:11:28 | INFO | degraded test: f1=0.9750, roc_auc=0.9955666996409128
-2026-09-15 16:11:28 | INFO | kết quả đã lưu: results\raw\E11_noisehigh_seed456.json
+2026-09-19 00:54:58 | INFO | ===== BẮT ĐẦU E11_noisehigh_seed456 (degradation evaluation) =====
+2026-09-19 00:54:58 | INFO | checkpoint: results\checkpoints\E07_robust_seed456.pt
+2026-09-19 00:54:58 | INFO | degradation: {'name': 'noise', 'std': 0.03}
+2026-09-19 00:59:27 | INFO | degraded test: f1=0.8391, roc_auc=0.9437691328299169
+2026-09-19 00:59:27 | INFO | kết quả đã lưu: results\raw\E11_noisehigh_seed456.json

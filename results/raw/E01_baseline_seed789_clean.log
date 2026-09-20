@@ -1,4 +1,4 @@
-2026-09-14 15:19:56 | INFO | ===== BẮT ĐẦU E01_baseline_seed789_clean (clean evaluation) =====
-2026-09-14 15:19:56 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
-2026-09-14 15:22:54 | INFO | clean test: f1=0.9865, roc_auc=0.9980077387594408
-2026-09-14 15:22:55 | INFO | kết quả đã lưu: results\raw\E01_baseline_seed789_clean.json
+2026-09-19 22:52:31 | INFO | ===== BẮT ĐẦU E01_baseline_seed789_clean (clean evaluation) =====
+2026-09-19 22:52:31 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
+2026-09-19 22:54:25 | INFO | clean test: f1=0.8542, roc_auc=0.9682202308680347
+2026-09-19 22:54:25 | INFO | kết quả đã lưu: results\raw\E01_baseline_seed789_clean.json

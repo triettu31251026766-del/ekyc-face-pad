@@ -1,0 +1,120 @@
+2026-09-18 01:36:25 | INFO | ===== BẮT ĐẦU E01_baseline_seed456 (training_mode=clean) =====
+
+2026-09-18 01:36:25 | INFO | seed=456
+
+2026-09-18 01:36:25 | INFO | device=cuda
+
+2026-09-18 01:36:25 | INFO | dataset root: C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\data\raw\celeba_spoof_full
+
+2026-09-18 01:36:32 | INFO | samples: total=203215, bona_fide=70288, spoof=132927, spoof_ratio=0.6541 (mục 15)
+
+2026-09-18 01:36:32 | INFO | tái sử dụng splits: data\splits\celeba_spoof_full_seed123_subject_disjoint.json
+
+2026-09-18 01:36:33 | INFO | split train: 203215 mẫu
+
+2026-09-18 01:36:33 | INFO | split val: 20773 mẫu
+
+2026-09-18 01:36:33 | INFO | split test: 20042 mẫu
+
+2026-09-18 01:36:33 | INFO | model=mobilenet_v2, params=2225153, size=8.62 MB
+
+train epoch 1:   0%|          | 0/3176 [00:00<?, ?batch/s]
+                                                          
+Traceback (most recent call last):
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\src\dataset.py", line 71, in __getitem__
+
+    with Image.open(sample.path) as handle:
+
+         ~~~~~~~~~~^^^^^^^^^^^^^
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\PIL\Image.py", line 3639, in open
+
+    fp = builtins.open(filename, "rb")
+
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\LEGION\\Desktop\\New folder\\ekyc-face-pad\\data\\raw\\celeba_spoof_full\\SpoofingData\\038555.jpg'
+
+
+The above exception was the direct cause of the following exception:
+
+
+Traceback (most recent call last):
+
+  File "<frozen runpy>", line 203, in _run_module_as_main
+
+  File "<frozen runpy>", line 88, in _run_code
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\experiments\train_baseline.py", line 71, in <module>
+
+    main()
+
+    ~~~~^^
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\experiments\train_baseline.py", line 67, in main
+
+    run(config)
+
+    ~~~^^^^^^^^
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\experiments\train_baseline.py", line 45, in run
+
+    return train_and_evaluate(
+
+        config,
+
+    ...<3 lines>...
+
+        checkpoints_dir=checkpoints_dir,
+
+    )
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\experiments\_common.py", line 253, in train_and_evaluate
+
+    history = train_model(
+
+        model,
+
+    ...<6 lines>...
+
+        on_epoch_end=save_checkpoint,
+
+    )
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\src\train.py", line 129, in train_model
+
+    train_loss = train_one_epoch(model, train_loader, optimizer, loss_fn, device,
+
+                                 epoch=epoch)
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\src\train.py", line 69, in train_one_epoch
+
+    for batch in progress:
+
+                 ^^^^^^^^
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\tqdm\std.py", line 1187, in __iter__
+
+    for obj in iterable:
+
+               ^^^^^^^^
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\dataloader.py", line 725, in __next__
+
+    data = self._next_data()
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\dataloader.py", line 785, in _next_data
+
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+
+  File "C:\Users\LEGION\AppData\Local\Programs\Python\Python314\Lib\site-packages\torch\utils\data\_utils\fetch.py", line 54, in fetch
+
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+
+            ~~~~~~~~~~~~^^^^^
+
+  File "C:\Users\LEGION\Desktop\eKYC\ekyc-face-pad\src\dataset.py", line 75, in __getitem__
+
+    raise RuntimeError(f"Failed to load image: {sample.path}") from exc
+
+RuntimeError: Failed to load image: C:\Users\LEGION\Desktop\New folder\ekyc-face-pad\data\raw\celeba_spoof_full\SpoofingData\038555.jpg
+

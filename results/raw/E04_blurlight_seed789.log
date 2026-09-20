@@ -1,5 +1,5 @@
-2026-09-14 15:55:46 | INFO | ===== BẮT ĐẦU E04_blurlight_seed789 (degradation evaluation) =====
-2026-09-14 15:55:46 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
-2026-09-14 15:55:46 | INFO | degradation: {'name': 'blur', 'kernel_size': 3, 'sigma': 0.6}
-2026-09-14 15:59:51 | INFO | degraded test: f1=0.9822, roc_auc=0.9963445073543619
-2026-09-14 15:59:51 | INFO | kết quả đã lưu: results\raw\E04_blurlight_seed789.json
+2026-09-19 23:09:58 | INFO | ===== BẮT ĐẦU E04_blurlight_seed789 (degradation evaluation) =====
+2026-09-19 23:09:58 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
+2026-09-19 23:09:58 | INFO | degradation: {'name': 'blur', 'kernel_size': 3, 'sigma': 0.6}
+2026-09-19 23:11:46 | INFO | degraded test: f1=0.8590, roc_auc=0.9488187112944007
+2026-09-19 23:11:46 | INFO | kết quả đã lưu: results\raw\E04_blurlight_seed789.json

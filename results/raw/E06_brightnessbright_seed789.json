@@ -9,16 +9,16 @@
   "degradation_parameters": {
     "factor": 1.4
   },
-  "threshold": 0.71,
-  "accuracy": 0.8137932731343651,
-  "precision": 0.9856254460189622,
-  "recall": 0.7263165802719556,
-  "f1": 0.8363321799307959,
-  "roc_auc": 0.9765682914716969,
-  "pr_auc": 0.9858330445722304,
-  "apcer": 0.2736834197280445,
-  "bpcer": 0.020112688110691106,
-  "acer": 0.1468980539193678,
+  "threshold": 0.525,
+  "accuracy": 0.6620596746831654,
+  "precision": 0.9782552420398654,
+  "recall": 0.5336440019769823,
+  "f1": 0.6905751747453058,
+  "roc_auc": 0.8951969462246097,
+  "pr_auc": 0.9540477247054637,
+  "apcer": 0.46635599802301775,
+  "bpcer": 0.02857628848443613,
+  "acer": 0.24746614325372693,
   "parameter_count": 2225153,
   "model_size_mb": 8.6188,
   "environment": {
@@ -29,7 +29,7 @@
     "platform": "Windows-11-10.0.26200-SP0",
     "device": "NVIDIA GeForce RTX 5060 Laptop GPU",
     "cuda_available": true,
-    "git_commit": "577c0c89a5b320f1ce3544b49102c12fdcba7905"
+    "git_commit": "78f2f84d80bec72a953bf219abb655d42c5a2f8f"
   },
-  "runtime_seconds": 181.18
+  "runtime_seconds": 116.32
 }

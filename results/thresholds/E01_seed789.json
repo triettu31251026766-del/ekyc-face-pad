@@ -1,8 +1,8 @@
 {
-  "checkpoint": "C:\\Users\\LEGION\\Desktop\\New folder\\ekyc-face-pad\\results\\checkpoints\\E01_baseline_seed789.pt",
+  "checkpoint": "C:\\Users\\LEGION\\Desktop\\eKYC\\ekyc-face-pad\\results\\checkpoints\\E01_baseline_seed789.pt",
   "seed": 789,
-  "threshold": 0.71,
-  "validation_acer": 0.019833134867700237,
-  "validation_apcer": 0.018108350793175697,
-  "validation_bpcer": 0.021557918942224776
+  "threshold": 0.525,
+  "validation_acer": 0.013835304159074267,
+  "validation_apcer": 0.01016574585635359,
+  "validation_bpcer": 0.017504862461794942
 }

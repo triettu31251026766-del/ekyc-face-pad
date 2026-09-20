@@ -1,5 +1,5 @@
-2026-09-15 14:06:02 | INFO | ===== BẮT ĐẦU E02_jpeg70_seed456 (degradation evaluation) =====
-2026-09-15 14:06:02 | INFO | checkpoint: results\checkpoints\E01_baseline_seed456.pt
-2026-09-15 14:06:02 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
-2026-09-15 14:09:11 | INFO | degraded test: f1=0.9647, roc_auc=0.995219136158336
-2026-09-15 14:09:11 | INFO | kết quả đã lưu: results\raw\E02_jpeg70_seed456.json
+2026-09-18 23:49:25 | INFO | ===== BẮT ĐẦU E02_jpeg70_seed456 (degradation evaluation) =====
+2026-09-18 23:49:25 | INFO | checkpoint: results\checkpoints\E01_baseline_seed456.pt
+2026-09-18 23:49:25 | INFO | degradation: {'name': 'jpeg', 'quality': 70}
+2026-09-18 23:51:18 | INFO | degraded test: f1=0.7251, roc_auc=0.9495206990147768
+2026-09-18 23:51:18 | INFO | kết quả đã lưu: results\raw\E02_jpeg70_seed456.json

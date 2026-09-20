@@ -1,5 +1,5 @@
-2026-09-14 17:34:58 | INFO | ===== BẮT ĐẦU E09_resize75_seed789 (degradation evaluation) =====
-2026-09-14 17:34:58 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
-2026-09-14 17:34:58 | INFO | degradation: {'name': 'resize', 'scale': 0.75}
-2026-09-14 17:40:25 | INFO | degraded test: f1=0.9790, roc_auc=0.9957352893891291
-2026-09-14 17:40:26 | INFO | kết quả đã lưu: results\raw\E09_resize75_seed789.json
+2026-09-19 23:46:05 | INFO | ===== BẮT ĐẦU E09_resize75_seed789 (degradation evaluation) =====
+2026-09-19 23:46:05 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-19 23:46:05 | INFO | degradation: {'name': 'resize', 'scale': 0.75}
+2026-09-19 23:48:23 | INFO | degraded test: f1=0.8793, roc_auc=0.9521241444275076
+2026-09-19 23:48:23 | INFO | kết quả đã lưu: results\raw\E09_resize75_seed789.json

@@ -1,5 +1,5 @@
-2026-09-14 17:30:01 | INFO | ===== BẮT ĐẦU E08_jpeg30_seed789 (degradation evaluation) =====
-2026-09-14 17:30:01 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
-2026-09-14 17:30:01 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
-2026-09-14 17:34:57 | INFO | degraded test: f1=0.9657, roc_auc=0.9942425552137252
-2026-09-14 17:34:57 | INFO | kết quả đã lưu: results\raw\E08_jpeg30_seed789.json
+2026-09-19 23:43:57 | INFO | ===== BẮT ĐẦU E08_jpeg30_seed789 (degradation evaluation) =====
+2026-09-19 23:43:57 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-19 23:43:57 | INFO | degradation: {'name': 'jpeg', 'quality': 30}
+2026-09-19 23:46:04 | INFO | degraded test: f1=0.8160, roc_auc=0.9463751003326434
+2026-09-19 23:46:04 | INFO | kết quả đã lưu: results\raw\E08_jpeg30_seed789.json

@@ -1,5 +1,5 @@
-2026-09-14 18:12:07 | INFO | ===== BẮT ĐẦU E11_noisemedium_seed789 (degradation evaluation) =====
-2026-09-14 18:12:07 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
-2026-09-14 18:12:07 | INFO | degradation: {'name': 'noise', 'std': 0.015}
-2026-09-14 18:22:28 | INFO | degraded test: f1=0.9799, roc_auc=0.9962865019683949
-2026-09-14 18:22:29 | INFO | kết quả đã lưu: results\raw\E11_noisemedium_seed789.json
+2026-09-20 00:02:09 | INFO | ===== BẮT ĐẦU E11_noisemedium_seed789 (degradation evaluation) =====
+2026-09-20 00:02:09 | INFO | checkpoint: results\checkpoints\E07_robust_seed789.pt
+2026-09-20 00:02:09 | INFO | degradation: {'name': 'noise', 'std': 0.015}
+2026-09-20 00:06:08 | INFO | degraded test: f1=0.8840, roc_auc=0.963431214324962
+2026-09-20 00:06:08 | INFO | kết quả đã lưu: results\raw\E11_noisemedium_seed789.json

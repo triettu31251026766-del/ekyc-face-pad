@@ -1,5 +1,5 @@
-2026-09-14 16:06:44 | INFO | ===== BẮT ĐẦU E05_noiselow_seed789 (degradation evaluation) =====
-2026-09-14 16:06:44 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
-2026-09-14 16:06:44 | INFO | degradation: {'name': 'noise', 'std': 0.005}
-2026-09-14 16:15:09 | INFO | degraded test: f1=0.9835, roc_auc=0.9976350511741643
-2026-09-14 16:15:09 | INFO | kết quả đã lưu: results\raw\E05_noiselow_seed789.json
+2026-09-19 23:15:31 | INFO | ===== BẮT ĐẦU E05_noiselow_seed789 (degradation evaluation) =====
+2026-09-19 23:15:31 | INFO | checkpoint: results\checkpoints\E01_baseline_seed789.pt
+2026-09-19 23:15:31 | INFO | degradation: {'name': 'noise', 'std': 0.005}
+2026-09-19 23:20:17 | INFO | degraded test: f1=0.8501, roc_auc=0.9694120745202651
+2026-09-19 23:20:17 | INFO | kết quả đã lưu: results\raw\E05_noiselow_seed789.json

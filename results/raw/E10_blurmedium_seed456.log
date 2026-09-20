@@ -1,5 +1,5 @@
-2026-09-15 15:40:14 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed456 (degradation evaluation) =====
-2026-09-15 15:40:14 | INFO | checkpoint: results\checkpoints\E07_robust_seed456.pt
-2026-09-15 15:40:14 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
-2026-09-15 15:43:04 | INFO | degraded test: f1=0.9763, roc_auc=0.9949724910364578
-2026-09-15 15:43:05 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed456.json
+2026-09-19 00:41:51 | INFO | ===== BẮT ĐẦU E10_blurmedium_seed456 (degradation evaluation) =====
+2026-09-19 00:41:51 | INFO | checkpoint: results\checkpoints\E07_robust_seed456.pt
+2026-09-19 00:41:51 | INFO | degradation: {'name': 'blur', 'kernel_size': 7, 'sigma': 1.8}
+2026-09-19 00:43:47 | INFO | degraded test: f1=0.8501, roc_auc=0.9324078980473223
+2026-09-19 00:43:47 | INFO | kết quả đã lưu: results\raw\E10_blurmedium_seed456.json
